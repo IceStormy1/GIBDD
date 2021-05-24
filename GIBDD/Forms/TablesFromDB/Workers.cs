@@ -7,11 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace yt_DesignUI
+namespace yt_DesignUI.Forms.TablesFromDB
 {
-    public partial class Formii : Form
+    public partial class Workers : Form
     {
-        public Formii()
+        public Workers()
         {
             InitializeComponent();
         }

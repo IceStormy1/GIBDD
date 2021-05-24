@@ -46,10 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AboutProgramm.cs">
+    <Compile Include="Forms\Forms\AboutProgramm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AboutProgramm.Designer.cs">
+    <Compile Include="Forms\Forms\AboutProgramm.Designer.cs">
       <DependentUpon>AboutProgramm.cs</DependentUpon>
     </Compile>
     <Compile Include="Animation\Animation.cs" />
@@ -87,10 +87,10 @@
     </Compile>
     <Compile Include="Drawer.cs" />
     <Compile Include="FlatColors.cs" />
-    <Compile Include="Formii.cs">
+    <Compile Include="Forms\Forms\Formii.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formii.Designer.cs">
+    <Compile Include="Forms\Forms\Formii.Designer.cs">
       <DependentUpon>Formii.cs</DependentUpon>
     </Compile>
     <Compile Include="FormMain.cs">
@@ -99,31 +99,76 @@
     <Compile Include="FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
-    <Compile Include="Otchet.cs">
+    <Compile Include="Forms\Forms\Otchet.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Otchet.Designer.cs">
+    <Compile Include="Forms\Forms\Otchet.Designer.cs">
       <DependentUpon>Otchet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TablesFromDB\CarBrand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TablesFromDB\CarBrand.Designer.cs">
+      <DependentUpon>CarBrand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TablesFromDB\Cars.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TablesFromDB\Cars.Designer.cs">
+      <DependentUpon>Cars.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TablesFromDB\Drivers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TablesFromDB\Drivers.Designer.cs">
+      <DependentUpon>Drivers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TablesFromDB\Position.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TablesFromDB\Position.Designer.cs">
+      <DependentUpon>Position.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TablesFromDB\Ranks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TablesFromDB\Ranks.Designer.cs">
+      <DependentUpon>Ranks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TablesFromDB\StolenCar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TablesFromDB\StolenCar.Designer.cs">
+      <DependentUpon>StolenCar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TablesFromDB\Workers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TablesFromDB\Workers.Designer.cs">
+      <DependentUpon>Workers.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Controls\yt_Button.cs">
       <SubType>Component</SubType>
     </Compile>
-    <EmbeddedResource Include="AboutProgramm.resx">
+    <EmbeddedResource Include="Forms\Forms\AboutProgramm.resx">
       <DependentUpon>AboutProgramm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Components\EgoldsFormStyle.resx">
       <DependentUpon>EgoldsFormStyle.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formii.resx">
+    <EmbeddedResource Include="Forms\Forms\Formii.resx">
       <DependentUpon>Formii.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Otchet.resx">
+    <EmbeddedResource Include="Forms\Forms\Otchet.resx">
       <DependentUpon>Otchet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TablesFromDB\CarBrand.resx">
+      <DependentUpon>CarBrand.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -145,7 +190,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Forms\TablesFromDB\" />
     <Folder Include="wwwroot\img\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

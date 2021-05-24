@@ -1,7 +1,7 @@
 ﻿
-namespace yt_DesignUI
+namespace yt_DesignUI.Forms.TablesFromDB
 {
-    partial class Formii
+    partial class CarBrand
     {
         /// <summary>
         /// Required designer variable.
@@ -52,13 +52,13 @@ namespace yt_DesignUI
             this.egoldsFormStyle1.HeaderTextColor = System.Drawing.Color.White;
             this.egoldsFormStyle1.HeaderTextFont = new System.Drawing.Font("Segoe UI", 9.75F);
             // 
-            // Formii
+            // CarBrand
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "Formii";
-            this.Text = "Formii";
+            this.Name = "CarBrand";
+            this.Text = "CarBrand";
             this.ResumeLayout(false);
 
         }
