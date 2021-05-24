@@ -5,17 +5,20 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace GIBDD
+namespace yt_DesignUI
 {
-    public partial class Form1 : Form
+    public partial class Otchet : Form
     {
-        public Form1()
+        public Otchet()
         {
             InitializeComponent();
         }
 
+        private void Otchet_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
