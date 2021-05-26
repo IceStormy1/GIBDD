@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{41573EE5-B877-4F9F-A173-B432995E6382}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>yt_DesignUI</RootNamespace>
+    <AssemblyName>yt_DesignUI</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\Forms\AboutProgramm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Forms\AboutProgramm.Designer.cs">
+      <DependentUpon>AboutProgramm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Animation\Animation.cs" />
+    <Compile Include="Animation\Animator.cs" />
+    <Compile Include="Components\EgoldsFormStyle.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\EgoldsFormStyle.Designer.cs">
+      <DependentUpon>EgoldsFormStyle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\EgoldsStyle.cs" />
+    <Compile Include="Components\RoundingButtonsComponent.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\RoundingButtonsComponent.Designer.cs">
+      <DependentUpon>RoundingButtonsComponent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\EgoldsCard.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\EgoldsToggleSwitch.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\EgoldsRadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\EgoldsProgressBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\EgoldsGoogleTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ShadowedForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Drawer.cs" />
+    <Compile Include="FlatColors.cs" />
+    <Compile Include="Forms\Forms\Formii.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Forms\Formii.Designer.cs">
+      <DependentUpon>Formii.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Forms\Otchet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Forms\Otchet.Designer.cs">
+      <DependentUpon>Otchet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TablesFromDB\CarBrand.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TablesFromDB\CarBrand.Designer.cs">
+      <DependentUpon>CarBrand.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TablesFromDB\Cars.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TablesFromDB\Cars.Designer.cs">
+      <DependentUpon>Cars.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TablesFromDB\Drivers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TablesFromDB\Drivers.Designer.cs">
+      <DependentUpon>Drivers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TablesFromDB\Position.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TablesFromDB\Position.Designer.cs">
+      <DependentUpon>Position.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TablesFromDB\Ranks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TablesFromDB\Ranks.Designer.cs">
+      <DependentUpon>Ranks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TablesFromDB\StolenCar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TablesFromDB\StolenCar.Designer.cs">
+      <DependentUpon>StolenCar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TablesFromDB\Workers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TablesFromDB\Workers.Designer.cs">
+      <DependentUpon>Workers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Controls\yt_Button.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TrafficPoliceDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TrafficPoliceDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\Forms\AboutProgramm.resx">
+      <DependentUpon>AboutProgramm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\EgoldsFormStyle.resx">
+      <DependentUpon>EgoldsFormStyle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Forms\Formii.resx">
+      <DependentUpon>Formii.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Forms\Otchet.resx">
+      <DependentUpon>Otchet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TablesFromDB\CarBrand.resx">
+      <DependentUpon>CarBrand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="TrafficPoliceDataSet.xsc">
+      <DependentUpon>TrafficPoliceDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TrafficPoliceDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TrafficPoliceDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TrafficPoliceDataSet.xss">
+      <DependentUpon>TrafficPoliceDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="wwwroot\img\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
