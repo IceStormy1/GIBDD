@@ -262,16 +262,16 @@ namespace yt_DesignUI.Forms.TablesFromDB
             // 
             fIOLabel.AutoSize = true;
             fIOLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            fIOLabel.Location = new System.Drawing.Point(64, 95);
+            fIOLabel.Location = new System.Drawing.Point(50, 97);
             fIOLabel.Name = "fIOLabel";
-            fIOLabel.Size = new System.Drawing.Size(36, 18);
+            fIOLabel.Size = new System.Drawing.Size(48, 18);
             fIOLabel.TabIndex = 1;
-            fIOLabel.Text = "FIO:";
+            fIOLabel.Text = "ФИО:";
             // 
             // fIOTextBox
             // 
             this.fIOTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.workersBindingSource, "FIO", true));
-            this.fIOTextBox.Location = new System.Drawing.Point(209, 95);
+            this.fIOTextBox.Location = new System.Drawing.Point(240, 95);
             this.fIOTextBox.Name = "fIOTextBox";
             this.fIOTextBox.Size = new System.Drawing.Size(100, 20);
             this.fIOTextBox.TabIndex = 2;
@@ -280,16 +280,16 @@ namespace yt_DesignUI.Forms.TablesFromDB
             // 
             ageLabel.AutoSize = true;
             ageLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            ageLabel.Location = new System.Drawing.Point(62, 134);
+            ageLabel.Location = new System.Drawing.Point(50, 133);
             ageLabel.Name = "ageLabel";
-            ageLabel.Size = new System.Drawing.Size(37, 18);
+            ageLabel.Size = new System.Drawing.Size(70, 18);
             ageLabel.TabIndex = 3;
-            ageLabel.Text = "Age:";
+            ageLabel.Text = "Возраст:";
             // 
             // ageTextBox
             // 
             this.ageTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.workersBindingSource, "Age", true));
-            this.ageTextBox.Location = new System.Drawing.Point(210, 135);
+            this.ageTextBox.Location = new System.Drawing.Point(241, 135);
             this.ageTextBox.Name = "ageTextBox";
             this.ageTextBox.Size = new System.Drawing.Size(100, 20);
             this.ageTextBox.TabIndex = 4;
@@ -298,16 +298,16 @@ namespace yt_DesignUI.Forms.TablesFromDB
             // 
             genderLabel.AutoSize = true;
             genderLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            genderLabel.Location = new System.Drawing.Point(62, 164);
+            genderLabel.Location = new System.Drawing.Point(50, 167);
             genderLabel.Name = "genderLabel";
-            genderLabel.Size = new System.Drawing.Size(61, 18);
+            genderLabel.Size = new System.Drawing.Size(41, 18);
             genderLabel.TabIndex = 5;
-            genderLabel.Text = "Gender:";
+            genderLabel.Text = "Пол:";
             // 
             // genderTextBox
             // 
             this.genderTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.workersBindingSource, "Gender", true));
-            this.genderTextBox.Location = new System.Drawing.Point(210, 165);
+            this.genderTextBox.Location = new System.Drawing.Point(241, 165);
             this.genderTextBox.Name = "genderTextBox";
             this.genderTextBox.Size = new System.Drawing.Size(100, 20);
             this.genderTextBox.TabIndex = 6;
@@ -316,16 +316,16 @@ namespace yt_DesignUI.Forms.TablesFromDB
             // 
             adressLabel.AutoSize = true;
             adressLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            adressLabel.Location = new System.Drawing.Point(62, 200);
+            adressLabel.Location = new System.Drawing.Point(50, 200);
             adressLabel.Name = "adressLabel";
-            adressLabel.Size = new System.Drawing.Size(58, 18);
+            adressLabel.Size = new System.Drawing.Size(54, 18);
             adressLabel.TabIndex = 7;
-            adressLabel.Text = "Adress:";
+            adressLabel.Text = "Адрес:";
             // 
             // adressTextBox
             // 
             this.adressTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.workersBindingSource, "Adress", true));
-            this.adressTextBox.Location = new System.Drawing.Point(210, 201);
+            this.adressTextBox.Location = new System.Drawing.Point(241, 201);
             this.adressTextBox.Name = "adressTextBox";
             this.adressTextBox.Size = new System.Drawing.Size(100, 20);
             this.adressTextBox.TabIndex = 8;
@@ -334,16 +334,16 @@ namespace yt_DesignUI.Forms.TablesFromDB
             // 
             telephoneLabel.AutoSize = true;
             telephoneLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            telephoneLabel.Location = new System.Drawing.Point(62, 231);
+            telephoneLabel.Location = new System.Drawing.Point(50, 231);
             telephoneLabel.Name = "telephoneLabel";
-            telephoneLabel.Size = new System.Drawing.Size(81, 18);
+            telephoneLabel.Size = new System.Drawing.Size(76, 18);
             telephoneLabel.TabIndex = 9;
-            telephoneLabel.Text = "Telephone:";
+            telephoneLabel.Text = "Телефон:";
             // 
             // telephoneTextBox
             // 
             this.telephoneTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.workersBindingSource, "Telephone", true));
-            this.telephoneTextBox.Location = new System.Drawing.Point(210, 232);
+            this.telephoneTextBox.Location = new System.Drawing.Point(241, 232);
             this.telephoneTextBox.Name = "telephoneTextBox";
             this.telephoneTextBox.Size = new System.Drawing.Size(100, 20);
             this.telephoneTextBox.TabIndex = 10;
@@ -352,16 +352,16 @@ namespace yt_DesignUI.Forms.TablesFromDB
             // 
             passportDataLabel.AutoSize = true;
             passportDataLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            passportDataLabel.Location = new System.Drawing.Point(62, 266);
+            passportDataLabel.Location = new System.Drawing.Point(50, 266);
             passportDataLabel.Name = "passportDataLabel";
-            passportDataLabel.Size = new System.Drawing.Size(107, 18);
+            passportDataLabel.Size = new System.Drawing.Size(151, 18);
             passportDataLabel.TabIndex = 11;
-            passportDataLabel.Text = "Passport Data:";
+            passportDataLabel.Text = "Поспортные данные";
             // 
             // passportDataTextBox
             // 
             this.passportDataTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.workersBindingSource, "PassportData", true));
-            this.passportDataTextBox.Location = new System.Drawing.Point(209, 267);
+            this.passportDataTextBox.Location = new System.Drawing.Point(240, 267);
             this.passportDataTextBox.Name = "passportDataTextBox";
             this.passportDataTextBox.Size = new System.Drawing.Size(100, 20);
             this.passportDataTextBox.TabIndex = 12;
@@ -370,16 +370,16 @@ namespace yt_DesignUI.Forms.TablesFromDB
             // 
             idPositionLabel.AutoSize = true;
             idPositionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            idPositionLabel.Location = new System.Drawing.Point(62, 298);
+            idPositionLabel.Location = new System.Drawing.Point(50, 298);
             idPositionLabel.Name = "idPositionLabel";
-            idPositionLabel.Size = new System.Drawing.Size(81, 18);
+            idPositionLabel.Size = new System.Drawing.Size(101, 18);
             idPositionLabel.TabIndex = 13;
-            idPositionLabel.Text = "Id Position:";
+            idPositionLabel.Text = "Id должности";
             // 
             // idPositionTextBox
             // 
             this.idPositionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.workersBindingSource, "IdPosition", true));
-            this.idPositionTextBox.Location = new System.Drawing.Point(210, 299);
+            this.idPositionTextBox.Location = new System.Drawing.Point(241, 299);
             this.idPositionTextBox.Name = "idPositionTextBox";
             this.idPositionTextBox.Size = new System.Drawing.Size(100, 20);
             this.idPositionTextBox.TabIndex = 14;
@@ -388,16 +388,16 @@ namespace yt_DesignUI.Forms.TablesFromDB
             // 
             idRankLabel.AutoSize = true;
             idRankLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            idRankLabel.Location = new System.Drawing.Point(64, 329);
+            idRankLabel.Location = new System.Drawing.Point(50, 329);
             idRankLabel.Name = "idRankLabel";
-            idRankLabel.Size = new System.Drawing.Size(62, 18);
+            idRankLabel.Size = new System.Drawing.Size(75, 18);
             idRankLabel.TabIndex = 15;
-            idRankLabel.Text = "Id Rank:";
+            idRankLabel.Text = "Id звания:";
             // 
             // idRankTextBox
             // 
             this.idRankTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.workersBindingSource, "IdRank", true));
-            this.idRankTextBox.Location = new System.Drawing.Point(210, 330);
+            this.idRankTextBox.Location = new System.Drawing.Point(241, 330);
             this.idRankTextBox.Name = "idRankTextBox";
             this.idRankTextBox.Size = new System.Drawing.Size(100, 20);
             this.idRankTextBox.TabIndex = 16;

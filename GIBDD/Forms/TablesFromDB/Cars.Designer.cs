@@ -103,9 +103,9 @@ namespace yt_DesignUI.Forms.TablesFromDB
             idDriverLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             idDriverLabel.Location = new System.Drawing.Point(21, 68);
             idDriverLabel.Name = "idDriverLabel";
-            idDriverLabel.Size = new System.Drawing.Size(66, 18);
+            idDriverLabel.Size = new System.Drawing.Size(106, 18);
             idDriverLabel.TabIndex = 3;
-            idDriverLabel.Text = "Id Driver:";
+            idDriverLabel.Text = "Код водителя";
             // 
             // idCarBrandLabel
             // 
@@ -113,9 +113,9 @@ namespace yt_DesignUI.Forms.TablesFromDB
             idCarBrandLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             idCarBrandLabel.Location = new System.Drawing.Point(21, 94);
             idCarBrandLabel.Name = "idCarBrandLabel";
-            idCarBrandLabel.Size = new System.Drawing.Size(94, 18);
+            idCarBrandLabel.Size = new System.Drawing.Size(83, 18);
             idCarBrandLabel.TabIndex = 5;
-            idCarBrandLabel.Text = "Id Car Brand:";
+            idCarBrandLabel.Text = "Код марки";
             // 
             // engineNumberLabel
             // 
@@ -123,9 +123,9 @@ namespace yt_DesignUI.Forms.TablesFromDB
             engineNumberLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             engineNumberLabel.Location = new System.Drawing.Point(21, 120);
             engineNumberLabel.Name = "engineNumberLabel";
-            engineNumberLabel.Size = new System.Drawing.Size(114, 18);
+            engineNumberLabel.Size = new System.Drawing.Size(130, 18);
             engineNumberLabel.TabIndex = 7;
-            engineNumberLabel.Text = "Engine Number:";
+            engineNumberLabel.Text = "Номер двигателя";
             // 
             // numberTechnicalPassportLabel
             // 
@@ -133,9 +133,9 @@ namespace yt_DesignUI.Forms.TablesFromDB
             numberTechnicalPassportLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             numberTechnicalPassportLabel.Location = new System.Drawing.Point(21, 149);
             numberTechnicalPassportLabel.Name = "numberTechnicalPassportLabel";
-            numberTechnicalPassportLabel.Size = new System.Drawing.Size(196, 18);
+            numberTechnicalPassportLabel.Size = new System.Drawing.Size(145, 18);
             numberTechnicalPassportLabel.TabIndex = 9;
-            numberTechnicalPassportLabel.Text = "Number Technical Passport:";
+            numberTechnicalPassportLabel.Text = "Номер техпаспорта";
             // 
             // releaseDateLabel
             // 
@@ -143,9 +143,9 @@ namespace yt_DesignUI.Forms.TablesFromDB
             releaseDateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             releaseDateLabel.Location = new System.Drawing.Point(21, 181);
             releaseDateLabel.Name = "releaseDateLabel";
-            releaseDateLabel.Size = new System.Drawing.Size(101, 18);
+            releaseDateLabel.Size = new System.Drawing.Size(105, 18);
             releaseDateLabel.TabIndex = 11;
-            releaseDateLabel.Text = "Release Date:";
+            releaseDateLabel.Text = "Дата выпуска";
             // 
             // registrDateLabel
             // 
@@ -153,9 +153,9 @@ namespace yt_DesignUI.Forms.TablesFromDB
             registrDateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             registrDateLabel.Location = new System.Drawing.Point(21, 210);
             registrDateLabel.Name = "registrDateLabel";
-            registrDateLabel.Size = new System.Drawing.Size(94, 18);
+            registrDateLabel.Size = new System.Drawing.Size(132, 18);
             registrDateLabel.TabIndex = 13;
-            registrDateLabel.Text = "Registr Date:";
+            registrDateLabel.Text = "Дата регистрации";
             // 
             // colorLabel
             // 
@@ -163,9 +163,9 @@ namespace yt_DesignUI.Forms.TablesFromDB
             colorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             colorLabel.Location = new System.Drawing.Point(21, 235);
             colorLabel.Name = "colorLabel";
-            colorLabel.Size = new System.Drawing.Size(49, 18);
+            colorLabel.Size = new System.Drawing.Size(42, 18);
             colorLabel.TabIndex = 15;
-            colorLabel.Text = "Color:";
+            colorLabel.Text = "Цвет";
             // 
             // technicalInspectionLabel
             // 
@@ -173,9 +173,9 @@ namespace yt_DesignUI.Forms.TablesFromDB
             technicalInspectionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             technicalInspectionLabel.Location = new System.Drawing.Point(21, 261);
             technicalInspectionLabel.Name = "technicalInspectionLabel";
-            technicalInspectionLabel.Size = new System.Drawing.Size(146, 18);
+            technicalInspectionLabel.Size = new System.Drawing.Size(152, 18);
             technicalInspectionLabel.TabIndex = 17;
-            technicalInspectionLabel.Text = "Technical Inspection:";
+            technicalInspectionLabel.Text = "Технический осмотр";
             // 
             // dateTechnicalInspectionLabel
             // 
@@ -183,9 +183,9 @@ namespace yt_DesignUI.Forms.TablesFromDB
             dateTechnicalInspectionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             dateTechnicalInspectionLabel.Location = new System.Drawing.Point(21, 290);
             dateTechnicalInspectionLabel.Name = "dateTechnicalInspectionLabel";
-            dateTechnicalInspectionLabel.Size = new System.Drawing.Size(181, 18);
+            dateTechnicalInspectionLabel.Size = new System.Drawing.Size(205, 18);
             dateTechnicalInspectionLabel.TabIndex = 19;
-            dateTechnicalInspectionLabel.Text = "Date Technical Inspection:";
+            dateTechnicalInspectionLabel.Text = "Дата технического осмотра";
             // 
             // descriptionLabel
             // 
@@ -193,9 +193,9 @@ namespace yt_DesignUI.Forms.TablesFromDB
             descriptionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             descriptionLabel.Location = new System.Drawing.Point(21, 313);
             descriptionLabel.Name = "descriptionLabel";
-            descriptionLabel.Size = new System.Drawing.Size(87, 18);
+            descriptionLabel.Size = new System.Drawing.Size(120, 18);
             descriptionLabel.TabIndex = 21;
-            descriptionLabel.Text = "Description:";
+            descriptionLabel.Text = "Код сотрудника";
             // 
             // idWorkerLabel
             // 

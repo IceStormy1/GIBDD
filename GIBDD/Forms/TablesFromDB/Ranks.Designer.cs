@@ -82,9 +82,9 @@ namespace yt_DesignUI.Forms.TablesFromDB
             rankNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             rankNameLabel.Location = new System.Drawing.Point(38, 94);
             rankNameLabel.Name = "rankNameLabel";
-            rankNameLabel.Size = new System.Drawing.Size(91, 18);
+            rankNameLabel.Size = new System.Drawing.Size(111, 18);
             rankNameLabel.TabIndex = 1;
-            rankNameLabel.Text = "Rank Name:";
+            rankNameLabel.Text = "Наименование";
             // 
             // allowanceLabel
             // 
@@ -92,9 +92,9 @@ namespace yt_DesignUI.Forms.TablesFromDB
             allowanceLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             allowanceLabel.Location = new System.Drawing.Point(38, 132);
             allowanceLabel.Name = "allowanceLabel";
-            allowanceLabel.Size = new System.Drawing.Size(79, 18);
+            allowanceLabel.Size = new System.Drawing.Size(77, 18);
             allowanceLabel.TabIndex = 3;
-            allowanceLabel.Text = "Allowance:";
+            allowanceLabel.Text = "Надбавка";
             // 
             // dutiesLabel
             // 
@@ -102,9 +102,9 @@ namespace yt_DesignUI.Forms.TablesFromDB
             dutiesLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             dutiesLabel.Location = new System.Drawing.Point(38, 168);
             dutiesLabel.Name = "dutiesLabel";
-            dutiesLabel.Size = new System.Drawing.Size(54, 18);
+            dutiesLabel.Size = new System.Drawing.Size(101, 18);
             dutiesLabel.TabIndex = 5;
-            dutiesLabel.Text = "Duties:";
+            dutiesLabel.Text = "Обязанности";
             // 
             // requirementsLabel
             // 
@@ -112,9 +112,9 @@ namespace yt_DesignUI.Forms.TablesFromDB
             requirementsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             requirementsLabel.Location = new System.Drawing.Point(38, 203);
             requirementsLabel.Name = "requirementsLabel";
-            requirementsLabel.Size = new System.Drawing.Size(104, 18);
+            requirementsLabel.Size = new System.Drawing.Size(91, 18);
             requirementsLabel.TabIndex = 7;
-            requirementsLabel.Text = "Requirements:";
+            requirementsLabel.Text = "Требования";
             // 
             // egoldsFormStyle1
             // 
