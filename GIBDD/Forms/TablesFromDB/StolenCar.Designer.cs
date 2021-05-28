@@ -94,9 +94,9 @@ namespace yt_DesignUI.Forms.TablesFromDB
             dateOfHijackingLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             dateOfHijackingLabel.Location = new System.Drawing.Point(24, 82);
             dateOfHijackingLabel.Name = "dateOfHijackingLabel";
-            dateOfHijackingLabel.Size = new System.Drawing.Size(127, 18);
+            dateOfHijackingLabel.Size = new System.Drawing.Size(85, 18);
             dateOfHijackingLabel.TabIndex = 30;
-            dateOfHijackingLabel.Text = "Date Of Hijacking:";
+            dateOfHijackingLabel.Text = "Дата угона";
             // 
             // dateOfRequestLabel
             // 
@@ -104,9 +104,9 @@ namespace yt_DesignUI.Forms.TablesFromDB
             dateOfRequestLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             dateOfRequestLabel.Location = new System.Drawing.Point(24, 118);
             dateOfRequestLabel.Name = "dateOfRequestLabel";
-            dateOfRequestLabel.Size = new System.Drawing.Size(122, 18);
+            dateOfRequestLabel.Size = new System.Drawing.Size(124, 18);
             dateOfRequestLabel.TabIndex = 31;
-            dateOfRequestLabel.Text = "Date Of Request:";
+            dateOfRequestLabel.Text = "Дата обращения";
             // 
             // idCarLabel
             // 
@@ -114,9 +114,9 @@ namespace yt_DesignUI.Forms.TablesFromDB
             idCarLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             idCarLabel.Location = new System.Drawing.Point(24, 148);
             idCarLabel.Name = "idCarLabel";
-            idCarLabel.Size = new System.Drawing.Size(51, 18);
+            idCarLabel.Size = new System.Drawing.Size(126, 18);
             idCarLabel.TabIndex = 32;
-            idCarLabel.Text = "Id Car:";
+            idCarLabel.Text = "Код автомобиля";
             // 
             // idDriverLabel
             // 
@@ -124,9 +124,9 @@ namespace yt_DesignUI.Forms.TablesFromDB
             idDriverLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             idDriverLabel.Location = new System.Drawing.Point(24, 182);
             idDriverLabel.Name = "idDriverLabel";
-            idDriverLabel.Size = new System.Drawing.Size(66, 18);
+            idDriverLabel.Size = new System.Drawing.Size(106, 18);
             idDriverLabel.TabIndex = 33;
-            idDriverLabel.Text = "Id Driver:";
+            idDriverLabel.Text = "Код водителя";
             // 
             // descriptionLabel
             // 
@@ -134,9 +134,9 @@ namespace yt_DesignUI.Forms.TablesFromDB
             descriptionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             descriptionLabel.Location = new System.Drawing.Point(24, 211);
             descriptionLabel.Name = "descriptionLabel";
-            descriptionLabel.Size = new System.Drawing.Size(87, 18);
+            descriptionLabel.Size = new System.Drawing.Size(166, 18);
             descriptionLabel.TabIndex = 34;
-            descriptionLabel.Text = "Description:";
+            descriptionLabel.Text = "Обстоятельства угона";
             // 
             // locationMarkLabel
             // 
@@ -144,9 +144,9 @@ namespace yt_DesignUI.Forms.TablesFromDB
             locationMarkLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             locationMarkLabel.Location = new System.Drawing.Point(24, 241);
             locationMarkLabel.Name = "locationMarkLabel";
-            locationMarkLabel.Size = new System.Drawing.Size(107, 18);
+            locationMarkLabel.Size = new System.Drawing.Size(179, 18);
             locationMarkLabel.TabIndex = 35;
-            locationMarkLabel.Text = "Location Mark:";
+            locationMarkLabel.Text = "Отметка об нахождении";
             // 
             // dateFindLabel
             // 
@@ -154,9 +154,9 @@ namespace yt_DesignUI.Forms.TablesFromDB
             dateFindLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             dateFindLabel.Location = new System.Drawing.Point(24, 280);
             dateFindLabel.Name = "dateFindLabel";
-            dateFindLabel.Size = new System.Drawing.Size(75, 18);
+            dateFindLabel.Size = new System.Drawing.Size(131, 18);
             dateFindLabel.TabIndex = 36;
-            dateFindLabel.Text = "Date Find:";
+            dateFindLabel.Text = "Дата нахождения";
             // 
             // idWorkerLabel
             // 
@@ -164,9 +164,9 @@ namespace yt_DesignUI.Forms.TablesFromDB
             idWorkerLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             idWorkerLabel.Location = new System.Drawing.Point(24, 314);
             idWorkerLabel.Name = "idWorkerLabel";
-            idWorkerLabel.Size = new System.Drawing.Size(77, 18);
+            idWorkerLabel.Size = new System.Drawing.Size(120, 18);
             idWorkerLabel.TabIndex = 37;
-            idWorkerLabel.Text = "Id Worker:";
+            idWorkerLabel.Text = "Код сотрудника";
             // 
             // egoldsFormStyle1
             // 

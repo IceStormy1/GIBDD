@@ -15,6 +15,16 @@ namespace yt_DesignUI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
+            Present first = new Present();
+            DateTime end = DateTime.Now + TimeSpan.FromSeconds(3);
+            first.Show();
+            while (end>DateTime.Now)
+            {
+                Application.DoEvents();
+            }
+            first.Close();
+            first.Dispose();
             Application.Run(new FormMain());
         }
     }

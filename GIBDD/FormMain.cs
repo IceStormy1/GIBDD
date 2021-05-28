@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using yt_DesignUI.Forms.TablesFromDB;
 
 namespace yt_DesignUI
 {
@@ -53,6 +54,78 @@ namespace yt_DesignUI
         {
             AboutProgramm aboutProgramm = new AboutProgramm();
             aboutProgramm.Show();
+        }
+
+        private void Drivers_Button_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Ranks_Button_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void StolenCar_Button_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Position_Button_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Workers_Button_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CarBrand_Button_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CarBrand_Button_Click_1(object sender, EventArgs e)
+        {
+            var carBrand = new CarBrand();
+            carBrand.Show();
+        }
+
+        private void Cars_Button_Click(object sender, EventArgs e)
+        {
+            var cars = new Cars();
+            cars.Show();
+        }
+
+        private void StolenCar_Button_Click_1(object sender, EventArgs e)
+        {
+            var stolenCars = new StolenCar();
+            stolenCars.Show();
+        }
+
+        private void Drivers_Button_Click_1(object sender, EventArgs e)
+        {
+            var drivers = new Drivers();
+            drivers.Show();
+        }
+
+        private void Workers_Button_Click_1(object sender, EventArgs e)
+        {
+            var workers = new Workers();
+            workers.Show();
+        }
+
+        private void Ranks_Button_Click_1(object sender, EventArgs e)
+        {
+            var ranks = new Ranks();
+            ranks.Show();
+        }
+
+        private void Position_Button_Click_1(object sender, EventArgs e)
+        {
+            var position = new Position();
+            position.Show();
         }
     }
 }

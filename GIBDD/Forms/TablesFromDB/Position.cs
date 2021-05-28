@@ -81,5 +81,10 @@ namespace yt_DesignUI.Forms.TablesFromDB
             }
             
         }
+
+        private void dutiesTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
