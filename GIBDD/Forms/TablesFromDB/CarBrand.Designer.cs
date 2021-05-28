@@ -94,9 +94,9 @@ namespace yt_DesignUI.Forms.TablesFromDB
             brandNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             brandNameLabel.Location = new System.Drawing.Point(44, 80);
             brandNameLabel.Name = "brandNameLabel";
-            brandNameLabel.Size = new System.Drawing.Size(87, 16);
+            brandNameLabel.Size = new System.Drawing.Size(107, 16);
             brandNameLabel.TabIndex = 3;
-            brandNameLabel.Text = "Brand Name:";
+            brandNameLabel.Text = "Наименование";
             // 
             // companyNameLabel
             // 
@@ -104,9 +104,9 @@ namespace yt_DesignUI.Forms.TablesFromDB
             companyNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             companyNameLabel.Location = new System.Drawing.Point(44, 110);
             companyNameLabel.Name = "companyNameLabel";
-            companyNameLabel.Size = new System.Drawing.Size(109, 16);
+            companyNameLabel.Size = new System.Drawing.Size(157, 16);
             companyNameLabel.TabIndex = 5;
-            companyNameLabel.Text = "Company Name:";
+            companyNameLabel.Text = "Фирма производитель";
             // 
             // countryLabel
             // 
@@ -114,9 +114,9 @@ namespace yt_DesignUI.Forms.TablesFromDB
             countryLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             countryLabel.Location = new System.Drawing.Point(44, 136);
             countryLabel.Name = "countryLabel";
-            countryLabel.Size = new System.Drawing.Size(56, 16);
+            countryLabel.Size = new System.Drawing.Size(161, 16);
             countryLabel.TabIndex = 7;
-            countryLabel.Text = "Country:";
+            countryLabel.Text = "Страна производитель";
             // 
             // productionDateStartLabel
             // 
