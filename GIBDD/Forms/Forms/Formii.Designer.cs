@@ -294,7 +294,7 @@ namespace yt_DesignUI
             this.Controls.Add(this.Workers_Button);
             this.Controls.Add(this.CarBrand_Button);
             this.Name = "Formii";
-            this.Text = "Formii";
+            this.Text = "Формы";
             this.ResumeLayout(false);
             this.PerformLayout();
 

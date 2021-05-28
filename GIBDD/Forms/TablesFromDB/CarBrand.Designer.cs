@@ -30,8 +30,6 @@ namespace yt_DesignUI.Forms.TablesFromDB
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CarBrand));
-            System.Windows.Forms.Label idCarBrandLabel;
             System.Windows.Forms.Label brandNameLabel;
             System.Windows.Forms.Label companyNameLabel;
             System.Windows.Forms.Label countryLabel;
@@ -40,25 +38,24 @@ namespace yt_DesignUI.Forms.TablesFromDB
             System.Windows.Forms.Label characteristicLabel;
             System.Windows.Forms.Label categoryLabel;
             System.Windows.Forms.Label descriptionLabel;
-            this.egoldsFormStyle1 = new yt_DesignUI.Components.EgoldsFormStyle(this.components);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CarBrand));
             this.trafficPoliceDataSet = new yt_DesignUI.TrafficPoliceDataSet();
             this.carBrandBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.carBrandTableAdapter = new yt_DesignUI.TrafficPoliceDataSetTableAdapters.CarBrandTableAdapter();
             this.tableAdapterManager = new yt_DesignUI.TrafficPoliceDataSetTableAdapters.TableAdapterManager();
             this.carBrandBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.carBrandBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.idCarBrandTextBox = new System.Windows.Forms.TextBox();
             this.brandNameTextBox = new System.Windows.Forms.TextBox();
             this.companyNameTextBox = new System.Windows.Forms.TextBox();
             this.countryTextBox = new System.Windows.Forms.TextBox();
@@ -67,7 +64,16 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.characteristicTextBox = new System.Windows.Forms.TextBox();
             this.categoryTextBox = new System.Windows.Forms.TextBox();
             this.descriptionTextBox = new System.Windows.Forms.TextBox();
-            idCarBrandLabel = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.Exit_CarBrand_Button = new yt_DesignUI.yt_Button();
+            this.Save_CarBrand_Button = new yt_DesignUI.yt_Button();
+            this.Remove_CarBrand_Button = new yt_DesignUI.yt_Button();
+            this.Next_CarBrand_Button = new yt_DesignUI.yt_Button();
+            this.Last_CarBrand_Button = new yt_DesignUI.yt_Button();
+            this.Add_CarBrand_Button = new yt_DesignUI.yt_Button();
+            this.Previevs_CarBrand_Button = new yt_DesignUI.yt_Button();
+            this.First_CarBrand_Button = new yt_DesignUI.yt_Button();
+            this.egoldsFormStyle1 = new yt_DesignUI.Components.EgoldsFormStyle(this.components);
             brandNameLabel = new System.Windows.Forms.Label();
             companyNameLabel = new System.Windows.Forms.Label();
             countryLabel = new System.Windows.Forms.Label();
@@ -82,24 +88,85 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.carBrandBindingNavigator.SuspendLayout();
             this.SuspendLayout();
             // 
-            // egoldsFormStyle1
+            // brandNameLabel
             // 
-            this.egoldsFormStyle1.AllowUserResize = false;
-            this.egoldsFormStyle1.BackColor = System.Drawing.Color.MediumPurple;
-            this.egoldsFormStyle1.ContextMenuForm = null;
-            this.egoldsFormStyle1.ControlBoxButtonsWidth = 30;
-            this.egoldsFormStyle1.EnableControlBoxIconsLight = false;
-            this.egoldsFormStyle1.EnableControlBoxMouseLight = false;
-            this.egoldsFormStyle1.Form = this;
-            this.egoldsFormStyle1.FormStyle = yt_DesignUI.Components.EgoldsFormStyle.fStyle.UserStyle;
-            this.egoldsFormStyle1.HeaderColor = System.Drawing.Color.RoyalBlue;
-            this.egoldsFormStyle1.HeaderColorAdditional = System.Drawing.Color.Tomato;
-            this.egoldsFormStyle1.HeaderColorGradientEnable = true;
-            this.egoldsFormStyle1.HeaderColorGradientMode = System.Drawing.Drawing2D.LinearGradientMode.Horizontal;
-            this.egoldsFormStyle1.HeaderHeight = 38;
-            this.egoldsFormStyle1.HeaderImage = null;
-            this.egoldsFormStyle1.HeaderTextColor = System.Drawing.Color.White;
-            this.egoldsFormStyle1.HeaderTextFont = new System.Drawing.Font("Segoe UI", 9.75F);
+            brandNameLabel.AutoSize = true;
+            brandNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            brandNameLabel.Location = new System.Drawing.Point(44, 80);
+            brandNameLabel.Name = "brandNameLabel";
+            brandNameLabel.Size = new System.Drawing.Size(87, 16);
+            brandNameLabel.TabIndex = 3;
+            brandNameLabel.Text = "Brand Name:";
+            // 
+            // companyNameLabel
+            // 
+            companyNameLabel.AutoSize = true;
+            companyNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            companyNameLabel.Location = new System.Drawing.Point(44, 110);
+            companyNameLabel.Name = "companyNameLabel";
+            companyNameLabel.Size = new System.Drawing.Size(109, 16);
+            companyNameLabel.TabIndex = 5;
+            companyNameLabel.Text = "Company Name:";
+            // 
+            // countryLabel
+            // 
+            countryLabel.AutoSize = true;
+            countryLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            countryLabel.Location = new System.Drawing.Point(44, 136);
+            countryLabel.Name = "countryLabel";
+            countryLabel.Size = new System.Drawing.Size(56, 16);
+            countryLabel.TabIndex = 7;
+            countryLabel.Text = "Country:";
+            // 
+            // productionDateStartLabel
+            // 
+            productionDateStartLabel.AutoSize = true;
+            productionDateStartLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            productionDateStartLabel.Location = new System.Drawing.Point(44, 166);
+            productionDateStartLabel.Name = "productionDateStartLabel";
+            productionDateStartLabel.Size = new System.Drawing.Size(188, 16);
+            productionDateStartLabel.TabIndex = 9;
+            productionDateStartLabel.Text = "Дата начала производства";
+            // 
+            // productionDateEndLabel
+            // 
+            productionDateEndLabel.AutoSize = true;
+            productionDateEndLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            productionDateEndLabel.Location = new System.Drawing.Point(44, 196);
+            productionDateEndLabel.Name = "productionDateEndLabel";
+            productionDateEndLabel.Size = new System.Drawing.Size(210, 16);
+            productionDateEndLabel.TabIndex = 11;
+            productionDateEndLabel.Text = "Дата окончания производства";
+            // 
+            // characteristicLabel
+            // 
+            characteristicLabel.AutoSize = true;
+            characteristicLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            characteristicLabel.Location = new System.Drawing.Point(44, 229);
+            characteristicLabel.Name = "characteristicLabel";
+            characteristicLabel.Size = new System.Drawing.Size(115, 16);
+            characteristicLabel.TabIndex = 13;
+            characteristicLabel.Text = "Характеристики";
+            // 
+            // categoryLabel
+            // 
+            categoryLabel.AutoSize = true;
+            categoryLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            categoryLabel.Location = new System.Drawing.Point(44, 265);
+            categoryLabel.Name = "categoryLabel";
+            categoryLabel.Size = new System.Drawing.Size(76, 16);
+            categoryLabel.TabIndex = 15;
+            categoryLabel.Text = "Категория";
+            // 
+            // descriptionLabel
+            // 
+            descriptionLabel.AutoSize = true;
+            descriptionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            descriptionLabel.Location = new System.Drawing.Point(44, 303);
+            descriptionLabel.Name = "descriptionLabel";
+            descriptionLabel.Size = new System.Drawing.Size(73, 16);
+            descriptionLabel.TabIndex = 17;
+            descriptionLabel.Text = "Описание";
             // 
             // trafficPoliceDataSet
             // 
@@ -153,9 +220,34 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.carBrandBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.carBrandBindingNavigator.Name = "carBrandBindingNavigator";
             this.carBrandBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.carBrandBindingNavigator.Size = new System.Drawing.Size(800, 25);
+            this.carBrandBindingNavigator.Size = new System.Drawing.Size(404, 25);
             this.carBrandBindingNavigator.TabIndex = 0;
             this.carBrandBindingNavigator.Text = "bindingNavigator1";
+            // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Text = "Добавить";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(43, 22);
+            this.bindingNavigatorCountItem.Text = "для {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Text = "Удалить";
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -184,22 +276,16 @@ namespace yt_DesignUI.Forms.TablesFromDB
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Положение";
             this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Текущее положение";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(43, 15);
-            this.bindingNavigatorCountItem.Text = "для {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 6);
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -207,7 +293,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 20);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorMoveNextItem.Text = "Переместить вперед";
             // 
             // bindingNavigatorMoveLastItem
@@ -216,199 +302,338 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 20);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorMoveLastItem.Text = "Переместить в конец";
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 6);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Добавить";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 20);
-            this.bindingNavigatorDeleteItem.Text = "Удалить";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
             // carBrandBindingNavigatorSaveItem
             // 
             this.carBrandBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.carBrandBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("carBrandBindingNavigatorSaveItem.Image")));
             this.carBrandBindingNavigatorSaveItem.Name = "carBrandBindingNavigatorSaveItem";
-            this.carBrandBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 23);
+            this.carBrandBindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
             this.carBrandBindingNavigatorSaveItem.Text = "Сохранить данные";
             this.carBrandBindingNavigatorSaveItem.Click += new System.EventHandler(this.carBrandBindingNavigatorSaveItem_Click);
-            // 
-            // idCarBrandLabel
-            // 
-            idCarBrandLabel.AutoSize = true;
-            idCarBrandLabel.Location = new System.Drawing.Point(261, 41);
-            idCarBrandLabel.Name = "idCarBrandLabel";
-            idCarBrandLabel.Size = new System.Drawing.Size(69, 13);
-            idCarBrandLabel.TabIndex = 1;
-            idCarBrandLabel.Text = "Id Car Brand:";
-            // 
-            // idCarBrandTextBox
-            // 
-            this.idCarBrandTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.carBrandBindingSource, "IdCarBrand", true));
-            this.idCarBrandTextBox.Location = new System.Drawing.Point(336, 38);
-            this.idCarBrandTextBox.Name = "idCarBrandTextBox";
-            this.idCarBrandTextBox.Size = new System.Drawing.Size(100, 20);
-            this.idCarBrandTextBox.TabIndex = 2;
-            // 
-            // brandNameLabel
-            // 
-            brandNameLabel.AutoSize = true;
-            brandNameLabel.Location = new System.Drawing.Point(266, 73);
-            brandNameLabel.Name = "brandNameLabel";
-            brandNameLabel.Size = new System.Drawing.Size(69, 13);
-            brandNameLabel.TabIndex = 3;
-            brandNameLabel.Text = "Brand Name:";
             // 
             // brandNameTextBox
             // 
             this.brandNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.carBrandBindingSource, "BrandName", true));
-            this.brandNameTextBox.Location = new System.Drawing.Point(341, 70);
+            this.brandNameTextBox.Location = new System.Drawing.Point(270, 76);
             this.brandNameTextBox.Name = "brandNameTextBox";
-            this.brandNameTextBox.Size = new System.Drawing.Size(100, 20);
+            this.brandNameTextBox.Size = new System.Drawing.Size(122, 20);
             this.brandNameTextBox.TabIndex = 4;
-            // 
-            // companyNameLabel
-            // 
-            companyNameLabel.AutoSize = true;
-            companyNameLabel.Location = new System.Drawing.Point(270, 103);
-            companyNameLabel.Name = "companyNameLabel";
-            companyNameLabel.Size = new System.Drawing.Size(85, 13);
-            companyNameLabel.TabIndex = 5;
-            companyNameLabel.Text = "Company Name:";
             // 
             // companyNameTextBox
             // 
             this.companyNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.carBrandBindingSource, "CompanyName", true));
-            this.companyNameTextBox.Location = new System.Drawing.Point(361, 100);
+            this.companyNameTextBox.Location = new System.Drawing.Point(270, 106);
             this.companyNameTextBox.Name = "companyNameTextBox";
-            this.companyNameTextBox.Size = new System.Drawing.Size(100, 20);
+            this.companyNameTextBox.Size = new System.Drawing.Size(122, 20);
             this.companyNameTextBox.TabIndex = 6;
-            // 
-            // countryLabel
-            // 
-            countryLabel.AutoSize = true;
-            countryLabel.Location = new System.Drawing.Point(277, 129);
-            countryLabel.Name = "countryLabel";
-            countryLabel.Size = new System.Drawing.Size(46, 13);
-            countryLabel.TabIndex = 7;
-            countryLabel.Text = "Country:";
             // 
             // countryTextBox
             // 
             this.countryTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.carBrandBindingSource, "Country", true));
-            this.countryTextBox.Location = new System.Drawing.Point(329, 126);
+            this.countryTextBox.Location = new System.Drawing.Point(270, 132);
             this.countryTextBox.Name = "countryTextBox";
-            this.countryTextBox.Size = new System.Drawing.Size(100, 20);
+            this.countryTextBox.Size = new System.Drawing.Size(122, 20);
             this.countryTextBox.TabIndex = 8;
-            // 
-            // productionDateStartLabel
-            // 
-            productionDateStartLabel.AutoSize = true;
-            productionDateStartLabel.Location = new System.Drawing.Point(273, 160);
-            productionDateStartLabel.Name = "productionDateStartLabel";
-            productionDateStartLabel.Size = new System.Drawing.Size(112, 13);
-            productionDateStartLabel.TabIndex = 9;
-            productionDateStartLabel.Text = "Production Date Start:";
             // 
             // productionDateStartDateTimePicker
             // 
             this.productionDateStartDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.carBrandBindingSource, "ProductionDateStart", true));
-            this.productionDateStartDateTimePicker.Location = new System.Drawing.Point(391, 156);
+            this.productionDateStartDateTimePicker.Location = new System.Drawing.Point(270, 166);
             this.productionDateStartDateTimePicker.Name = "productionDateStartDateTimePicker";
-            this.productionDateStartDateTimePicker.Size = new System.Drawing.Size(200, 20);
+            this.productionDateStartDateTimePicker.Size = new System.Drawing.Size(122, 20);
             this.productionDateStartDateTimePicker.TabIndex = 10;
-            // 
-            // productionDateEndLabel
-            // 
-            productionDateEndLabel.AutoSize = true;
-            productionDateEndLabel.Location = new System.Drawing.Point(278, 192);
-            productionDateEndLabel.Name = "productionDateEndLabel";
-            productionDateEndLabel.Size = new System.Drawing.Size(109, 13);
-            productionDateEndLabel.TabIndex = 11;
-            productionDateEndLabel.Text = "Production Date End:";
             // 
             // productionDateEndDateTimePicker
             // 
             this.productionDateEndDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.carBrandBindingSource, "ProductionDateEnd", true));
-            this.productionDateEndDateTimePicker.Location = new System.Drawing.Point(393, 188);
+            this.productionDateEndDateTimePicker.Location = new System.Drawing.Point(270, 192);
             this.productionDateEndDateTimePicker.Name = "productionDateEndDateTimePicker";
-            this.productionDateEndDateTimePicker.Size = new System.Drawing.Size(200, 20);
+            this.productionDateEndDateTimePicker.Size = new System.Drawing.Size(122, 20);
             this.productionDateEndDateTimePicker.TabIndex = 12;
-            // 
-            // characteristicLabel
-            // 
-            characteristicLabel.AutoSize = true;
-            characteristicLabel.Location = new System.Drawing.Point(299, 229);
-            characteristicLabel.Name = "characteristicLabel";
-            characteristicLabel.Size = new System.Drawing.Size(74, 13);
-            characteristicLabel.TabIndex = 13;
-            characteristicLabel.Text = "Characteristic:";
             // 
             // characteristicTextBox
             // 
             this.characteristicTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.carBrandBindingSource, "Characteristic", true));
-            this.characteristicTextBox.Location = new System.Drawing.Point(379, 226);
+            this.characteristicTextBox.Location = new System.Drawing.Point(270, 228);
             this.characteristicTextBox.Name = "characteristicTextBox";
-            this.characteristicTextBox.Size = new System.Drawing.Size(100, 20);
+            this.characteristicTextBox.Size = new System.Drawing.Size(122, 20);
             this.characteristicTextBox.TabIndex = 14;
-            // 
-            // categoryLabel
-            // 
-            categoryLabel.AutoSize = true;
-            categoryLabel.Location = new System.Drawing.Point(305, 265);
-            categoryLabel.Name = "categoryLabel";
-            categoryLabel.Size = new System.Drawing.Size(52, 13);
-            categoryLabel.TabIndex = 15;
-            categoryLabel.Text = "Category:";
             // 
             // categoryTextBox
             // 
             this.categoryTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.carBrandBindingSource, "Category", true));
-            this.categoryTextBox.Location = new System.Drawing.Point(363, 262);
+            this.categoryTextBox.Location = new System.Drawing.Point(270, 264);
             this.categoryTextBox.Name = "categoryTextBox";
-            this.categoryTextBox.Size = new System.Drawing.Size(100, 20);
+            this.categoryTextBox.Size = new System.Drawing.Size(122, 20);
             this.categoryTextBox.TabIndex = 16;
-            // 
-            // descriptionLabel
-            // 
-            descriptionLabel.AutoSize = true;
-            descriptionLabel.Location = new System.Drawing.Point(304, 300);
-            descriptionLabel.Name = "descriptionLabel";
-            descriptionLabel.Size = new System.Drawing.Size(61, 13);
-            descriptionLabel.TabIndex = 17;
-            descriptionLabel.Text = "description:";
             // 
             // descriptionTextBox
             // 
             this.descriptionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.carBrandBindingSource, "description", true));
-            this.descriptionTextBox.Location = new System.Drawing.Point(371, 297);
+            this.descriptionTextBox.Location = new System.Drawing.Point(270, 303);
             this.descriptionTextBox.Name = "descriptionTextBox";
-            this.descriptionTextBox.Size = new System.Drawing.Size(100, 20);
+            this.descriptionTextBox.Size = new System.Drawing.Size(122, 20);
             this.descriptionTextBox.TabIndex = 18;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(82, 38);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(243, 20);
+            this.label1.TabIndex = 22;
+            this.label1.Text = "Таблица \"Марки автомобилей\"";
+            // 
+            // Exit_CarBrand_Button
+            // 
+            this.Exit_CarBrand_Button.BackColor = System.Drawing.Color.RoyalBlue;
+            this.Exit_CarBrand_Button.BackColorAdditional = System.Drawing.Color.Tomato;
+            this.Exit_CarBrand_Button.BackColorGradientEnabled = true;
+            this.Exit_CarBrand_Button.BackColorGradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.Exit_CarBrand_Button.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.Exit_CarBrand_Button.BorderColorEnabled = true;
+            this.Exit_CarBrand_Button.BorderColorOnHover = System.Drawing.Color.Maroon;
+            this.Exit_CarBrand_Button.BorderColorOnHoverEnabled = true;
+            this.Exit_CarBrand_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Exit_CarBrand_Button.Font = new System.Drawing.Font("Verdana", 8.25F);
+            this.Exit_CarBrand_Button.ForeColor = System.Drawing.Color.White;
+            this.Exit_CarBrand_Button.Location = new System.Drawing.Point(346, 436);
+            this.Exit_CarBrand_Button.Name = "Exit_CarBrand_Button";
+            this.Exit_CarBrand_Button.RippleColor = System.Drawing.Color.White;
+            this.Exit_CarBrand_Button.RoundingEnable = true;
+            this.Exit_CarBrand_Button.Size = new System.Drawing.Size(46, 17);
+            this.Exit_CarBrand_Button.TabIndex = 27;
+            this.Exit_CarBrand_Button.Text = "Выход";
+            this.Exit_CarBrand_Button.TextHover = "Открыть все формы";
+            this.Exit_CarBrand_Button.UseDownPressEffectOnClick = true;
+            this.Exit_CarBrand_Button.UseRippleEffect = true;
+            this.Exit_CarBrand_Button.UseZoomEffectOnHover = true;
+            this.Exit_CarBrand_Button.Click += new System.EventHandler(this.Exit_CarBrand_Button_Click);
+            // 
+            // Save_CarBrand_Button
+            // 
+            this.Save_CarBrand_Button.BackColor = System.Drawing.Color.RoyalBlue;
+            this.Save_CarBrand_Button.BackColorAdditional = System.Drawing.Color.Tomato;
+            this.Save_CarBrand_Button.BackColorGradientEnabled = true;
+            this.Save_CarBrand_Button.BackColorGradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.Save_CarBrand_Button.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.Save_CarBrand_Button.BorderColorEnabled = true;
+            this.Save_CarBrand_Button.BorderColorOnHover = System.Drawing.Color.Maroon;
+            this.Save_CarBrand_Button.BorderColorOnHoverEnabled = true;
+            this.Save_CarBrand_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Save_CarBrand_Button.Font = new System.Drawing.Font("Verdana", 8.25F);
+            this.Save_CarBrand_Button.ForeColor = System.Drawing.Color.White;
+            this.Save_CarBrand_Button.Location = new System.Drawing.Point(157, 425);
+            this.Save_CarBrand_Button.Name = "Save_CarBrand_Button";
+            this.Save_CarBrand_Button.RippleColor = System.Drawing.Color.White;
+            this.Save_CarBrand_Button.RoundingEnable = true;
+            this.Save_CarBrand_Button.Size = new System.Drawing.Size(94, 28);
+            this.Save_CarBrand_Button.TabIndex = 26;
+            this.Save_CarBrand_Button.Text = "Сохранить";
+            this.Save_CarBrand_Button.TextHover = "Открыть все формы";
+            this.Save_CarBrand_Button.UseDownPressEffectOnClick = true;
+            this.Save_CarBrand_Button.UseRippleEffect = true;
+            this.Save_CarBrand_Button.UseZoomEffectOnHover = true;
+            this.Save_CarBrand_Button.Click += new System.EventHandler(this.Save_CarBrand_Button_Click);
+            // 
+            // Remove_CarBrand_Button
+            // 
+            this.Remove_CarBrand_Button.BackColor = System.Drawing.Color.RoyalBlue;
+            this.Remove_CarBrand_Button.BackColorAdditional = System.Drawing.Color.Tomato;
+            this.Remove_CarBrand_Button.BackColorGradientEnabled = true;
+            this.Remove_CarBrand_Button.BackColorGradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.Remove_CarBrand_Button.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.Remove_CarBrand_Button.BorderColorEnabled = true;
+            this.Remove_CarBrand_Button.BorderColorOnHover = System.Drawing.Color.Maroon;
+            this.Remove_CarBrand_Button.BorderColorOnHoverEnabled = true;
+            this.Remove_CarBrand_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Remove_CarBrand_Button.Font = new System.Drawing.Font("Verdana", 8.25F);
+            this.Remove_CarBrand_Button.ForeColor = System.Drawing.Color.White;
+            this.Remove_CarBrand_Button.Location = new System.Drawing.Point(270, 391);
+            this.Remove_CarBrand_Button.Name = "Remove_CarBrand_Button";
+            this.Remove_CarBrand_Button.RippleColor = System.Drawing.Color.White;
+            this.Remove_CarBrand_Button.RoundingEnable = true;
+            this.Remove_CarBrand_Button.Size = new System.Drawing.Size(94, 28);
+            this.Remove_CarBrand_Button.TabIndex = 25;
+            this.Remove_CarBrand_Button.Text = "Удалить";
+            this.Remove_CarBrand_Button.TextHover = "Открыть все формы";
+            this.Remove_CarBrand_Button.UseDownPressEffectOnClick = true;
+            this.Remove_CarBrand_Button.UseRippleEffect = true;
+            this.Remove_CarBrand_Button.UseZoomEffectOnHover = true;
+            this.Remove_CarBrand_Button.Click += new System.EventHandler(this.Remove_CarBrand_Button_Click);
+            // 
+            // Next_CarBrand_Button
+            // 
+            this.Next_CarBrand_Button.BackColor = System.Drawing.Color.RoyalBlue;
+            this.Next_CarBrand_Button.BackColorAdditional = System.Drawing.Color.Tomato;
+            this.Next_CarBrand_Button.BackColorGradientEnabled = true;
+            this.Next_CarBrand_Button.BackColorGradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.Next_CarBrand_Button.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.Next_CarBrand_Button.BorderColorEnabled = true;
+            this.Next_CarBrand_Button.BorderColorOnHover = System.Drawing.Color.Maroon;
+            this.Next_CarBrand_Button.BorderColorOnHoverEnabled = true;
+            this.Next_CarBrand_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Next_CarBrand_Button.Font = new System.Drawing.Font("Verdana", 8.25F);
+            this.Next_CarBrand_Button.ForeColor = System.Drawing.Color.White;
+            this.Next_CarBrand_Button.Location = new System.Drawing.Point(157, 391);
+            this.Next_CarBrand_Button.Name = "Next_CarBrand_Button";
+            this.Next_CarBrand_Button.RippleColor = System.Drawing.Color.White;
+            this.Next_CarBrand_Button.RoundingEnable = true;
+            this.Next_CarBrand_Button.Size = new System.Drawing.Size(94, 28);
+            this.Next_CarBrand_Button.TabIndex = 24;
+            this.Next_CarBrand_Button.Text = "Следующая";
+            this.Next_CarBrand_Button.TextHover = "Открыть все формы";
+            this.Next_CarBrand_Button.UseDownPressEffectOnClick = true;
+            this.Next_CarBrand_Button.UseRippleEffect = true;
+            this.Next_CarBrand_Button.UseZoomEffectOnHover = true;
+            this.Next_CarBrand_Button.Click += new System.EventHandler(this.Next_CarBrand_Button_Click);
+            // 
+            // Last_CarBrand_Button
+            // 
+            this.Last_CarBrand_Button.BackColor = System.Drawing.Color.RoyalBlue;
+            this.Last_CarBrand_Button.BackColorAdditional = System.Drawing.Color.Tomato;
+            this.Last_CarBrand_Button.BackColorGradientEnabled = true;
+            this.Last_CarBrand_Button.BackColorGradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.Last_CarBrand_Button.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.Last_CarBrand_Button.BorderColorEnabled = true;
+            this.Last_CarBrand_Button.BorderColorOnHover = System.Drawing.Color.Maroon;
+            this.Last_CarBrand_Button.BorderColorOnHoverEnabled = true;
+            this.Last_CarBrand_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Last_CarBrand_Button.Font = new System.Drawing.Font("Verdana", 8.25F);
+            this.Last_CarBrand_Button.ForeColor = System.Drawing.Color.White;
+            this.Last_CarBrand_Button.Location = new System.Drawing.Point(46, 391);
+            this.Last_CarBrand_Button.Name = "Last_CarBrand_Button";
+            this.Last_CarBrand_Button.RippleColor = System.Drawing.Color.White;
+            this.Last_CarBrand_Button.RoundingEnable = true;
+            this.Last_CarBrand_Button.Size = new System.Drawing.Size(94, 28);
+            this.Last_CarBrand_Button.TabIndex = 23;
+            this.Last_CarBrand_Button.Text = "Последняя";
+            this.Last_CarBrand_Button.TextHover = "Открыть все формы";
+            this.Last_CarBrand_Button.UseDownPressEffectOnClick = true;
+            this.Last_CarBrand_Button.UseRippleEffect = true;
+            this.Last_CarBrand_Button.UseZoomEffectOnHover = true;
+            this.Last_CarBrand_Button.Click += new System.EventHandler(this.Last_CarBrand_Button_Click);
+            // 
+            // Add_CarBrand_Button
+            // 
+            this.Add_CarBrand_Button.BackColor = System.Drawing.Color.RoyalBlue;
+            this.Add_CarBrand_Button.BackColorAdditional = System.Drawing.Color.Tomato;
+            this.Add_CarBrand_Button.BackColorGradientEnabled = true;
+            this.Add_CarBrand_Button.BackColorGradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.Add_CarBrand_Button.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.Add_CarBrand_Button.BorderColorEnabled = true;
+            this.Add_CarBrand_Button.BorderColorOnHover = System.Drawing.Color.Maroon;
+            this.Add_CarBrand_Button.BorderColorOnHoverEnabled = true;
+            this.Add_CarBrand_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Add_CarBrand_Button.Font = new System.Drawing.Font("Verdana", 8.25F);
+            this.Add_CarBrand_Button.ForeColor = System.Drawing.Color.White;
+            this.Add_CarBrand_Button.Location = new System.Drawing.Point(270, 357);
+            this.Add_CarBrand_Button.Name = "Add_CarBrand_Button";
+            this.Add_CarBrand_Button.RippleColor = System.Drawing.Color.White;
+            this.Add_CarBrand_Button.RoundingEnable = true;
+            this.Add_CarBrand_Button.Size = new System.Drawing.Size(94, 28);
+            this.Add_CarBrand_Button.TabIndex = 21;
+            this.Add_CarBrand_Button.Text = "Добавить";
+            this.Add_CarBrand_Button.TextHover = "Открыть все формы";
+            this.Add_CarBrand_Button.UseDownPressEffectOnClick = true;
+            this.Add_CarBrand_Button.UseRippleEffect = true;
+            this.Add_CarBrand_Button.UseZoomEffectOnHover = true;
+            this.Add_CarBrand_Button.Click += new System.EventHandler(this.Add_CarBrand_Button_Click);
+            // 
+            // Previevs_CarBrand_Button
+            // 
+            this.Previevs_CarBrand_Button.BackColor = System.Drawing.Color.RoyalBlue;
+            this.Previevs_CarBrand_Button.BackColorAdditional = System.Drawing.Color.Tomato;
+            this.Previevs_CarBrand_Button.BackColorGradientEnabled = true;
+            this.Previevs_CarBrand_Button.BackColorGradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.Previevs_CarBrand_Button.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.Previevs_CarBrand_Button.BorderColorEnabled = true;
+            this.Previevs_CarBrand_Button.BorderColorOnHover = System.Drawing.Color.Maroon;
+            this.Previevs_CarBrand_Button.BorderColorOnHoverEnabled = true;
+            this.Previevs_CarBrand_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Previevs_CarBrand_Button.Font = new System.Drawing.Font("Verdana", 8.25F);
+            this.Previevs_CarBrand_Button.ForeColor = System.Drawing.Color.White;
+            this.Previevs_CarBrand_Button.Location = new System.Drawing.Point(157, 357);
+            this.Previevs_CarBrand_Button.Name = "Previevs_CarBrand_Button";
+            this.Previevs_CarBrand_Button.RippleColor = System.Drawing.Color.White;
+            this.Previevs_CarBrand_Button.RoundingEnable = true;
+            this.Previevs_CarBrand_Button.Size = new System.Drawing.Size(94, 28);
+            this.Previevs_CarBrand_Button.TabIndex = 20;
+            this.Previevs_CarBrand_Button.Text = "Предыдущая";
+            this.Previevs_CarBrand_Button.TextHover = "Открыть все формы";
+            this.Previevs_CarBrand_Button.UseDownPressEffectOnClick = true;
+            this.Previevs_CarBrand_Button.UseRippleEffect = true;
+            this.Previevs_CarBrand_Button.UseZoomEffectOnHover = true;
+            this.Previevs_CarBrand_Button.Click += new System.EventHandler(this.Previevs_CarBrand_Button_Click);
+            // 
+            // First_CarBrand_Button
+            // 
+            this.First_CarBrand_Button.BackColor = System.Drawing.Color.RoyalBlue;
+            this.First_CarBrand_Button.BackColorAdditional = System.Drawing.Color.Tomato;
+            this.First_CarBrand_Button.BackColorGradientEnabled = true;
+            this.First_CarBrand_Button.BackColorGradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.First_CarBrand_Button.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.First_CarBrand_Button.BorderColorEnabled = true;
+            this.First_CarBrand_Button.BorderColorOnHover = System.Drawing.Color.Maroon;
+            this.First_CarBrand_Button.BorderColorOnHoverEnabled = true;
+            this.First_CarBrand_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.First_CarBrand_Button.Font = new System.Drawing.Font("Verdana", 8.25F);
+            this.First_CarBrand_Button.ForeColor = System.Drawing.Color.White;
+            this.First_CarBrand_Button.Location = new System.Drawing.Point(46, 357);
+            this.First_CarBrand_Button.Name = "First_CarBrand_Button";
+            this.First_CarBrand_Button.RippleColor = System.Drawing.Color.White;
+            this.First_CarBrand_Button.RoundingEnable = true;
+            this.First_CarBrand_Button.Size = new System.Drawing.Size(94, 28);
+            this.First_CarBrand_Button.TabIndex = 19;
+            this.First_CarBrand_Button.Text = "Первая";
+            this.First_CarBrand_Button.TextHover = "Открыть все формы";
+            this.First_CarBrand_Button.UseDownPressEffectOnClick = true;
+            this.First_CarBrand_Button.UseRippleEffect = true;
+            this.First_CarBrand_Button.UseZoomEffectOnHover = true;
+            this.First_CarBrand_Button.Click += new System.EventHandler(this.First_CarBrand_Button_Click);
+            // 
+            // egoldsFormStyle1
+            // 
+            this.egoldsFormStyle1.AllowUserResize = false;
+            this.egoldsFormStyle1.BackColor = System.Drawing.Color.MediumPurple;
+            this.egoldsFormStyle1.ContextMenuForm = null;
+            this.egoldsFormStyle1.ControlBoxButtonsWidth = 30;
+            this.egoldsFormStyle1.EnableControlBoxIconsLight = false;
+            this.egoldsFormStyle1.EnableControlBoxMouseLight = false;
+            this.egoldsFormStyle1.Form = this;
+            this.egoldsFormStyle1.FormStyle = yt_DesignUI.Components.EgoldsFormStyle.fStyle.UserStyle;
+            this.egoldsFormStyle1.HeaderColor = System.Drawing.Color.RoyalBlue;
+            this.egoldsFormStyle1.HeaderColorAdditional = System.Drawing.Color.Tomato;
+            this.egoldsFormStyle1.HeaderColorGradientEnable = true;
+            this.egoldsFormStyle1.HeaderColorGradientMode = System.Drawing.Drawing2D.LinearGradientMode.Horizontal;
+            this.egoldsFormStyle1.HeaderHeight = 38;
+            this.egoldsFormStyle1.HeaderImage = null;
+            this.egoldsFormStyle1.HeaderTextColor = System.Drawing.Color.White;
+            this.egoldsFormStyle1.HeaderTextFont = new System.Drawing.Font("Segoe UI", 9.75F);
             // 
             // CarBrand
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(404, 464);
+            this.Controls.Add(this.Exit_CarBrand_Button);
+            this.Controls.Add(this.Save_CarBrand_Button);
+            this.Controls.Add(this.Remove_CarBrand_Button);
+            this.Controls.Add(this.Next_CarBrand_Button);
+            this.Controls.Add(this.Last_CarBrand_Button);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.Add_CarBrand_Button);
+            this.Controls.Add(this.Previevs_CarBrand_Button);
+            this.Controls.Add(this.First_CarBrand_Button);
             this.Controls.Add(descriptionLabel);
             this.Controls.Add(this.descriptionTextBox);
             this.Controls.Add(categoryLabel);
@@ -425,11 +650,9 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.Controls.Add(this.companyNameTextBox);
             this.Controls.Add(brandNameLabel);
             this.Controls.Add(this.brandNameTextBox);
-            this.Controls.Add(idCarBrandLabel);
-            this.Controls.Add(this.idCarBrandTextBox);
             this.Controls.Add(this.carBrandBindingNavigator);
             this.Name = "CarBrand";
-            this.Text = "CarBrand";
+            this.Text = "Марки автомобилей";
             this.Load += new System.EventHandler(this.CarBrand_Load);
             ((System.ComponentModel.ISupportInitialize)(this.trafficPoliceDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.carBrandBindingSource)).EndInit();
@@ -469,6 +692,14 @@ namespace yt_DesignUI.Forms.TablesFromDB
         private System.Windows.Forms.TextBox countryTextBox;
         private System.Windows.Forms.TextBox companyNameTextBox;
         private System.Windows.Forms.TextBox brandNameTextBox;
-        private System.Windows.Forms.TextBox idCarBrandTextBox;
+        private yt_Button First_CarBrand_Button;
+        private yt_Button Save_CarBrand_Button;
+        private yt_Button Remove_CarBrand_Button;
+        private yt_Button Next_CarBrand_Button;
+        private yt_Button Last_CarBrand_Button;
+        private System.Windows.Forms.Label label1;
+        private yt_Button Add_CarBrand_Button;
+        private yt_Button Previevs_CarBrand_Button;
+        private yt_Button Exit_CarBrand_Button;
     }
 }

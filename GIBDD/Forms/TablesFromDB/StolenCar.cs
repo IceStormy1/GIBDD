@@ -15,5 +15,70 @@ namespace yt_DesignUI.Forms.TablesFromDB
         {
             InitializeComponent();
         }
+
+        private void stolenCarBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.stolenCarBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.trafficPoliceDataSet);
+
+        }
+
+        private void StolenCar_Load(object sender, EventArgs e)
+        {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "trafficPoliceDataSet.StolenCar". При необходимости она может быть перемещена или удалена.
+            this.stolenCarTableAdapter.Fill(this.trafficPoliceDataSet.StolenCar);
+
+        }
+
+        private void First_CarBrand_Button_Click(object sender, EventArgs e)
+        {
+            stolenCarBindingSource.MoveFirst();
+        }
+
+        private void Last_CarBrand_Button_Click(object sender, EventArgs e)
+        {
+            stolenCarBindingSource.MoveLast();
+        }
+
+        private void Previevs_CarBrand_Button_Click(object sender, EventArgs e)
+        {
+            stolenCarBindingSource.MovePrevious();
+        }
+
+        private void Next_CarBrand_Button_Click(object sender, EventArgs e)
+        {
+            stolenCarBindingSource.MoveNext();
+        }
+
+        private void Add_CarBrand_Button_Click(object sender, EventArgs e)
+        {
+            stolenCarBindingSource.AddNew();
+        }
+
+        private void Remove_CarBrand_Button_Click(object sender, EventArgs e)
+        {
+            stolenCarBindingSource.RemoveCurrent();
+        }
+
+        private void Exit_CarBrand_Button_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void Save_CarBrand_Button_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Validate();
+                stolenCarBindingSource.EndEdit();
+                stolenCarTableAdapter.Update(trafficPoliceDataSet);
+                MessageBox.Show("SUCCESFULL!");
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show("FAIL");
+            }
+        }
     }
 }

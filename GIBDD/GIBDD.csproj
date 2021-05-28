@@ -175,6 +175,24 @@
     <EmbeddedResource Include="Forms\TablesFromDB\CarBrand.resx">
       <DependentUpon>CarBrand.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TablesFromDB\Cars.resx">
+      <DependentUpon>Cars.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TablesFromDB\Drivers.resx">
+      <DependentUpon>Drivers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TablesFromDB\Position.resx">
+      <DependentUpon>Position.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TablesFromDB\Ranks.resx">
+      <DependentUpon>Ranks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TablesFromDB\StolenCar.resx">
+      <DependentUpon>StolenCar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TablesFromDB\Workers.resx">
+      <DependentUpon>Workers.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

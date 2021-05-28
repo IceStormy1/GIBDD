@@ -30,5 +30,55 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.carBrandTableAdapter.Fill(this.trafficPoliceDataSet.CarBrand);
 
         }
+
+        private void First_CarBrand_Button_Click(object sender, EventArgs e)
+        {
+            carBrandBindingSource.MoveFirst();
+        }
+
+        private void Previevs_CarBrand_Button_Click(object sender, EventArgs e)
+        {
+            carBrandBindingSource.MovePrevious();
+        }
+
+        private void Add_CarBrand_Button_Click(object sender, EventArgs e)
+        {
+            carBrandBindingSource.AddNew();
+        }
+
+        private void Remove_CarBrand_Button_Click(object sender, EventArgs e)
+        {
+            carBrandBindingSource.RemoveCurrent();
+        }
+
+        private void Last_CarBrand_Button_Click(object sender, EventArgs e)
+        {
+            carBrandBindingSource.MoveLast();
+        }
+
+        private void Next_CarBrand_Button_Click(object sender, EventArgs e)
+        {
+            carBrandBindingSource.MoveNext();
+        }
+
+        private void Save_CarBrand_Button_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Validate();
+                carBrandBindingSource.EndEdit();
+                carBrandTableAdapter.Update(trafficPoliceDataSet);
+                MessageBox.Show("SUCCESFULL!");
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show("FAIL");
+            }
+        }
+
+        private void Exit_CarBrand_Button_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

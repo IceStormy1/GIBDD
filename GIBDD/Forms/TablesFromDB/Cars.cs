@@ -15,5 +15,70 @@ namespace yt_DesignUI.Forms.TablesFromDB
         {
             InitializeComponent();
         }
+
+        private void carsBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.carsBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.trafficPoliceDataSet);
+
+        }
+
+        private void Cars_Load(object sender, EventArgs e)
+        {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "trafficPoliceDataSet.Cars". При необходимости она может быть перемещена или удалена.
+            this.carsTableAdapter.Fill(this.trafficPoliceDataSet.Cars);
+
+        }
+
+        private void First_CarBrand_Button_Click(object sender, EventArgs e)
+        {
+            carsBindingSource.MoveFirst();
+        }
+
+        private void Last_CarBrand_Button_Click(object sender, EventArgs e)
+        {
+            carsBindingSource.MoveLast();
+        }
+
+        private void Previevs_CarBrand_Button_Click(object sender, EventArgs e)
+        {
+            carsBindingSource.MoveLast();
+        }
+
+        private void Next_CarBrand_Button_Click(object sender, EventArgs e)
+        {
+            carsBindingSource.MoveNext();
+        }
+
+        private void Add_CarBrand_Button_Click(object sender, EventArgs e)
+        {
+            carsBindingSource.AddNew();
+        }
+
+        private void Remove_CarBrand_Button_Click(object sender, EventArgs e)
+        {
+            carsBindingSource.RemoveCurrent();
+        }
+
+        private void Exit_CarBrand_Button_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void Save_CarBrand_Button_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Validate();
+                carsBindingSource.EndEdit();
+                carsTableAdapter.Update(trafficPoliceDataSet);
+                MessageBox.Show("SUCCESFULL!");
+            }
+            catch (Exception exception)
+            {
+                MessageBox.Show("FAIL");
+            }
+        }
     }
 }
