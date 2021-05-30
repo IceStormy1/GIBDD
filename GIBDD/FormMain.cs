@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using yt_DesignUI.Forms.Requests;
 using yt_DesignUI.Forms.TablesFromDB;
 
 namespace yt_DesignUI
@@ -133,6 +134,27 @@ namespace yt_DesignUI
             Hide();
             var position = new Position();
             position.Show();
+        }
+
+        private void Cadr_FormMain_Button_Click(object sender, EventArgs e)
+        {
+            Hide();
+            var cadr = new Cadri();
+            cadr.Show();
+        }
+
+        private void ListOfCars_FormMain_Button_Click(object sender, EventArgs e)
+        {
+            Hide();
+            var listOfCars = new ListOfCars();
+            listOfCars.Show();
+        }
+
+        private void ListOfHijackings_Click(object sender, EventArgs e)
+        {
+            Hide();
+            var listOfHijackings = new ListOfHijackings();
+            listOfHijackings.Show();
         }
     }
 }
