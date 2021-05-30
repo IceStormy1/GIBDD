@@ -88,42 +88,49 @@ namespace yt_DesignUI
 
         private void CarBrand_Button_Click_1(object sender, EventArgs e)
         {
+            Hide();
             var carBrand = new CarBrand();
             carBrand.Show();
         }
 
         private void Cars_Button_Click(object sender, EventArgs e)
         {
+            Hide();
             var cars = new Cars();
             cars.Show();
         }
 
         private void StolenCar_Button_Click_1(object sender, EventArgs e)
         {
+            Hide();
             var stolenCars = new StolenCar();
             stolenCars.Show();
         }
 
         private void Drivers_Button_Click_1(object sender, EventArgs e)
         {
+            Hide();
             var drivers = new Drivers();
             drivers.Show();
         }
 
         private void Workers_Button_Click_1(object sender, EventArgs e)
         {
+            Hide();
             var workers = new Workers();
             workers.Show();
         }
 
         private void Ranks_Button_Click_1(object sender, EventArgs e)
         {
+            Hide();
             var ranks = new Ranks();
             ranks.Show();
         }
 
         private void Position_Button_Click_1(object sender, EventArgs e)
         {
+            Hide();
             var position = new Position();
             position.Show();
         }

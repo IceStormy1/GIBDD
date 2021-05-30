@@ -30,6 +30,7 @@ namespace yt_DesignUI
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AboutProgramm));
             this.egoldsFormStyle1 = new yt_DesignUI.Components.EgoldsFormStyle(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -39,7 +40,7 @@ namespace yt_DesignUI
             // egoldsFormStyle1
             // 
             this.egoldsFormStyle1.AllowUserResize = false;
-            this.egoldsFormStyle1.BackColor = System.Drawing.Color.MediumPurple;
+            this.egoldsFormStyle1.BackColor = System.Drawing.Color.RosyBrown;
             this.egoldsFormStyle1.ContextMenuForm = null;
             this.egoldsFormStyle1.ControlBoxButtonsWidth = 30;
             this.egoldsFormStyle1.EnableControlBoxIconsLight = false;
@@ -94,9 +95,9 @@ namespace yt_DesignUI
             this.AboutProgramm_button_exit.Name = "AboutProgramm_button_exit";
             this.AboutProgramm_button_exit.RippleColor = System.Drawing.Color.White;
             this.AboutProgramm_button_exit.RoundingEnable = true;
-            this.AboutProgramm_button_exit.Size = new System.Drawing.Size(49, 26);
+            this.AboutProgramm_button_exit.Size = new System.Drawing.Size(57, 26);
             this.AboutProgramm_button_exit.TabIndex = 6;
-            this.AboutProgramm_button_exit.Text = "Выход";
+            this.AboutProgramm_button_exit.Text = "Закрыть";
             this.AboutProgramm_button_exit.TextHover = null;
             this.AboutProgramm_button_exit.UseDownPressEffectOnClick = true;
             this.AboutProgramm_button_exit.UseRippleEffect = true;
@@ -112,7 +113,9 @@ namespace yt_DesignUI
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AboutProgramm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "О программе";
             this.ResumeLayout(false);
             this.PerformLayout();

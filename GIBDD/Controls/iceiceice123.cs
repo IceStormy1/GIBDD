@@ -7,11 +7,11 @@ using System.Design;
 using System.Windows.Forms.Design;
 using EgoldsUI;
 
-namespace yt_DesignUI
+namespace yt_DesignUI.Controls
 {
-    [Designer(typeof(ControlDesignerEx))] // ControlDesignerEx Добавляем для ограничения изменения размеров
+    [Designer(typeof(iceiceice123.ControlDesignerEx))] // ControlDesignerEx Добавляем для ограничения изменения размеров
     [DefaultProperty("TextPreview")]
-    public class EgoldsGoogleTextBox : Control
+    class iceiceice123:Control
     {
         #region -- Свойства --
 
@@ -25,11 +25,11 @@ namespace yt_DesignUI
             {
                 // Ограничение, чтобы размер шрифта заголовка нельзя было установить больше, 
                 // чем размер основного шрифта
-                if(value.Size >= Font.Size )
+                if (value.Size >= Font.Size)
                     return;
                 fontTextPreview = value;
             }
-        } 
+        }
 
         public Color BorderColor { get; set; } = FlatColors.Blue;
         public Color BorderColorNotActive { get; set; } = FlatColors.GrayDark;
@@ -52,7 +52,7 @@ namespace yt_DesignUI
 
         //[Browsable(false)]
         //public new string Text { get; set; }
-        
+
         public new string Text
         {
             get => tbInput.Text;
@@ -90,11 +90,11 @@ namespace yt_DesignUI
 
         #endregion
 
-        public EgoldsGoogleTextBox()
+        public iceiceice123()
         {
             SetStyle(ControlStyles.AllPaintingInWmPaint | ControlStyles.OptimizedDoubleBuffer | ControlStyles.ResizeRedraw | ControlStyles.SupportsTransparentBackColor | ControlStyles.UserPaint, true);
             DoubleBuffered = true;
-            
+
             Size = new Size(150, 40);
             Font = new Font("Arial", 11.25F, FontStyle.Regular);
             ForeColor = Color.Black;
@@ -181,7 +181,7 @@ namespace yt_DesignUI
 
             Font FontTextPreviewActual = new Font(FontTextPreview.FontFamily, FontSizeTextPreviewAnim.Value, FontTextPreview.Style);
 
-            if(tbInput.Visible == false && FontTextPreviewActual.Size <= FontTextPreview.Size)
+            if (tbInput.Visible == false && FontTextPreviewActual.Size <= FontTextPreview.Size)
             {
                 tbInput.Visible = true;
                 tbInput.Focus();
@@ -198,14 +198,14 @@ namespace yt_DesignUI
 
             // Обводка
             graph.DrawRectangle(new Pen(tbInput.Focused == true ? BorderColor : BorderColorNotActive), rectBase);
-            
+
             // Заголовок/Описание
             graph.DrawRectangle(new Pen(Parent.BackColor), rectTextPreview);
             graph.FillRectangle(new SolidBrush(Parent.BackColor), rectTextPreview);
 
             // Цвет внутри
             graph.FillRectangle(new SolidBrush(BackColor), rectBase);
-            
+
             graph.DrawString(TextPreview, FontTextPreviewActual, new SolidBrush(tbInput.Focused == true ? BorderColor : BorderColorNotActive), rectTextPreview, SF);
         }
 
@@ -290,3 +290,4 @@ namespace yt_DesignUI
         }
     }
 }
+

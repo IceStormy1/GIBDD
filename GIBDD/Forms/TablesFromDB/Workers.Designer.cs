@@ -30,7 +30,6 @@ namespace yt_DesignUI.Forms.TablesFromDB
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Workers));
             System.Windows.Forms.Label fIOLabel;
             System.Windows.Forms.Label ageLabel;
             System.Windows.Forms.Label genderLabel;
@@ -39,23 +38,24 @@ namespace yt_DesignUI.Forms.TablesFromDB
             System.Windows.Forms.Label passportDataLabel;
             System.Windows.Forms.Label idPositionLabel;
             System.Windows.Forms.Label idRankLabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Workers));
             this.egoldsFormStyle1 = new yt_DesignUI.Components.EgoldsFormStyle(this.components);
             this.trafficPoliceDataSet = new yt_DesignUI.TrafficPoliceDataSet();
             this.workersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.workersTableAdapter = new yt_DesignUI.TrafficPoliceDataSetTableAdapters.WorkersTableAdapter();
             this.tableAdapterManager = new yt_DesignUI.TrafficPoliceDataSetTableAdapters.TableAdapterManager();
             this.workersBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.workersBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.fIOTextBox = new System.Windows.Forms.TextBox();
             this.ageTextBox = new System.Windows.Forms.TextBox();
@@ -88,10 +88,90 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.workersBindingNavigator.SuspendLayout();
             this.SuspendLayout();
             // 
+            // fIOLabel
+            // 
+            fIOLabel.AutoSize = true;
+            fIOLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            fIOLabel.Location = new System.Drawing.Point(51, 101);
+            fIOLabel.Name = "fIOLabel";
+            fIOLabel.Size = new System.Drawing.Size(48, 18);
+            fIOLabel.TabIndex = 1;
+            fIOLabel.Text = "ФИО:";
+            // 
+            // ageLabel
+            // 
+            ageLabel.AutoSize = true;
+            ageLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            ageLabel.Location = new System.Drawing.Point(50, 133);
+            ageLabel.Name = "ageLabel";
+            ageLabel.Size = new System.Drawing.Size(70, 18);
+            ageLabel.TabIndex = 3;
+            ageLabel.Text = "Возраст:";
+            // 
+            // genderLabel
+            // 
+            genderLabel.AutoSize = true;
+            genderLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            genderLabel.Location = new System.Drawing.Point(50, 167);
+            genderLabel.Name = "genderLabel";
+            genderLabel.Size = new System.Drawing.Size(41, 18);
+            genderLabel.TabIndex = 5;
+            genderLabel.Text = "Пол:";
+            // 
+            // adressLabel
+            // 
+            adressLabel.AutoSize = true;
+            adressLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            adressLabel.Location = new System.Drawing.Point(50, 200);
+            adressLabel.Name = "adressLabel";
+            adressLabel.Size = new System.Drawing.Size(54, 18);
+            adressLabel.TabIndex = 7;
+            adressLabel.Text = "Адрес:";
+            // 
+            // telephoneLabel
+            // 
+            telephoneLabel.AutoSize = true;
+            telephoneLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            telephoneLabel.Location = new System.Drawing.Point(50, 231);
+            telephoneLabel.Name = "telephoneLabel";
+            telephoneLabel.Size = new System.Drawing.Size(76, 18);
+            telephoneLabel.TabIndex = 9;
+            telephoneLabel.Text = "Телефон:";
+            // 
+            // passportDataLabel
+            // 
+            passportDataLabel.AutoSize = true;
+            passportDataLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            passportDataLabel.Location = new System.Drawing.Point(50, 266);
+            passportDataLabel.Name = "passportDataLabel";
+            passportDataLabel.Size = new System.Drawing.Size(151, 18);
+            passportDataLabel.TabIndex = 11;
+            passportDataLabel.Text = "Поспортные данные";
+            // 
+            // idPositionLabel
+            // 
+            idPositionLabel.AutoSize = true;
+            idPositionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            idPositionLabel.Location = new System.Drawing.Point(50, 298);
+            idPositionLabel.Name = "idPositionLabel";
+            idPositionLabel.Size = new System.Drawing.Size(101, 18);
+            idPositionLabel.TabIndex = 13;
+            idPositionLabel.Text = "Id должности";
+            // 
+            // idRankLabel
+            // 
+            idRankLabel.AutoSize = true;
+            idRankLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            idRankLabel.Location = new System.Drawing.Point(50, 329);
+            idRankLabel.Name = "idRankLabel";
+            idRankLabel.Size = new System.Drawing.Size(75, 18);
+            idRankLabel.TabIndex = 15;
+            idRankLabel.Text = "Id звания:";
+            // 
             // egoldsFormStyle1
             // 
             this.egoldsFormStyle1.AllowUserResize = false;
-            this.egoldsFormStyle1.BackColor = System.Drawing.Color.MediumPurple;
+            this.egoldsFormStyle1.BackColor = System.Drawing.Color.RosyBrown;
             this.egoldsFormStyle1.ContextMenuForm = null;
             this.egoldsFormStyle1.ControlBoxButtonsWidth = 30;
             this.egoldsFormStyle1.EnableControlBoxIconsLight = false;
@@ -102,7 +182,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.egoldsFormStyle1.HeaderColorAdditional = System.Drawing.Color.Tomato;
             this.egoldsFormStyle1.HeaderColorGradientEnable = true;
             this.egoldsFormStyle1.HeaderColorGradientMode = System.Drawing.Drawing2D.LinearGradientMode.Horizontal;
-            this.egoldsFormStyle1.HeaderHeight = 38;
+            this.egoldsFormStyle1.HeaderHeight = 10;
             this.egoldsFormStyle1.HeaderImage = null;
             this.egoldsFormStyle1.HeaderTextColor = System.Drawing.Color.White;
             this.egoldsFormStyle1.HeaderTextFont = new System.Drawing.Font("Segoe UI", 9.75F);
@@ -163,6 +243,31 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.workersBindingNavigator.TabIndex = 0;
             this.workersBindingNavigator.Text = "bindingNavigator1";
             // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Text = "Добавить";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(43, 22);
+            this.bindingNavigatorCountItem.Text = "для {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Text = "Удалить";
+            // 
             // bindingNavigatorMoveFirstItem
             // 
             this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -196,16 +301,9 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Текущее положение";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(43, 22);
-            this.bindingNavigatorCountItem.Text = "для {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
             this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorMoveNextItem
@@ -228,26 +326,8 @@ namespace yt_DesignUI.Forms.TablesFromDB
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Добавить";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorDeleteItem.Text = "Удалить";
             // 
             // workersBindingNavigatorSaveItem
             // 
@@ -258,33 +338,13 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.workersBindingNavigatorSaveItem.Text = "Сохранить данные";
             this.workersBindingNavigatorSaveItem.Click += new System.EventHandler(this.workersBindingNavigatorSaveItem_Click);
             // 
-            // fIOLabel
-            // 
-            fIOLabel.AutoSize = true;
-            fIOLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            fIOLabel.Location = new System.Drawing.Point(50, 97);
-            fIOLabel.Name = "fIOLabel";
-            fIOLabel.Size = new System.Drawing.Size(48, 18);
-            fIOLabel.TabIndex = 1;
-            fIOLabel.Text = "ФИО:";
-            // 
             // fIOTextBox
             // 
             this.fIOTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.workersBindingSource, "FIO", true));
-            this.fIOTextBox.Location = new System.Drawing.Point(240, 95);
+            this.fIOTextBox.Location = new System.Drawing.Point(241, 99);
             this.fIOTextBox.Name = "fIOTextBox";
             this.fIOTextBox.Size = new System.Drawing.Size(100, 20);
             this.fIOTextBox.TabIndex = 2;
-            // 
-            // ageLabel
-            // 
-            ageLabel.AutoSize = true;
-            ageLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            ageLabel.Location = new System.Drawing.Point(50, 133);
-            ageLabel.Name = "ageLabel";
-            ageLabel.Size = new System.Drawing.Size(70, 18);
-            ageLabel.TabIndex = 3;
-            ageLabel.Text = "Возраст:";
             // 
             // ageTextBox
             // 
@@ -294,16 +354,6 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.ageTextBox.Size = new System.Drawing.Size(100, 20);
             this.ageTextBox.TabIndex = 4;
             // 
-            // genderLabel
-            // 
-            genderLabel.AutoSize = true;
-            genderLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            genderLabel.Location = new System.Drawing.Point(50, 167);
-            genderLabel.Name = "genderLabel";
-            genderLabel.Size = new System.Drawing.Size(41, 18);
-            genderLabel.TabIndex = 5;
-            genderLabel.Text = "Пол:";
-            // 
             // genderTextBox
             // 
             this.genderTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.workersBindingSource, "Gender", true));
@@ -311,16 +361,6 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.genderTextBox.Name = "genderTextBox";
             this.genderTextBox.Size = new System.Drawing.Size(100, 20);
             this.genderTextBox.TabIndex = 6;
-            // 
-            // adressLabel
-            // 
-            adressLabel.AutoSize = true;
-            adressLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            adressLabel.Location = new System.Drawing.Point(50, 200);
-            adressLabel.Name = "adressLabel";
-            adressLabel.Size = new System.Drawing.Size(54, 18);
-            adressLabel.TabIndex = 7;
-            adressLabel.Text = "Адрес:";
             // 
             // adressTextBox
             // 
@@ -330,16 +370,6 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.adressTextBox.Size = new System.Drawing.Size(100, 20);
             this.adressTextBox.TabIndex = 8;
             // 
-            // telephoneLabel
-            // 
-            telephoneLabel.AutoSize = true;
-            telephoneLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            telephoneLabel.Location = new System.Drawing.Point(50, 231);
-            telephoneLabel.Name = "telephoneLabel";
-            telephoneLabel.Size = new System.Drawing.Size(76, 18);
-            telephoneLabel.TabIndex = 9;
-            telephoneLabel.Text = "Телефон:";
-            // 
             // telephoneTextBox
             // 
             this.telephoneTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.workersBindingSource, "Telephone", true));
@@ -347,16 +377,6 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.telephoneTextBox.Name = "telephoneTextBox";
             this.telephoneTextBox.Size = new System.Drawing.Size(100, 20);
             this.telephoneTextBox.TabIndex = 10;
-            // 
-            // passportDataLabel
-            // 
-            passportDataLabel.AutoSize = true;
-            passportDataLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            passportDataLabel.Location = new System.Drawing.Point(50, 266);
-            passportDataLabel.Name = "passportDataLabel";
-            passportDataLabel.Size = new System.Drawing.Size(151, 18);
-            passportDataLabel.TabIndex = 11;
-            passportDataLabel.Text = "Поспортные данные";
             // 
             // passportDataTextBox
             // 
@@ -366,16 +386,6 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.passportDataTextBox.Size = new System.Drawing.Size(100, 20);
             this.passportDataTextBox.TabIndex = 12;
             // 
-            // idPositionLabel
-            // 
-            idPositionLabel.AutoSize = true;
-            idPositionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            idPositionLabel.Location = new System.Drawing.Point(50, 298);
-            idPositionLabel.Name = "idPositionLabel";
-            idPositionLabel.Size = new System.Drawing.Size(101, 18);
-            idPositionLabel.TabIndex = 13;
-            idPositionLabel.Text = "Id должности";
-            // 
             // idPositionTextBox
             // 
             this.idPositionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.workersBindingSource, "IdPosition", true));
@@ -383,16 +393,6 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.idPositionTextBox.Name = "idPositionTextBox";
             this.idPositionTextBox.Size = new System.Drawing.Size(100, 20);
             this.idPositionTextBox.TabIndex = 14;
-            // 
-            // idRankLabel
-            // 
-            idRankLabel.AutoSize = true;
-            idRankLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            idRankLabel.Location = new System.Drawing.Point(50, 329);
-            idRankLabel.Name = "idRankLabel";
-            idRankLabel.Size = new System.Drawing.Size(75, 18);
-            idRankLabel.TabIndex = 15;
-            idRankLabel.Text = "Id звания:";
             // 
             // idRankTextBox
             // 
@@ -406,7 +406,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(61, 34);
+            this.label1.Location = new System.Drawing.Point(108, 36);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(180, 20);
             this.label1.TabIndex = 30;
@@ -425,14 +425,14 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.Exit_CarBrand_Button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Exit_CarBrand_Button.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.Exit_CarBrand_Button.ForeColor = System.Drawing.Color.White;
-            this.Exit_CarBrand_Button.Location = new System.Drawing.Point(349, 460);
+            this.Exit_CarBrand_Button.Location = new System.Drawing.Point(12, 66);
             this.Exit_CarBrand_Button.Name = "Exit_CarBrand_Button";
             this.Exit_CarBrand_Button.RippleColor = System.Drawing.Color.White;
             this.Exit_CarBrand_Button.RoundingEnable = true;
-            this.Exit_CarBrand_Button.Size = new System.Drawing.Size(46, 17);
+            this.Exit_CarBrand_Button.Size = new System.Drawing.Size(48, 24);
             this.Exit_CarBrand_Button.TabIndex = 77;
-            this.Exit_CarBrand_Button.Text = "Выход";
-            this.Exit_CarBrand_Button.TextHover = "Открыть все формы";
+            this.Exit_CarBrand_Button.Text = "Назад";
+            this.Exit_CarBrand_Button.TextHover = "";
             this.Exit_CarBrand_Button.UseDownPressEffectOnClick = true;
             this.Exit_CarBrand_Button.UseRippleEffect = true;
             this.Exit_CarBrand_Button.UseZoomEffectOnHover = true;
@@ -451,14 +451,14 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.Save_CarBrand_Button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Save_CarBrand_Button.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.Save_CarBrand_Button.ForeColor = System.Drawing.Color.White;
-            this.Save_CarBrand_Button.Location = new System.Drawing.Point(133, 441);
+            this.Save_CarBrand_Button.Location = new System.Drawing.Point(150, 441);
             this.Save_CarBrand_Button.Name = "Save_CarBrand_Button";
             this.Save_CarBrand_Button.RippleColor = System.Drawing.Color.White;
             this.Save_CarBrand_Button.RoundingEnable = true;
             this.Save_CarBrand_Button.Size = new System.Drawing.Size(94, 28);
             this.Save_CarBrand_Button.TabIndex = 76;
             this.Save_CarBrand_Button.Text = "Сохранить";
-            this.Save_CarBrand_Button.TextHover = "Открыть все формы";
+            this.Save_CarBrand_Button.TextHover = "";
             this.Save_CarBrand_Button.UseDownPressEffectOnClick = true;
             this.Save_CarBrand_Button.UseRippleEffect = true;
             this.Save_CarBrand_Button.UseZoomEffectOnHover = true;
@@ -477,14 +477,14 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.Remove_CarBrand_Button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Remove_CarBrand_Button.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.Remove_CarBrand_Button.ForeColor = System.Drawing.Color.White;
-            this.Remove_CarBrand_Button.Location = new System.Drawing.Point(246, 407);
+            this.Remove_CarBrand_Button.Location = new System.Drawing.Point(263, 407);
             this.Remove_CarBrand_Button.Name = "Remove_CarBrand_Button";
             this.Remove_CarBrand_Button.RippleColor = System.Drawing.Color.White;
             this.Remove_CarBrand_Button.RoundingEnable = true;
             this.Remove_CarBrand_Button.Size = new System.Drawing.Size(94, 28);
             this.Remove_CarBrand_Button.TabIndex = 75;
             this.Remove_CarBrand_Button.Text = "Удалить";
-            this.Remove_CarBrand_Button.TextHover = "Открыть все формы";
+            this.Remove_CarBrand_Button.TextHover = "";
             this.Remove_CarBrand_Button.UseDownPressEffectOnClick = true;
             this.Remove_CarBrand_Button.UseRippleEffect = true;
             this.Remove_CarBrand_Button.UseZoomEffectOnHover = true;
@@ -503,14 +503,14 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.Next_CarBrand_Button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Next_CarBrand_Button.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.Next_CarBrand_Button.ForeColor = System.Drawing.Color.White;
-            this.Next_CarBrand_Button.Location = new System.Drawing.Point(133, 407);
+            this.Next_CarBrand_Button.Location = new System.Drawing.Point(150, 407);
             this.Next_CarBrand_Button.Name = "Next_CarBrand_Button";
             this.Next_CarBrand_Button.RippleColor = System.Drawing.Color.White;
             this.Next_CarBrand_Button.RoundingEnable = true;
             this.Next_CarBrand_Button.Size = new System.Drawing.Size(94, 28);
             this.Next_CarBrand_Button.TabIndex = 74;
             this.Next_CarBrand_Button.Text = "Следующая";
-            this.Next_CarBrand_Button.TextHover = "Открыть все формы";
+            this.Next_CarBrand_Button.TextHover = "";
             this.Next_CarBrand_Button.UseDownPressEffectOnClick = true;
             this.Next_CarBrand_Button.UseRippleEffect = true;
             this.Next_CarBrand_Button.UseZoomEffectOnHover = true;
@@ -529,14 +529,14 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.Last_CarBrand_Button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Last_CarBrand_Button.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.Last_CarBrand_Button.ForeColor = System.Drawing.Color.White;
-            this.Last_CarBrand_Button.Location = new System.Drawing.Point(22, 407);
+            this.Last_CarBrand_Button.Location = new System.Drawing.Point(39, 407);
             this.Last_CarBrand_Button.Name = "Last_CarBrand_Button";
             this.Last_CarBrand_Button.RippleColor = System.Drawing.Color.White;
             this.Last_CarBrand_Button.RoundingEnable = true;
             this.Last_CarBrand_Button.Size = new System.Drawing.Size(94, 28);
             this.Last_CarBrand_Button.TabIndex = 73;
             this.Last_CarBrand_Button.Text = "Последняя";
-            this.Last_CarBrand_Button.TextHover = "Открыть все формы";
+            this.Last_CarBrand_Button.TextHover = "";
             this.Last_CarBrand_Button.UseDownPressEffectOnClick = true;
             this.Last_CarBrand_Button.UseRippleEffect = true;
             this.Last_CarBrand_Button.UseZoomEffectOnHover = true;
@@ -555,14 +555,14 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.Add_CarBrand_Button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Add_CarBrand_Button.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.Add_CarBrand_Button.ForeColor = System.Drawing.Color.White;
-            this.Add_CarBrand_Button.Location = new System.Drawing.Point(246, 373);
+            this.Add_CarBrand_Button.Location = new System.Drawing.Point(263, 373);
             this.Add_CarBrand_Button.Name = "Add_CarBrand_Button";
             this.Add_CarBrand_Button.RippleColor = System.Drawing.Color.White;
             this.Add_CarBrand_Button.RoundingEnable = true;
             this.Add_CarBrand_Button.Size = new System.Drawing.Size(94, 28);
             this.Add_CarBrand_Button.TabIndex = 72;
             this.Add_CarBrand_Button.Text = "Добавить";
-            this.Add_CarBrand_Button.TextHover = "Открыть все формы";
+            this.Add_CarBrand_Button.TextHover = "";
             this.Add_CarBrand_Button.UseDownPressEffectOnClick = true;
             this.Add_CarBrand_Button.UseRippleEffect = true;
             this.Add_CarBrand_Button.UseZoomEffectOnHover = true;
@@ -581,14 +581,14 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.Previevs_CarBrand_Button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Previevs_CarBrand_Button.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.Previevs_CarBrand_Button.ForeColor = System.Drawing.Color.White;
-            this.Previevs_CarBrand_Button.Location = new System.Drawing.Point(133, 373);
+            this.Previevs_CarBrand_Button.Location = new System.Drawing.Point(150, 373);
             this.Previevs_CarBrand_Button.Name = "Previevs_CarBrand_Button";
             this.Previevs_CarBrand_Button.RippleColor = System.Drawing.Color.White;
             this.Previevs_CarBrand_Button.RoundingEnable = true;
             this.Previevs_CarBrand_Button.Size = new System.Drawing.Size(94, 28);
             this.Previevs_CarBrand_Button.TabIndex = 71;
             this.Previevs_CarBrand_Button.Text = "Предыдущая";
-            this.Previevs_CarBrand_Button.TextHover = "Открыть все формы";
+            this.Previevs_CarBrand_Button.TextHover = "";
             this.Previevs_CarBrand_Button.UseDownPressEffectOnClick = true;
             this.Previevs_CarBrand_Button.UseRippleEffect = true;
             this.Previevs_CarBrand_Button.UseZoomEffectOnHover = true;
@@ -607,14 +607,14 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.First_CarBrand_Button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.First_CarBrand_Button.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.First_CarBrand_Button.ForeColor = System.Drawing.Color.White;
-            this.First_CarBrand_Button.Location = new System.Drawing.Point(22, 373);
+            this.First_CarBrand_Button.Location = new System.Drawing.Point(39, 373);
             this.First_CarBrand_Button.Name = "First_CarBrand_Button";
             this.First_CarBrand_Button.RippleColor = System.Drawing.Color.White;
             this.First_CarBrand_Button.RoundingEnable = true;
             this.First_CarBrand_Button.Size = new System.Drawing.Size(94, 28);
             this.First_CarBrand_Button.TabIndex = 70;
             this.First_CarBrand_Button.Text = "Первая";
-            this.First_CarBrand_Button.TextHover = "Открыть все формы";
+            this.First_CarBrand_Button.TextHover = "";
             this.First_CarBrand_Button.UseDownPressEffectOnClick = true;
             this.First_CarBrand_Button.UseRippleEffect = true;
             this.First_CarBrand_Button.UseZoomEffectOnHover = true;
@@ -651,7 +651,9 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.Controls.Add(fIOLabel);
             this.Controls.Add(this.fIOTextBox);
             this.Controls.Add(this.workersBindingNavigator);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Workers";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Таблица сотрудники";
             this.Load += new System.EventHandler(this.Workers_Load);
             ((System.ComponentModel.ISupportInitialize)(this.trafficPoliceDataSet)).EndInit();

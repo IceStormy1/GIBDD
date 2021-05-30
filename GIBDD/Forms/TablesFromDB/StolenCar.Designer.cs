@@ -171,7 +171,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
             // egoldsFormStyle1
             // 
             this.egoldsFormStyle1.AllowUserResize = false;
-            this.egoldsFormStyle1.BackColor = System.Drawing.Color.MediumPurple;
+            this.egoldsFormStyle1.BackColor = System.Drawing.Color.RosyBrown;
             this.egoldsFormStyle1.ContextMenuForm = null;
             this.egoldsFormStyle1.ControlBoxButtonsWidth = 30;
             this.egoldsFormStyle1.EnableControlBoxIconsLight = false;
@@ -182,7 +182,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.egoldsFormStyle1.HeaderColorAdditional = System.Drawing.Color.Tomato;
             this.egoldsFormStyle1.HeaderColorGradientEnable = true;
             this.egoldsFormStyle1.HeaderColorGradientMode = System.Drawing.Drawing2D.LinearGradientMode.Horizontal;
-            this.egoldsFormStyle1.HeaderHeight = 38;
+            this.egoldsFormStyle1.HeaderHeight = 10;
             this.egoldsFormStyle1.HeaderImage = null;
             this.egoldsFormStyle1.HeaderTextColor = System.Drawing.Color.White;
             this.egoldsFormStyle1.HeaderTextFont = new System.Drawing.Font("Segoe UI", 9.75F);
@@ -425,14 +425,14 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.Exit_CarBrand_Button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Exit_CarBrand_Button.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.Exit_CarBrand_Button.ForeColor = System.Drawing.Color.White;
-            this.Exit_CarBrand_Button.Location = new System.Drawing.Point(371, 464);
+            this.Exit_CarBrand_Button.Location = new System.Drawing.Point(12, 49);
             this.Exit_CarBrand_Button.Name = "Exit_CarBrand_Button";
             this.Exit_CarBrand_Button.RippleColor = System.Drawing.Color.White;
             this.Exit_CarBrand_Button.RoundingEnable = true;
-            this.Exit_CarBrand_Button.Size = new System.Drawing.Size(46, 17);
+            this.Exit_CarBrand_Button.Size = new System.Drawing.Size(48, 24);
             this.Exit_CarBrand_Button.TabIndex = 69;
-            this.Exit_CarBrand_Button.Text = "Выход";
-            this.Exit_CarBrand_Button.TextHover = "Открыть все формы";
+            this.Exit_CarBrand_Button.Text = "Назад";
+            this.Exit_CarBrand_Button.TextHover = "";
             this.Exit_CarBrand_Button.UseDownPressEffectOnClick = true;
             this.Exit_CarBrand_Button.UseRippleEffect = true;
             this.Exit_CarBrand_Button.UseZoomEffectOnHover = true;
@@ -458,7 +458,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.Save_CarBrand_Button.Size = new System.Drawing.Size(94, 28);
             this.Save_CarBrand_Button.TabIndex = 68;
             this.Save_CarBrand_Button.Text = "Сохранить";
-            this.Save_CarBrand_Button.TextHover = "Открыть все формы";
+            this.Save_CarBrand_Button.TextHover = "";
             this.Save_CarBrand_Button.UseDownPressEffectOnClick = true;
             this.Save_CarBrand_Button.UseRippleEffect = true;
             this.Save_CarBrand_Button.UseZoomEffectOnHover = true;
@@ -484,7 +484,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.Remove_CarBrand_Button.Size = new System.Drawing.Size(94, 28);
             this.Remove_CarBrand_Button.TabIndex = 67;
             this.Remove_CarBrand_Button.Text = "Удалить";
-            this.Remove_CarBrand_Button.TextHover = "Открыть все формы";
+            this.Remove_CarBrand_Button.TextHover = "";
             this.Remove_CarBrand_Button.UseDownPressEffectOnClick = true;
             this.Remove_CarBrand_Button.UseRippleEffect = true;
             this.Remove_CarBrand_Button.UseZoomEffectOnHover = true;
@@ -510,7 +510,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.Next_CarBrand_Button.Size = new System.Drawing.Size(94, 28);
             this.Next_CarBrand_Button.TabIndex = 66;
             this.Next_CarBrand_Button.Text = "Следующая";
-            this.Next_CarBrand_Button.TextHover = "Открыть все формы";
+            this.Next_CarBrand_Button.TextHover = "";
             this.Next_CarBrand_Button.UseDownPressEffectOnClick = true;
             this.Next_CarBrand_Button.UseRippleEffect = true;
             this.Next_CarBrand_Button.UseZoomEffectOnHover = true;
@@ -536,7 +536,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.Last_CarBrand_Button.Size = new System.Drawing.Size(94, 28);
             this.Last_CarBrand_Button.TabIndex = 65;
             this.Last_CarBrand_Button.Text = "Последняя";
-            this.Last_CarBrand_Button.TextHover = "Открыть все формы";
+            this.Last_CarBrand_Button.TextHover = "";
             this.Last_CarBrand_Button.UseDownPressEffectOnClick = true;
             this.Last_CarBrand_Button.UseRippleEffect = true;
             this.Last_CarBrand_Button.UseZoomEffectOnHover = true;
@@ -562,7 +562,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.Add_CarBrand_Button.Size = new System.Drawing.Size(94, 28);
             this.Add_CarBrand_Button.TabIndex = 64;
             this.Add_CarBrand_Button.Text = "Добавить";
-            this.Add_CarBrand_Button.TextHover = "Открыть все формы";
+            this.Add_CarBrand_Button.TextHover = "";
             this.Add_CarBrand_Button.UseDownPressEffectOnClick = true;
             this.Add_CarBrand_Button.UseRippleEffect = true;
             this.Add_CarBrand_Button.UseZoomEffectOnHover = true;
@@ -588,7 +588,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.Previevs_CarBrand_Button.Size = new System.Drawing.Size(94, 28);
             this.Previevs_CarBrand_Button.TabIndex = 63;
             this.Previevs_CarBrand_Button.Text = "Предыдущая";
-            this.Previevs_CarBrand_Button.TextHover = "Открыть все формы";
+            this.Previevs_CarBrand_Button.TextHover = "";
             this.Previevs_CarBrand_Button.UseDownPressEffectOnClick = true;
             this.Previevs_CarBrand_Button.UseRippleEffect = true;
             this.Previevs_CarBrand_Button.UseZoomEffectOnHover = true;
@@ -614,7 +614,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.First_CarBrand_Button.Size = new System.Drawing.Size(94, 28);
             this.First_CarBrand_Button.TabIndex = 62;
             this.First_CarBrand_Button.Text = "Первая";
-            this.First_CarBrand_Button.TextHover = "Открыть все формы";
+            this.First_CarBrand_Button.TextHover = "";
             this.First_CarBrand_Button.UseDownPressEffectOnClick = true;
             this.First_CarBrand_Button.UseRippleEffect = true;
             this.First_CarBrand_Button.UseZoomEffectOnHover = true;
@@ -651,7 +651,9 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.Controls.Add(this.dateOfHijackingDateTimePicker);
             this.Controls.Add(this.stolenCarBindingNavigator);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "StolenCar";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Угнанные автомобили";
             this.Load += new System.EventHandler(this.StolenCar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.trafficPoliceDataSet)).EndInit();
