@@ -74,6 +74,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.Add_CarBrand_Button = new yt_DesignUI.yt_Button();
             this.Previevs_CarBrand_Button = new yt_DesignUI.yt_Button();
             this.First_CarBrand_Button = new yt_DesignUI.yt_Button();
+            this.yt_Button1 = new yt_DesignUI.yt_Button();
             dateOfHijackingLabel = new System.Windows.Forms.Label();
             dateOfRequestLabel = new System.Windows.Forms.Label();
             idCarLabel = new System.Windows.Forms.Label();
@@ -92,7 +93,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
             // 
             dateOfHijackingLabel.AutoSize = true;
             dateOfHijackingLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dateOfHijackingLabel.Location = new System.Drawing.Point(24, 82);
+            dateOfHijackingLabel.Location = new System.Drawing.Point(19, 106);
             dateOfHijackingLabel.Name = "dateOfHijackingLabel";
             dateOfHijackingLabel.Size = new System.Drawing.Size(85, 18);
             dateOfHijackingLabel.TabIndex = 30;
@@ -102,7 +103,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
             // 
             dateOfRequestLabel.AutoSize = true;
             dateOfRequestLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dateOfRequestLabel.Location = new System.Drawing.Point(24, 118);
+            dateOfRequestLabel.Location = new System.Drawing.Point(19, 142);
             dateOfRequestLabel.Name = "dateOfRequestLabel";
             dateOfRequestLabel.Size = new System.Drawing.Size(124, 18);
             dateOfRequestLabel.TabIndex = 31;
@@ -112,7 +113,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
             // 
             idCarLabel.AutoSize = true;
             idCarLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            idCarLabel.Location = new System.Drawing.Point(24, 148);
+            idCarLabel.Location = new System.Drawing.Point(19, 172);
             idCarLabel.Name = "idCarLabel";
             idCarLabel.Size = new System.Drawing.Size(126, 18);
             idCarLabel.TabIndex = 32;
@@ -122,7 +123,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
             // 
             idDriverLabel.AutoSize = true;
             idDriverLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            idDriverLabel.Location = new System.Drawing.Point(24, 182);
+            idDriverLabel.Location = new System.Drawing.Point(19, 206);
             idDriverLabel.Name = "idDriverLabel";
             idDriverLabel.Size = new System.Drawing.Size(106, 18);
             idDriverLabel.TabIndex = 33;
@@ -132,7 +133,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
             // 
             descriptionLabel.AutoSize = true;
             descriptionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            descriptionLabel.Location = new System.Drawing.Point(24, 211);
+            descriptionLabel.Location = new System.Drawing.Point(19, 235);
             descriptionLabel.Name = "descriptionLabel";
             descriptionLabel.Size = new System.Drawing.Size(166, 18);
             descriptionLabel.TabIndex = 34;
@@ -142,7 +143,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
             // 
             locationMarkLabel.AutoSize = true;
             locationMarkLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            locationMarkLabel.Location = new System.Drawing.Point(24, 241);
+            locationMarkLabel.Location = new System.Drawing.Point(19, 265);
             locationMarkLabel.Name = "locationMarkLabel";
             locationMarkLabel.Size = new System.Drawing.Size(179, 18);
             locationMarkLabel.TabIndex = 35;
@@ -152,7 +153,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
             // 
             dateFindLabel.AutoSize = true;
             dateFindLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dateFindLabel.Location = new System.Drawing.Point(24, 280);
+            dateFindLabel.Location = new System.Drawing.Point(19, 304);
             dateFindLabel.Name = "dateFindLabel";
             dateFindLabel.Size = new System.Drawing.Size(131, 18);
             dateFindLabel.TabIndex = 36;
@@ -162,7 +163,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
             // 
             idWorkerLabel.AutoSize = true;
             idWorkerLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            idWorkerLabel.Location = new System.Drawing.Point(24, 314);
+            idWorkerLabel.Location = new System.Drawing.Point(19, 338);
             idWorkerLabel.Name = "idWorkerLabel";
             idWorkerLabel.Size = new System.Drawing.Size(120, 18);
             idWorkerLabel.TabIndex = 37;
@@ -351,7 +352,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
             // dateOfHijackingDateTimePicker
             // 
             this.dateOfHijackingDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.stolenCarBindingSource, "DateOfHijacking", true));
-            this.dateOfHijackingDateTimePicker.Location = new System.Drawing.Point(213, 80);
+            this.dateOfHijackingDateTimePicker.Location = new System.Drawing.Point(208, 104);
             this.dateOfHijackingDateTimePicker.Name = "dateOfHijackingDateTimePicker";
             this.dateOfHijackingDateTimePicker.Size = new System.Drawing.Size(200, 20);
             this.dateOfHijackingDateTimePicker.TabIndex = 31;
@@ -359,7 +360,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
             // dateOfRequestDateTimePicker
             // 
             this.dateOfRequestDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.stolenCarBindingSource, "DateOfRequest", true));
-            this.dateOfRequestDateTimePicker.Location = new System.Drawing.Point(213, 116);
+            this.dateOfRequestDateTimePicker.Location = new System.Drawing.Point(208, 140);
             this.dateOfRequestDateTimePicker.Name = "dateOfRequestDateTimePicker";
             this.dateOfRequestDateTimePicker.Size = new System.Drawing.Size(200, 20);
             this.dateOfRequestDateTimePicker.TabIndex = 32;
@@ -367,7 +368,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
             // idCarTextBox
             // 
             this.idCarTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.stolenCarBindingSource, "IdCar", true));
-            this.idCarTextBox.Location = new System.Drawing.Point(213, 149);
+            this.idCarTextBox.Location = new System.Drawing.Point(208, 173);
             this.idCarTextBox.Name = "idCarTextBox";
             this.idCarTextBox.Size = new System.Drawing.Size(200, 20);
             this.idCarTextBox.TabIndex = 33;
@@ -375,7 +376,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
             // idDriverTextBox
             // 
             this.idDriverTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.stolenCarBindingSource, "IdDriver", true));
-            this.idDriverTextBox.Location = new System.Drawing.Point(213, 183);
+            this.idDriverTextBox.Location = new System.Drawing.Point(208, 207);
             this.idDriverTextBox.Name = "idDriverTextBox";
             this.idDriverTextBox.Size = new System.Drawing.Size(200, 20);
             this.idDriverTextBox.TabIndex = 34;
@@ -383,7 +384,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
             // descriptionTextBox
             // 
             this.descriptionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.stolenCarBindingSource, "Description", true));
-            this.descriptionTextBox.Location = new System.Drawing.Point(213, 212);
+            this.descriptionTextBox.Location = new System.Drawing.Point(208, 236);
             this.descriptionTextBox.Name = "descriptionTextBox";
             this.descriptionTextBox.Size = new System.Drawing.Size(200, 20);
             this.descriptionTextBox.TabIndex = 35;
@@ -391,7 +392,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
             // locationMarkTextBox
             // 
             this.locationMarkTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.stolenCarBindingSource, "LocationMark", true));
-            this.locationMarkTextBox.Location = new System.Drawing.Point(213, 242);
+            this.locationMarkTextBox.Location = new System.Drawing.Point(208, 266);
             this.locationMarkTextBox.Name = "locationMarkTextBox";
             this.locationMarkTextBox.Size = new System.Drawing.Size(200, 20);
             this.locationMarkTextBox.TabIndex = 36;
@@ -399,7 +400,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
             // dateFindDateTimePicker
             // 
             this.dateFindDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.stolenCarBindingSource, "DateFind", true));
-            this.dateFindDateTimePicker.Location = new System.Drawing.Point(213, 278);
+            this.dateFindDateTimePicker.Location = new System.Drawing.Point(208, 302);
             this.dateFindDateTimePicker.Name = "dateFindDateTimePicker";
             this.dateFindDateTimePicker.Size = new System.Drawing.Size(200, 20);
             this.dateFindDateTimePicker.TabIndex = 37;
@@ -407,7 +408,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
             // idWorkerTextBox
             // 
             this.idWorkerTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.stolenCarBindingSource, "IdWorker", true));
-            this.idWorkerTextBox.Location = new System.Drawing.Point(213, 315);
+            this.idWorkerTextBox.Location = new System.Drawing.Point(208, 339);
             this.idWorkerTextBox.Name = "idWorkerTextBox";
             this.idWorkerTextBox.Size = new System.Drawing.Size(200, 20);
             this.idWorkerTextBox.TabIndex = 38;
@@ -620,11 +621,38 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.First_CarBrand_Button.UseZoomEffectOnHover = true;
             this.First_CarBrand_Button.Click += new System.EventHandler(this.First_CarBrand_Button_Click);
             // 
+            // yt_Button1
+            // 
+            this.yt_Button1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.yt_Button1.BackColorAdditional = System.Drawing.Color.Tomato;
+            this.yt_Button1.BackColorGradientEnabled = true;
+            this.yt_Button1.BackColorGradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.yt_Button1.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.yt_Button1.BorderColorEnabled = true;
+            this.yt_Button1.BorderColorOnHover = System.Drawing.Color.Maroon;
+            this.yt_Button1.BorderColorOnHoverEnabled = true;
+            this.yt_Button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.yt_Button1.Font = new System.Drawing.Font("Verdana", 8.25F);
+            this.yt_Button1.ForeColor = System.Drawing.Color.White;
+            this.yt_Button1.Location = new System.Drawing.Point(311, 60);
+            this.yt_Button1.Name = "yt_Button1";
+            this.yt_Button1.RippleColor = System.Drawing.Color.White;
+            this.yt_Button1.RoundingEnable = false;
+            this.yt_Button1.Size = new System.Drawing.Size(106, 28);
+            this.yt_Button1.TabIndex = 70;
+            this.yt_Button1.Text = "Табличный вид";
+            this.yt_Button1.TextHover = "";
+            this.yt_Button1.UseDownPressEffectOnClick = true;
+            this.yt_Button1.UseRippleEffect = true;
+            this.yt_Button1.UseZoomEffectOnHover = true;
+            this.yt_Button1.Click += new System.EventHandler(this.yt_Button1_Click);
+            // 
             // StolenCar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(429, 493);
+            this.Controls.Add(this.yt_Button1);
             this.Controls.Add(this.Exit_CarBrand_Button);
             this.Controls.Add(this.Save_CarBrand_Button);
             this.Controls.Add(this.Remove_CarBrand_Button);
@@ -703,5 +731,6 @@ namespace yt_DesignUI.Forms.TablesFromDB
         private yt_Button Add_CarBrand_Button;
         private yt_Button Previevs_CarBrand_Button;
         private yt_Button First_CarBrand_Button;
+        private yt_Button yt_Button1;
     }
 }

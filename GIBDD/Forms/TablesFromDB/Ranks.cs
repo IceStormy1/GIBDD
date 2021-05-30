@@ -78,7 +78,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
                 ranksTableAdapter.Update(trafficPoliceDataSet);
                 MessageBox.Show("SUCCESFULL!");
             }
-            catch (Exception exception)
+            catch (Exception)
             {
                 MessageBox.Show("FAIL");
             }
@@ -89,6 +89,13 @@ namespace yt_DesignUI.Forms.TablesFromDB
             var formMain = new FormMain();
             formMain.Show();
             Dispose();
+        }
+
+        private void yt_Button1_Click(object sender, EventArgs e)
+        {
+            var ranksTableForm = new RanksTableForm();
+            ranksTableForm.Show();
+            Close();
         }
     }
 }

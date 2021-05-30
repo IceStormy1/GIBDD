@@ -70,7 +70,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
                 carBrandTableAdapter.Update(trafficPoliceDataSet);
                 MessageBox.Show("SUCCESFULL!");
             }
-            catch (Exception exception)
+            catch (Exception)
             {
                 MessageBox.Show("FAIL");
             }
@@ -79,11 +79,6 @@ namespace yt_DesignUI.Forms.TablesFromDB
         private void Exit_CarBrand_Button_Click(object sender, EventArgs e)
         {
             Close();
-        }
-
-        private void egoldsToggleSwitch1_CheckedChanged(object sender)
-        {
-
         }
 
         private void Back_CarBrand_Button_Click(object sender, EventArgs e)

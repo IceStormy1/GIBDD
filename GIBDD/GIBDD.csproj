@@ -126,11 +126,23 @@
     <Compile Include="Forms\TablesFromDB\Cars.Designer.cs">
       <DependentUpon>Cars.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\TablesFromDB\CarsTableForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TablesFromDB\CarsTableForm.Designer.cs">
+      <DependentUpon>CarsTableForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\TablesFromDB\Drivers.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\TablesFromDB\Drivers.Designer.cs">
       <DependentUpon>Drivers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TablesFromDB\DriversTableForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TablesFromDB\DriversTableForm.Designer.cs">
+      <DependentUpon>DriversTableForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\TablesFromDB\Position.cs">
       <SubType>Form</SubType>
@@ -138,11 +150,23 @@
     <Compile Include="Forms\TablesFromDB\Position.Designer.cs">
       <DependentUpon>Position.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\TablesFromDB\PositionTableForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TablesFromDB\PositionTableForm.Designer.cs">
+      <DependentUpon>PositionTableForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\TablesFromDB\Ranks.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\TablesFromDB\Ranks.Designer.cs">
       <DependentUpon>Ranks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TablesFromDB\RanksTableForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TablesFromDB\RanksTableForm.Designer.cs">
+      <DependentUpon>RanksTableForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\TablesFromDB\StolenCar.cs">
       <SubType>Form</SubType>
@@ -150,11 +174,23 @@
     <Compile Include="Forms\TablesFromDB\StolenCar.Designer.cs">
       <DependentUpon>StolenCar.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\TablesFromDB\StolenCarTableForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TablesFromDB\StolenCarTableForm.Designer.cs">
+      <DependentUpon>StolenCarTableForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\TablesFromDB\Workers.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\TablesFromDB\Workers.Designer.cs">
       <DependentUpon>Workers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TablesFromDB\WorkersTableForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TablesFromDB\WorkersTableForm.Designer.cs">
+      <DependentUpon>WorkersTableForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Present.cs">
       <SubType>Form</SubType>
@@ -202,20 +238,38 @@
     <EmbeddedResource Include="Forms\TablesFromDB\Cars.resx">
       <DependentUpon>Cars.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TablesFromDB\CarsTableForm.resx">
+      <DependentUpon>CarsTableForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\TablesFromDB\Drivers.resx">
       <DependentUpon>Drivers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TablesFromDB\DriversTableForm.resx">
+      <DependentUpon>DriversTableForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\TablesFromDB\Position.resx">
       <DependentUpon>Position.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TablesFromDB\PositionTableForm.resx">
+      <DependentUpon>PositionTableForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\TablesFromDB\Ranks.resx">
       <DependentUpon>Ranks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TablesFromDB\RanksTableForm.resx">
+      <DependentUpon>RanksTableForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\TablesFromDB\StolenCar.resx">
       <DependentUpon>StolenCar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TablesFromDB\StolenCarTableForm.resx">
+      <DependentUpon>StolenCarTableForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\TablesFromDB\Workers.resx">
       <DependentUpon>Workers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TablesFromDB\WorkersTableForm.resx">
+      <DependentUpon>WorkersTableForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Present.resx">
       <DependentUpon>Present.cs</DependentUpon>
