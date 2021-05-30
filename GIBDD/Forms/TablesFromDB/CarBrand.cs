@@ -80,5 +80,24 @@ namespace yt_DesignUI.Forms.TablesFromDB
         {
             Close();
         }
+
+        private void egoldsToggleSwitch1_CheckedChanged(object sender)
+        {
+
+        }
+
+        private void Back_CarBrand_Button_Click(object sender, EventArgs e)
+        {
+            var formMain = new FormMain();
+            formMain.Show();
+            Close();
+        }
+
+        private void yt_Button1_Click(object sender, EventArgs e)
+        {
+            var carBrandTable = new CarBrandTableForm();
+            carBrandTable.Show();
+            Close();
+        }
     }
 }

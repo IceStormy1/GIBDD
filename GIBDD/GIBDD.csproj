@@ -46,6 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\iceiceice123.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Forms\Forms\AboutProgramm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +114,12 @@
     <Compile Include="Forms\TablesFromDB\CarBrand.Designer.cs">
       <DependentUpon>CarBrand.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\TablesFromDB\CarBrandTableForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TablesFromDB\CarBrandTableForm.Designer.cs">
+      <DependentUpon>CarBrandTableForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\TablesFromDB\Cars.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -163,6 +172,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>TrafficPoliceDataSet.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Controls\EgoldsGoogleTextBox.resx">
+      <DependentUpon>EgoldsGoogleTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\EgoldsToggleSwitch.resx">
+      <DependentUpon>EgoldsToggleSwitch.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Forms\AboutProgramm.resx">
       <DependentUpon>AboutProgramm.cs</DependentUpon>
     </EmbeddedResource>
@@ -180,6 +195,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\TablesFromDB\CarBrand.resx">
       <DependentUpon>CarBrand.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TablesFromDB\CarBrandTableForm.resx">
+      <DependentUpon>CarBrandTableForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\TablesFromDB\Cars.resx">
       <DependentUpon>Cars.cs</DependentUpon>
