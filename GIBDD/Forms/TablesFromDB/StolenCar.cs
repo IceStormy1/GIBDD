@@ -63,7 +63,9 @@ namespace yt_DesignUI.Forms.TablesFromDB
 
         private void Exit_CarBrand_Button_Click(object sender, EventArgs e)
         {
-            Close();
+            var formMain = new FormMain();
+            formMain.Show();
+            Dispose();
         }
 
         private void Save_CarBrand_Button_Click(object sender, EventArgs e)

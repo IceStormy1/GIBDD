@@ -15,7 +15,7 @@ namespace yt_DesignUI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-
+            Animator.Start();
             Present first = new Present();
             DateTime end = DateTime.Now + TimeSpan.FromSeconds(3);
             first.Show();

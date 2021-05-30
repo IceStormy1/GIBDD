@@ -80,7 +80,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
             // 
             namePositionLabel.AutoSize = true;
             namePositionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            namePositionLabel.Location = new System.Drawing.Point(37, 84);
+            namePositionLabel.Location = new System.Drawing.Point(37, 99);
             namePositionLabel.Name = "namePositionLabel";
             namePositionLabel.Size = new System.Drawing.Size(193, 18);
             namePositionLabel.TabIndex = 1;
@@ -90,7 +90,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
             // 
             salaryLabel.AutoSize = true;
             salaryLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            salaryLabel.Location = new System.Drawing.Point(37, 121);
+            salaryLabel.Location = new System.Drawing.Point(37, 136);
             salaryLabel.Name = "salaryLabel";
             salaryLabel.Size = new System.Drawing.Size(54, 18);
             salaryLabel.TabIndex = 3;
@@ -100,7 +100,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
             // 
             dutiesLabel.AutoSize = true;
             dutiesLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dutiesLabel.Location = new System.Drawing.Point(37, 164);
+            dutiesLabel.Location = new System.Drawing.Point(37, 179);
             dutiesLabel.Name = "dutiesLabel";
             dutiesLabel.Size = new System.Drawing.Size(101, 18);
             dutiesLabel.TabIndex = 5;
@@ -110,7 +110,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
             // 
             requirementsLabel.AutoSize = true;
             requirementsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            requirementsLabel.Location = new System.Drawing.Point(37, 207);
+            requirementsLabel.Location = new System.Drawing.Point(37, 222);
             requirementsLabel.Name = "requirementsLabel";
             requirementsLabel.Size = new System.Drawing.Size(91, 18);
             requirementsLabel.TabIndex = 7;
@@ -119,7 +119,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
             // egoldsFormStyle1
             // 
             this.egoldsFormStyle1.AllowUserResize = false;
-            this.egoldsFormStyle1.BackColor = System.Drawing.Color.MediumPurple;
+            this.egoldsFormStyle1.BackColor = System.Drawing.Color.RosyBrown;
             this.egoldsFormStyle1.ContextMenuForm = null;
             this.egoldsFormStyle1.ControlBoxButtonsWidth = 30;
             this.egoldsFormStyle1.EnableControlBoxIconsLight = false;
@@ -130,7 +130,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.egoldsFormStyle1.HeaderColorAdditional = System.Drawing.Color.Tomato;
             this.egoldsFormStyle1.HeaderColorGradientEnable = true;
             this.egoldsFormStyle1.HeaderColorGradientMode = System.Drawing.Drawing2D.LinearGradientMode.Horizontal;
-            this.egoldsFormStyle1.HeaderHeight = 38;
+            this.egoldsFormStyle1.HeaderHeight = 10;
             this.egoldsFormStyle1.HeaderImage = null;
             this.egoldsFormStyle1.HeaderTextColor = System.Drawing.Color.White;
             this.egoldsFormStyle1.HeaderTextFont = new System.Drawing.Font("Segoe UI", 9.75F);
@@ -289,7 +289,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
             // namePositionTextBox
             // 
             this.namePositionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.positionBindingSource, "NamePosition", true));
-            this.namePositionTextBox.Location = new System.Drawing.Point(240, 85);
+            this.namePositionTextBox.Location = new System.Drawing.Point(240, 100);
             this.namePositionTextBox.Name = "namePositionTextBox";
             this.namePositionTextBox.Size = new System.Drawing.Size(130, 20);
             this.namePositionTextBox.TabIndex = 2;
@@ -297,7 +297,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
             // salaryTextBox
             // 
             this.salaryTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.positionBindingSource, "Salary", true));
-            this.salaryTextBox.Location = new System.Drawing.Point(240, 121);
+            this.salaryTextBox.Location = new System.Drawing.Point(240, 136);
             this.salaryTextBox.Name = "salaryTextBox";
             this.salaryTextBox.Size = new System.Drawing.Size(130, 20);
             this.salaryTextBox.TabIndex = 4;
@@ -305,7 +305,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
             // dutiesTextBox
             // 
             this.dutiesTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.positionBindingSource, "Duties", true));
-            this.dutiesTextBox.Location = new System.Drawing.Point(240, 165);
+            this.dutiesTextBox.Location = new System.Drawing.Point(240, 180);
             this.dutiesTextBox.Name = "dutiesTextBox";
             this.dutiesTextBox.Size = new System.Drawing.Size(130, 20);
             this.dutiesTextBox.TabIndex = 6;
@@ -314,7 +314,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
             // requirementsTextBox
             // 
             this.requirementsTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.positionBindingSource, "Requirements", true));
-            this.requirementsTextBox.Location = new System.Drawing.Point(240, 205);
+            this.requirementsTextBox.Location = new System.Drawing.Point(240, 220);
             this.requirementsTextBox.Name = "requirementsTextBox";
             this.requirementsTextBox.Size = new System.Drawing.Size(130, 20);
             this.requirementsTextBox.TabIndex = 8;
@@ -342,14 +342,14 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.Exit_CarBrand_Button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Exit_CarBrand_Button.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.Exit_CarBrand_Button.ForeColor = System.Drawing.Color.White;
-            this.Exit_CarBrand_Button.Location = new System.Drawing.Point(324, 349);
+            this.Exit_CarBrand_Button.Location = new System.Drawing.Point(12, 58);
             this.Exit_CarBrand_Button.Name = "Exit_CarBrand_Button";
             this.Exit_CarBrand_Button.RippleColor = System.Drawing.Color.White;
             this.Exit_CarBrand_Button.RoundingEnable = true;
-            this.Exit_CarBrand_Button.Size = new System.Drawing.Size(46, 17);
+            this.Exit_CarBrand_Button.Size = new System.Drawing.Size(48, 24);
             this.Exit_CarBrand_Button.TabIndex = 53;
-            this.Exit_CarBrand_Button.Text = "Выход";
-            this.Exit_CarBrand_Button.TextHover = "Открыть все формы";
+            this.Exit_CarBrand_Button.Text = "Назад";
+            this.Exit_CarBrand_Button.TextHover = "";
             this.Exit_CarBrand_Button.UseDownPressEffectOnClick = true;
             this.Exit_CarBrand_Button.UseRippleEffect = true;
             this.Exit_CarBrand_Button.UseZoomEffectOnHover = true;
@@ -368,14 +368,14 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.Save_CarBrand_Button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Save_CarBrand_Button.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.Save_CarBrand_Button.ForeColor = System.Drawing.Color.White;
-            this.Save_CarBrand_Button.Location = new System.Drawing.Point(142, 319);
+            this.Save_CarBrand_Button.Location = new System.Drawing.Point(142, 336);
             this.Save_CarBrand_Button.Name = "Save_CarBrand_Button";
             this.Save_CarBrand_Button.RippleColor = System.Drawing.Color.White;
             this.Save_CarBrand_Button.RoundingEnable = true;
             this.Save_CarBrand_Button.Size = new System.Drawing.Size(94, 28);
             this.Save_CarBrand_Button.TabIndex = 52;
             this.Save_CarBrand_Button.Text = "Сохранить";
-            this.Save_CarBrand_Button.TextHover = "Открыть все формы";
+            this.Save_CarBrand_Button.TextHover = "";
             this.Save_CarBrand_Button.UseDownPressEffectOnClick = true;
             this.Save_CarBrand_Button.UseRippleEffect = true;
             this.Save_CarBrand_Button.UseZoomEffectOnHover = true;
@@ -394,14 +394,14 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.Remove_CarBrand_Button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Remove_CarBrand_Button.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.Remove_CarBrand_Button.ForeColor = System.Drawing.Color.White;
-            this.Remove_CarBrand_Button.Location = new System.Drawing.Point(255, 285);
+            this.Remove_CarBrand_Button.Location = new System.Drawing.Point(255, 302);
             this.Remove_CarBrand_Button.Name = "Remove_CarBrand_Button";
             this.Remove_CarBrand_Button.RippleColor = System.Drawing.Color.White;
             this.Remove_CarBrand_Button.RoundingEnable = true;
             this.Remove_CarBrand_Button.Size = new System.Drawing.Size(94, 28);
             this.Remove_CarBrand_Button.TabIndex = 51;
             this.Remove_CarBrand_Button.Text = "Удалить";
-            this.Remove_CarBrand_Button.TextHover = "Открыть все формы";
+            this.Remove_CarBrand_Button.TextHover = "";
             this.Remove_CarBrand_Button.UseDownPressEffectOnClick = true;
             this.Remove_CarBrand_Button.UseRippleEffect = true;
             this.Remove_CarBrand_Button.UseZoomEffectOnHover = true;
@@ -420,14 +420,14 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.Next_CarBrand_Button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Next_CarBrand_Button.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.Next_CarBrand_Button.ForeColor = System.Drawing.Color.White;
-            this.Next_CarBrand_Button.Location = new System.Drawing.Point(142, 285);
+            this.Next_CarBrand_Button.Location = new System.Drawing.Point(142, 302);
             this.Next_CarBrand_Button.Name = "Next_CarBrand_Button";
             this.Next_CarBrand_Button.RippleColor = System.Drawing.Color.White;
             this.Next_CarBrand_Button.RoundingEnable = true;
             this.Next_CarBrand_Button.Size = new System.Drawing.Size(94, 28);
             this.Next_CarBrand_Button.TabIndex = 50;
             this.Next_CarBrand_Button.Text = "Следующая";
-            this.Next_CarBrand_Button.TextHover = "Открыть все формы";
+            this.Next_CarBrand_Button.TextHover = "";
             this.Next_CarBrand_Button.UseDownPressEffectOnClick = true;
             this.Next_CarBrand_Button.UseRippleEffect = true;
             this.Next_CarBrand_Button.UseZoomEffectOnHover = true;
@@ -446,14 +446,14 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.Last_CarBrand_Button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Last_CarBrand_Button.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.Last_CarBrand_Button.ForeColor = System.Drawing.Color.White;
-            this.Last_CarBrand_Button.Location = new System.Drawing.Point(31, 285);
+            this.Last_CarBrand_Button.Location = new System.Drawing.Point(31, 302);
             this.Last_CarBrand_Button.Name = "Last_CarBrand_Button";
             this.Last_CarBrand_Button.RippleColor = System.Drawing.Color.White;
             this.Last_CarBrand_Button.RoundingEnable = true;
             this.Last_CarBrand_Button.Size = new System.Drawing.Size(94, 28);
             this.Last_CarBrand_Button.TabIndex = 49;
             this.Last_CarBrand_Button.Text = "Последняя";
-            this.Last_CarBrand_Button.TextHover = "Открыть все формы";
+            this.Last_CarBrand_Button.TextHover = "";
             this.Last_CarBrand_Button.UseDownPressEffectOnClick = true;
             this.Last_CarBrand_Button.UseRippleEffect = true;
             this.Last_CarBrand_Button.UseZoomEffectOnHover = true;
@@ -472,14 +472,14 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.Add_CarBrand_Button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Add_CarBrand_Button.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.Add_CarBrand_Button.ForeColor = System.Drawing.Color.White;
-            this.Add_CarBrand_Button.Location = new System.Drawing.Point(255, 251);
+            this.Add_CarBrand_Button.Location = new System.Drawing.Point(255, 268);
             this.Add_CarBrand_Button.Name = "Add_CarBrand_Button";
             this.Add_CarBrand_Button.RippleColor = System.Drawing.Color.White;
             this.Add_CarBrand_Button.RoundingEnable = true;
             this.Add_CarBrand_Button.Size = new System.Drawing.Size(94, 28);
             this.Add_CarBrand_Button.TabIndex = 48;
             this.Add_CarBrand_Button.Text = "Добавить";
-            this.Add_CarBrand_Button.TextHover = "Открыть все формы";
+            this.Add_CarBrand_Button.TextHover = "";
             this.Add_CarBrand_Button.UseDownPressEffectOnClick = true;
             this.Add_CarBrand_Button.UseRippleEffect = true;
             this.Add_CarBrand_Button.UseZoomEffectOnHover = true;
@@ -498,14 +498,14 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.Previevs_CarBrand_Button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Previevs_CarBrand_Button.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.Previevs_CarBrand_Button.ForeColor = System.Drawing.Color.White;
-            this.Previevs_CarBrand_Button.Location = new System.Drawing.Point(142, 251);
+            this.Previevs_CarBrand_Button.Location = new System.Drawing.Point(142, 268);
             this.Previevs_CarBrand_Button.Name = "Previevs_CarBrand_Button";
             this.Previevs_CarBrand_Button.RippleColor = System.Drawing.Color.White;
             this.Previevs_CarBrand_Button.RoundingEnable = true;
             this.Previevs_CarBrand_Button.Size = new System.Drawing.Size(94, 28);
             this.Previevs_CarBrand_Button.TabIndex = 47;
             this.Previevs_CarBrand_Button.Text = "Предыдущая";
-            this.Previevs_CarBrand_Button.TextHover = "Открыть все формы";
+            this.Previevs_CarBrand_Button.TextHover = "";
             this.Previevs_CarBrand_Button.UseDownPressEffectOnClick = true;
             this.Previevs_CarBrand_Button.UseRippleEffect = true;
             this.Previevs_CarBrand_Button.UseZoomEffectOnHover = true;
@@ -524,14 +524,14 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.First_CarBrand_Button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.First_CarBrand_Button.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.First_CarBrand_Button.ForeColor = System.Drawing.Color.White;
-            this.First_CarBrand_Button.Location = new System.Drawing.Point(31, 251);
+            this.First_CarBrand_Button.Location = new System.Drawing.Point(31, 268);
             this.First_CarBrand_Button.Name = "First_CarBrand_Button";
             this.First_CarBrand_Button.RippleColor = System.Drawing.Color.White;
             this.First_CarBrand_Button.RoundingEnable = true;
             this.First_CarBrand_Button.Size = new System.Drawing.Size(94, 28);
             this.First_CarBrand_Button.TabIndex = 46;
             this.First_CarBrand_Button.Text = "Первая";
-            this.First_CarBrand_Button.TextHover = "Открыть все формы";
+            this.First_CarBrand_Button.TextHover = "";
             this.First_CarBrand_Button.UseDownPressEffectOnClick = true;
             this.First_CarBrand_Button.UseRippleEffect = true;
             this.First_CarBrand_Button.UseZoomEffectOnHover = true;
@@ -560,7 +560,9 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.Controls.Add(namePositionLabel);
             this.Controls.Add(this.namePositionTextBox);
             this.Controls.Add(this.positionBindingNavigator);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Position";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Должности";
             this.Load += new System.EventHandler(this.Position_Load);
             ((System.ComponentModel.ISupportInitialize)(this.trafficPoliceDataSet)).EndInit();

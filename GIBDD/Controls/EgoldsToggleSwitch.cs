@@ -69,7 +69,7 @@ namespace yt_DesignUI
         private int TogglePosX_OFF;
 
         private Animation ToggleAnim = new Animation();
-
+        private EgoldsGoogleTextBox egoldsGoogleTextBox1;
         private StringFormat SF = new StringFormat();
 
         #endregion
@@ -208,6 +208,37 @@ namespace yt_DesignUI
                     return sr;
                 }
             }
+        }
+
+        private void InitializeComponent()
+        {
+            this.egoldsGoogleTextBox1 = new yt_DesignUI.EgoldsGoogleTextBox();
+            this.SuspendLayout();
+            // 
+            // egoldsGoogleTextBox1
+            // 
+            this.egoldsGoogleTextBox1.BackColor = System.Drawing.Color.White;
+            this.egoldsGoogleTextBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
+            this.egoldsGoogleTextBox1.BorderColorNotActive = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(140)))), ((int)(((byte)(141)))));
+            this.egoldsGoogleTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.egoldsGoogleTextBox1.Font = new System.Drawing.Font("Arial", 11.25F);
+            this.egoldsGoogleTextBox1.FontTextPreview = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
+            this.egoldsGoogleTextBox1.ForeColor = System.Drawing.Color.Black;
+            this.egoldsGoogleTextBox1.Location = new System.Drawing.Point(0, 0);
+            this.egoldsGoogleTextBox1.Name = "egoldsGoogleTextBox1";
+            this.egoldsGoogleTextBox1.Size = new System.Drawing.Size(150, 40);
+            this.egoldsGoogleTextBox1.TabIndex = 0;
+            this.egoldsGoogleTextBox1.TextInput = "egoldsGoogleTextBox1";
+            this.egoldsGoogleTextBox1.TextPreview = "Input text";
+            this.egoldsGoogleTextBox1.UseSystemPasswordChar = false;
+            this.egoldsGoogleTextBox1.Click += new System.EventHandler(this.egoldsGoogleTextBox1_Click);
+            this.ResumeLayout(false);
+
+        }
+
+        private void egoldsGoogleTextBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
