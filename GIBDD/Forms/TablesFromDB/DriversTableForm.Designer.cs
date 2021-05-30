@@ -597,6 +597,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.Controls.Add(this.yt_Button1);
             this.Controls.Add(this.driversDataGridView);
             this.Controls.Add(this.driversBindingNavigator);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "DriversTableForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DriversTableForm";

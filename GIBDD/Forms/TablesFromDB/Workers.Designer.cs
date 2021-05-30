@@ -682,7 +682,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Workers";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Таблица сотрудники";
+            this.Text = "Таблица \"Сотрудники\"";
             this.Load += new System.EventHandler(this.Workers_Load);
             ((System.ComponentModel.ISupportInitialize)(this.trafficPoliceDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.workersBindingSource)).EndInit();
