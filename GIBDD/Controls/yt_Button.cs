@@ -293,9 +293,9 @@ namespace yt_DesignUI
 
         private void ButtonMultiRippleAction()
         {
-            Animation MultiRippleButtonAnim = new Animation("ButtonMultiRipple_" + Handle + DateTime.Now.Millisecond, Invalidate, 0, Width * 3);
-            MultiRippleButtonAnim.StepDivider = 20;
-            
+            Animation MultiRippleButtonAnim = new Animation("ButtonMultiRipple_" + Handle + DateTime.Now.Millisecond,
+                Invalidate, 0, Width * 3) {StepDivider = 20};
+
             Animator.Request(MultiRippleButtonAnim);
 
             RippleButtonAnimDic.Add(MultiRippleButtonAnim, new Rectangle());

@@ -77,7 +77,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
                 positionTableAdapter.Update(trafficPoliceDataSet);
                 MessageBox.Show("SUCCESFULL!");
             }
-            catch (Exception exception)
+            catch (Exception)
             {
                 MessageBox.Show("FAIL");
             }
@@ -87,6 +87,13 @@ namespace yt_DesignUI.Forms.TablesFromDB
         private void dutiesTextBox_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void yt_Button1_Click(object sender, EventArgs e)
+        {
+            var positionTableForm = new PositionTableForm();
+            positionTableForm.Show();
+            Close();
         }
     }
 }

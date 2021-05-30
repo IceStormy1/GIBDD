@@ -77,10 +77,17 @@ namespace yt_DesignUI.Forms.TablesFromDB
                 carsTableAdapter.Update(trafficPoliceDataSet);
                 MessageBox.Show("SUCCESFULL!");
             }
-            catch (Exception exception)
+            catch (Exception)
             {
                 MessageBox.Show("FAIL");
             }
+        }
+
+        private void yt_Button1_Click(object sender, EventArgs e)
+        {
+            var carsTable = new CarsTableForm();
+            carsTable.Show();
+            Close();
         }
     }
 }
