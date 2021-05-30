@@ -47,8 +47,12 @@ namespace yt_DesignUI
             this.AboutProgramm = new yt_DesignUI.yt_Button();
             this.egoldsFormStyle1 = new yt_DesignUI.Components.EgoldsFormStyle(this.components);
             this.roundingButtonsComponent1 = new yt_DesignUI.Components.RoundingButtonsComponent(this.components);
+            this.Cadr_FormMain_Button = new yt_DesignUI.yt_Button();
+            this.ListOfCars_FormMain_Button = new yt_DesignUI.yt_Button();
+            this.ListOfHijackings = new yt_DesignUI.yt_Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -77,7 +81,7 @@ namespace yt_DesignUI
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(507, 195);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Формы";
+            this.tabPage1.Text = "Таблицы";
             // 
             // Position_Button
             // 
@@ -264,6 +268,9 @@ namespace yt_DesignUI
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.RosyBrown;
+            this.tabPage2.Controls.Add(this.Cadr_FormMain_Button);
+            this.tabPage2.Controls.Add(this.ListOfCars_FormMain_Button);
+            this.tabPage2.Controls.Add(this.ListOfHijackings);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -383,6 +390,84 @@ namespace yt_DesignUI
             this.roundingButtonsComponent1.RoundingEnable = true;
             this.roundingButtonsComponent1.TargetForm = this;
             // 
+            // Cadr_FormMain_Button
+            // 
+            this.Cadr_FormMain_Button.BackColor = System.Drawing.Color.RoyalBlue;
+            this.Cadr_FormMain_Button.BackColorAdditional = System.Drawing.Color.Tomato;
+            this.Cadr_FormMain_Button.BackColorGradientEnabled = true;
+            this.Cadr_FormMain_Button.BackColorGradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.Cadr_FormMain_Button.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.Cadr_FormMain_Button.BorderColorEnabled = true;
+            this.Cadr_FormMain_Button.BorderColorOnHover = System.Drawing.Color.Maroon;
+            this.Cadr_FormMain_Button.BorderColorOnHoverEnabled = true;
+            this.Cadr_FormMain_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Cadr_FormMain_Button.Font = new System.Drawing.Font("Verdana", 8.25F);
+            this.Cadr_FormMain_Button.ForeColor = System.Drawing.Color.White;
+            this.Cadr_FormMain_Button.Location = new System.Drawing.Point(20, 50);
+            this.Cadr_FormMain_Button.Name = "Cadr_FormMain_Button";
+            this.Cadr_FormMain_Button.RippleColor = System.Drawing.Color.White;
+            this.Cadr_FormMain_Button.RoundingEnable = true;
+            this.Cadr_FormMain_Button.Size = new System.Drawing.Size(131, 33);
+            this.Cadr_FormMain_Button.TabIndex = 21;
+            this.Cadr_FormMain_Button.Text = "Отдел кадров";
+            this.Cadr_FormMain_Button.TextHover = "";
+            this.Cadr_FormMain_Button.UseDownPressEffectOnClick = true;
+            this.Cadr_FormMain_Button.UseRippleEffect = true;
+            this.Cadr_FormMain_Button.UseZoomEffectOnHover = true;
+            this.Cadr_FormMain_Button.Click += new System.EventHandler(this.Cadr_FormMain_Button_Click);
+            // 
+            // ListOfCars_FormMain_Button
+            // 
+            this.ListOfCars_FormMain_Button.BackColor = System.Drawing.Color.RoyalBlue;
+            this.ListOfCars_FormMain_Button.BackColorAdditional = System.Drawing.Color.Tomato;
+            this.ListOfCars_FormMain_Button.BackColorGradientEnabled = true;
+            this.ListOfCars_FormMain_Button.BackColorGradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.ListOfCars_FormMain_Button.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.ListOfCars_FormMain_Button.BorderColorEnabled = true;
+            this.ListOfCars_FormMain_Button.BorderColorOnHover = System.Drawing.Color.Maroon;
+            this.ListOfCars_FormMain_Button.BorderColorOnHoverEnabled = true;
+            this.ListOfCars_FormMain_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ListOfCars_FormMain_Button.Font = new System.Drawing.Font("Verdana", 8.25F);
+            this.ListOfCars_FormMain_Button.ForeColor = System.Drawing.Color.White;
+            this.ListOfCars_FormMain_Button.Location = new System.Drawing.Point(252, 50);
+            this.ListOfCars_FormMain_Button.Name = "ListOfCars_FormMain_Button";
+            this.ListOfCars_FormMain_Button.RippleColor = System.Drawing.Color.White;
+            this.ListOfCars_FormMain_Button.RoundingEnable = true;
+            this.ListOfCars_FormMain_Button.Size = new System.Drawing.Size(131, 33);
+            this.ListOfCars_FormMain_Button.TabIndex = 23;
+            this.ListOfCars_FormMain_Button.Text = "Список автомобилей";
+            this.ListOfCars_FormMain_Button.TextHover = "";
+            this.ListOfCars_FormMain_Button.UseDownPressEffectOnClick = true;
+            this.ListOfCars_FormMain_Button.UseRippleEffect = true;
+            this.ListOfCars_FormMain_Button.UseZoomEffectOnHover = true;
+            this.ListOfCars_FormMain_Button.Click += new System.EventHandler(this.ListOfCars_FormMain_Button_Click);
+            // 
+            // ListOfHijackings
+            // 
+            this.ListOfHijackings.BackColor = System.Drawing.Color.RoyalBlue;
+            this.ListOfHijackings.BackColorAdditional = System.Drawing.Color.Tomato;
+            this.ListOfHijackings.BackColorGradientEnabled = true;
+            this.ListOfHijackings.BackColorGradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.ListOfHijackings.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.ListOfHijackings.BorderColorEnabled = true;
+            this.ListOfHijackings.BorderColorOnHover = System.Drawing.Color.Maroon;
+            this.ListOfHijackings.BorderColorOnHoverEnabled = true;
+            this.ListOfHijackings.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ListOfHijackings.Font = new System.Drawing.Font("Verdana", 8.25F);
+            this.ListOfHijackings.ForeColor = System.Drawing.Color.White;
+            this.ListOfHijackings.Location = new System.Drawing.Point(139, 138);
+            this.ListOfHijackings.Name = "ListOfHijackings";
+            this.ListOfHijackings.RippleColor = System.Drawing.Color.White;
+            this.ListOfHijackings.RoundingEnable = true;
+            this.ListOfHijackings.Size = new System.Drawing.Size(131, 33);
+            this.ListOfHijackings.TabIndex = 22;
+            this.ListOfHijackings.Text = "Список угонов";
+            this.ListOfHijackings.TextHover = "";
+            this.ListOfHijackings.UseDownPressEffectOnClick = true;
+            this.ListOfHijackings.UseRippleEffect = true;
+            this.ListOfHijackings.UseZoomEffectOnHover = true;
+            this.ListOfHijackings.Click += new System.EventHandler(this.ListOfHijackings_Click);
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -401,6 +486,7 @@ namespace yt_DesignUI
             this.Load += new System.EventHandler(this.FormMain_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -424,5 +510,8 @@ namespace yt_DesignUI
         private yt_Button Position_Button;
         private yt_Button Workers_Button;
         private yt_Button CarBrand_Button;
+        private yt_Button Cadr_FormMain_Button;
+        private yt_Button ListOfCars_FormMain_Button;
+        private yt_Button ListOfHijackings;
     }
 }
