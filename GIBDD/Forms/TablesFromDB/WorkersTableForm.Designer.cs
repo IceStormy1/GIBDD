@@ -1,7 +1,7 @@
 ﻿
 namespace yt_DesignUI.Forms.TablesFromDB
 {
-    partial class WorkersTableForm
+    partial class Таблица
     {
         /// <summary>
         /// Required designer variable.
@@ -30,23 +30,23 @@ namespace yt_DesignUI.Forms.TablesFromDB
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WorkersTableForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Таблица));
             this.trafficPoliceDataSet = new yt_DesignUI.TrafficPoliceDataSet();
             this.workersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.workersTableAdapter = new yt_DesignUI.TrafficPoliceDataSetTableAdapters.WorkersTableAdapter();
             this.tableAdapterManager = new yt_DesignUI.TrafficPoliceDataSetTableAdapters.TableAdapterManager();
             this.workersBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.workersBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.workersDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -71,6 +71,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.TextBox_CarBrandTable = new yt_DesignUI.EgoldsGoogleTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.egoldsFormStyle1 = new yt_DesignUI.Components.EgoldsFormStyle(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.trafficPoliceDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.workersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.workersBindingNavigator)).BeginInit();
@@ -135,6 +136,31 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.workersBindingNavigator.TabIndex = 0;
             this.workersBindingNavigator.Text = "bindingNavigator1";
             // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Text = "Добавить";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(43, 22);
+            this.bindingNavigatorCountItem.Text = "для {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Text = "Удалить";
+            // 
             // bindingNavigatorMoveFirstItem
             // 
             this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -168,16 +194,9 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Текущее положение";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(43, 22);
-            this.bindingNavigatorCountItem.Text = "для {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
             this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorMoveNextItem
@@ -200,26 +219,8 @@ namespace yt_DesignUI.Forms.TablesFromDB
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Добавить";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorDeleteItem.Text = "Удалить";
             // 
             // workersBindingNavigatorSaveItem
             // 
@@ -301,7 +302,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(388, 61);
+            this.label1.Location = new System.Drawing.Point(384, 41);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(311, 20);
             this.label1.TabIndex = 64;
@@ -331,6 +332,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.yt_Button1.UseDownPressEffectOnClick = true;
             this.yt_Button1.UseRippleEffect = true;
             this.yt_Button1.UseZoomEffectOnHover = true;
+            this.yt_Button1.Click += new System.EventHandler(this.yt_Button1_Click);
             // 
             // ShowAll_CarBrandTable_Button
             // 
@@ -356,6 +358,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.ShowAll_CarBrandTable_Button.UseDownPressEffectOnClick = true;
             this.ShowAll_CarBrandTable_Button.UseRippleEffect = true;
             this.ShowAll_CarBrandTable_Button.UseZoomEffectOnHover = true;
+            this.ShowAll_CarBrandTable_Button.Click += new System.EventHandler(this.ShowAll_CarBrandTable_Button_Click);
             // 
             // Find_CarBrandTable_Button
             // 
@@ -381,6 +384,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.Find_CarBrandTable_Button.UseDownPressEffectOnClick = true;
             this.Find_CarBrandTable_Button.UseRippleEffect = true;
             this.Find_CarBrandTable_Button.UseZoomEffectOnHover = true;
+            this.Find_CarBrandTable_Button.Click += new System.EventHandler(this.Find_CarBrandTable_Button_Click);
             // 
             // Filter_CarBrandTable_Button
             // 
@@ -406,6 +410,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.Filter_CarBrandTable_Button.UseDownPressEffectOnClick = true;
             this.Filter_CarBrandTable_Button.UseRippleEffect = true;
             this.Filter_CarBrandTable_Button.UseZoomEffectOnHover = true;
+            this.Filter_CarBrandTable_Button.Click += new System.EventHandler(this.Filter_CarBrandTable_Button_Click);
             // 
             // groupBox1
             // 
@@ -445,6 +450,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.Sort_CarBrandTable_Button.UseDownPressEffectOnClick = true;
             this.Sort_CarBrandTable_Button.UseRippleEffect = true;
             this.Sort_CarBrandTable_Button.UseZoomEffectOnHover = true;
+            this.Sort_CarBrandTable_Button.Click += new System.EventHandler(this.Sort_CarBrandTable_Button_Click);
             // 
             // RadioButton_DESC
             // 
@@ -477,12 +483,11 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 15;
             this.listBox1.Items.AddRange(new object[] {
-            "DateOfHijacking",
-            "DateOfRequest",
-            "DateFind"});
+            "Age",
+            "Gender"});
             this.listBox1.Location = new System.Drawing.Point(7, 19);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(207, 64);
+            this.listBox1.Size = new System.Drawing.Size(207, 49);
             this.listBox1.TabIndex = 0;
             // 
             // comboBox1
@@ -528,11 +533,30 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.Location = new System.Drawing.Point(18, 349);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(124, 18);
+            this.label2.Size = new System.Drawing.Size(128, 18);
             this.label2.TabIndex = 73;
-            this.label2.Text = "Дата обращения";
+            this.label2.Text = "ФИО сотрудника";
             // 
-            // WorkersTableForm
+            // egoldsFormStyle1
+            // 
+            this.egoldsFormStyle1.AllowUserResize = false;
+            this.egoldsFormStyle1.BackColor = System.Drawing.Color.RosyBrown;
+            this.egoldsFormStyle1.ContextMenuForm = null;
+            this.egoldsFormStyle1.ControlBoxButtonsWidth = 30;
+            this.egoldsFormStyle1.EnableControlBoxIconsLight = false;
+            this.egoldsFormStyle1.EnableControlBoxMouseLight = false;
+            this.egoldsFormStyle1.Form = this;
+            this.egoldsFormStyle1.FormStyle = yt_DesignUI.Components.EgoldsFormStyle.fStyle.UserStyle;
+            this.egoldsFormStyle1.HeaderColor = System.Drawing.Color.RoyalBlue;
+            this.egoldsFormStyle1.HeaderColorAdditional = System.Drawing.Color.Tomato;
+            this.egoldsFormStyle1.HeaderColorGradientEnable = true;
+            this.egoldsFormStyle1.HeaderColorGradientMode = System.Drawing.Drawing2D.LinearGradientMode.Horizontal;
+            this.egoldsFormStyle1.HeaderHeight = 10;
+            this.egoldsFormStyle1.HeaderImage = null;
+            this.egoldsFormStyle1.HeaderTextColor = System.Drawing.Color.White;
+            this.egoldsFormStyle1.HeaderTextFont = new System.Drawing.Font("Segoe UI", 9.75F);
+            // 
+            // Таблица
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -549,8 +573,10 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.Controls.Add(this.yt_Button1);
             this.Controls.Add(this.workersDataGridView);
             this.Controls.Add(this.workersBindingNavigator);
-            this.Name = "WorkersTableForm";
-            this.Text = "WorkersTableForm";
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "Таблица";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Таблица \"Сотрудники\" (Табличный вид)";
             this.Load += new System.EventHandler(this.WorkersTableForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.trafficPoliceDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.workersBindingSource)).EndInit();
@@ -607,5 +633,6 @@ namespace yt_DesignUI.Forms.TablesFromDB
         private EgoldsGoogleTextBox TextBox_CarBrandTable;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
+        private Components.EgoldsFormStyle egoldsFormStyle1;
     }
 }

@@ -244,7 +244,6 @@ namespace yt_DesignUI.Forms.TablesFromDB
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Положение";
             this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem.Text = "0";
@@ -590,7 +589,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Ranks";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Звания";
+            this.Text = "Таблица \"Звания\"";
             this.Load += new System.EventHandler(this.Ranks_Load);
             ((System.ComponentModel.ISupportInitialize)(this.trafficPoliceDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ranksBindingSource)).EndInit();
