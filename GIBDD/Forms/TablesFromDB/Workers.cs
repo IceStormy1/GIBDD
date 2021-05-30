@@ -85,7 +85,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
 
         private void yt_Button1_Click(object sender, EventArgs e)
         {
-            var workersTableForm = new WorkersTableForm();
+            var workersTableForm = new Таблица();
             workersTableForm.Show();
             Close();
         }
