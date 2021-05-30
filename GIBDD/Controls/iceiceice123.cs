@@ -121,13 +121,15 @@ namespace yt_DesignUI.Controls
 
         private void AdjustTextBoxInput()
         {
-            tbInput = new TextBox();
-            tbInput.Name = "InputBox";
-            tbInput.BorderStyle = BorderStyle.None;
-            tbInput.BackColor = BackColor;
-            tbInput.ForeColor = ForeColor;
-            tbInput.Font = Font;
-            tbInput.Visible = false;
+            tbInput = new TextBox
+            {
+                Name = "InputBox",
+                BorderStyle = BorderStyle.None,
+                BackColor = BackColor,
+                ForeColor = ForeColor,
+                Font = Font,
+                Visible = false
+            };
 
             int offset = TextRenderer.MeasureText(TextPreview, FontTextPreview).Height / 2;
             tbInput.Location = new Point(5, Height / 2 - offset);

@@ -74,6 +74,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.Add_CarBrand_Button = new yt_DesignUI.yt_Button();
             this.Previevs_CarBrand_Button = new yt_DesignUI.yt_Button();
             this.First_CarBrand_Button = new yt_DesignUI.yt_Button();
+            this.yt_Button1 = new yt_DesignUI.yt_Button();
             fIOLabel = new System.Windows.Forms.Label();
             ageLabel = new System.Windows.Forms.Label();
             genderLabel = new System.Windows.Forms.Label();
@@ -620,11 +621,38 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.First_CarBrand_Button.UseZoomEffectOnHover = true;
             this.First_CarBrand_Button.Click += new System.EventHandler(this.First_CarBrand_Button_Click);
             // 
+            // yt_Button1
+            // 
+            this.yt_Button1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.yt_Button1.BackColorAdditional = System.Drawing.Color.Tomato;
+            this.yt_Button1.BackColorGradientEnabled = true;
+            this.yt_Button1.BackColorGradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.yt_Button1.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.yt_Button1.BorderColorEnabled = true;
+            this.yt_Button1.BorderColorOnHover = System.Drawing.Color.Maroon;
+            this.yt_Button1.BorderColorOnHoverEnabled = true;
+            this.yt_Button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.yt_Button1.Font = new System.Drawing.Font("Verdana", 8.25F);
+            this.yt_Button1.ForeColor = System.Drawing.Color.White;
+            this.yt_Button1.Location = new System.Drawing.Point(286, 59);
+            this.yt_Button1.Name = "yt_Button1";
+            this.yt_Button1.RippleColor = System.Drawing.Color.White;
+            this.yt_Button1.RoundingEnable = false;
+            this.yt_Button1.Size = new System.Drawing.Size(106, 28);
+            this.yt_Button1.TabIndex = 78;
+            this.yt_Button1.Text = "Табличный вид";
+            this.yt_Button1.TextHover = "";
+            this.yt_Button1.UseDownPressEffectOnClick = true;
+            this.yt_Button1.UseRippleEffect = true;
+            this.yt_Button1.UseZoomEffectOnHover = true;
+            this.yt_Button1.Click += new System.EventHandler(this.yt_Button1_Click);
+            // 
             // Workers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(404, 484);
+            this.Controls.Add(this.yt_Button1);
             this.Controls.Add(this.Exit_CarBrand_Button);
             this.Controls.Add(this.Save_CarBrand_Button);
             this.Controls.Add(this.Remove_CarBrand_Button);
@@ -703,5 +731,6 @@ namespace yt_DesignUI.Forms.TablesFromDB
         private yt_Button Add_CarBrand_Button;
         private yt_Button Previevs_CarBrand_Button;
         private yt_Button First_CarBrand_Button;
+        private yt_Button yt_Button1;
     }
 }
