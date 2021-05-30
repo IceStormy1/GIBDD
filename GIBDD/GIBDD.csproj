@@ -108,6 +108,24 @@
     <Compile Include="Forms\Forms\Otchet.Designer.cs">
       <DependentUpon>Otchet.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Requests\Cadri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Requests\Cadri.Designer.cs">
+      <DependentUpon>Cadri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Requests\ListOfCars.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Requests\ListOfCars.Designer.cs">
+      <DependentUpon>ListOfCars.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Requests\ListOfHijackings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Requests\ListOfHijackings.Designer.cs">
+      <DependentUpon>ListOfHijackings.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\TablesFromDB\CarBrand.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -228,6 +246,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Forms\Otchet.resx">
       <DependentUpon>Otchet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Requests\Cadri.resx">
+      <DependentUpon>Cadri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Requests\ListOfCars.resx">
+      <DependentUpon>ListOfCars.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\TablesFromDB\CarBrand.resx">
       <DependentUpon>CarBrand.cs</DependentUpon>

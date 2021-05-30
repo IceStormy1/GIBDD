@@ -49,9 +49,15 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.carBrandBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.carBrandDataGridView = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.egoldsFormStyle1 = new yt_DesignUI.Components.EgoldsFormStyle(this.components);
-            this.yt_Button1 = new yt_DesignUI.yt_Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.Sort_CarBrandTable_Button = new yt_DesignUI.yt_Button();
             this.RadioButton_DESC = new yt_DesignUI.EgoldsRadioButton();
@@ -64,14 +70,8 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.label3 = new System.Windows.Forms.Label();
             this.TextBox_CarBrandTable = new yt_DesignUI.EgoldsGoogleTextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
+            this.yt_Button1 = new yt_DesignUI.yt_Button();
             ((System.ComponentModel.ISupportInitialize)(this.trafficPoliceDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.carBrandBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.carBrandBindingNavigator)).BeginInit();
@@ -251,15 +251,53 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.carBrandDataGridView.TabIndex = 1;
             this.carBrandDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.carBrandDataGridView_CellContentClick);
             // 
-            // label1
+            // dataGridViewTextBoxColumn2
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(298, 40);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(374, 20);
-            this.label1.TabIndex = 23;
-            this.label1.Text = "Таблица \"Марки автомобилей\" (Табличный вид)";
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "BrandName";
+            this.dataGridViewTextBoxColumn2.HeaderText = "BrandName";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "CompanyName";
+            this.dataGridViewTextBoxColumn3.HeaderText = "CompanyName";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Country";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Country";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "ProductionDateStart";
+            this.dataGridViewTextBoxColumn5.HeaderText = "ProductionDateStart";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "ProductionDateEnd";
+            this.dataGridViewTextBoxColumn6.HeaderText = "ProductionDateEnd";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "Characteristic";
+            this.dataGridViewTextBoxColumn7.HeaderText = "Characteristic";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "Category";
+            this.dataGridViewTextBoxColumn8.HeaderText = "Category";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.DataPropertyName = "description";
+            this.dataGridViewTextBoxColumn9.HeaderText = "description";
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
             // 
             // egoldsFormStyle1
             // 
@@ -279,32 +317,6 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.egoldsFormStyle1.HeaderImage = null;
             this.egoldsFormStyle1.HeaderTextColor = System.Drawing.Color.White;
             this.egoldsFormStyle1.HeaderTextFont = new System.Drawing.Font("Segoe UI", 9.75F);
-            // 
-            // yt_Button1
-            // 
-            this.yt_Button1.BackColor = System.Drawing.Color.RoyalBlue;
-            this.yt_Button1.BackColorAdditional = System.Drawing.Color.Tomato;
-            this.yt_Button1.BackColorGradientEnabled = true;
-            this.yt_Button1.BackColorGradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
-            this.yt_Button1.BorderColor = System.Drawing.Color.RoyalBlue;
-            this.yt_Button1.BorderColorEnabled = true;
-            this.yt_Button1.BorderColorOnHover = System.Drawing.Color.Maroon;
-            this.yt_Button1.BorderColorOnHoverEnabled = true;
-            this.yt_Button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.yt_Button1.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.yt_Button1.ForeColor = System.Drawing.Color.White;
-            this.yt_Button1.Location = new System.Drawing.Point(12, 40);
-            this.yt_Button1.Name = "yt_Button1";
-            this.yt_Button1.RippleColor = System.Drawing.Color.White;
-            this.yt_Button1.RoundingEnable = false;
-            this.yt_Button1.Size = new System.Drawing.Size(106, 28);
-            this.yt_Button1.TabIndex = 31;
-            this.yt_Button1.Text = "Ленточный вид";
-            this.yt_Button1.TextHover = "";
-            this.yt_Button1.UseDownPressEffectOnClick = true;
-            this.yt_Button1.UseRippleEffect = true;
-            this.yt_Button1.UseZoomEffectOnHover = true;
-            this.yt_Button1.Click += new System.EventHandler(this.yt_Button1_Click);
             // 
             // groupBox1
             // 
@@ -514,53 +526,41 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.comboBox1.Size = new System.Drawing.Size(150, 21);
             this.comboBox1.TabIndex = 40;
             // 
-            // dataGridViewTextBoxColumn2
+            // label1
             // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "BrandName";
-            this.dataGridViewTextBoxColumn2.HeaderText = "BrandName";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(298, 40);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(374, 20);
+            this.label1.TabIndex = 23;
+            this.label1.Text = "Таблица \"Марки автомобилей\" (Табличный вид)";
             // 
-            // dataGridViewTextBoxColumn3
+            // yt_Button1
             // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "CompanyName";
-            this.dataGridViewTextBoxColumn3.HeaderText = "CompanyName";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Country";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Country";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "ProductionDateStart";
-            this.dataGridViewTextBoxColumn5.HeaderText = "ProductionDateStart";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "ProductionDateEnd";
-            this.dataGridViewTextBoxColumn6.HeaderText = "ProductionDateEnd";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "Characteristic";
-            this.dataGridViewTextBoxColumn7.HeaderText = "Characteristic";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "Category";
-            this.dataGridViewTextBoxColumn8.HeaderText = "Category";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            // 
-            // dataGridViewTextBoxColumn9
-            // 
-            this.dataGridViewTextBoxColumn9.DataPropertyName = "description";
-            this.dataGridViewTextBoxColumn9.HeaderText = "description";
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            this.yt_Button1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.yt_Button1.BackColorAdditional = System.Drawing.Color.Tomato;
+            this.yt_Button1.BackColorGradientEnabled = true;
+            this.yt_Button1.BackColorGradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.yt_Button1.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.yt_Button1.BorderColorEnabled = true;
+            this.yt_Button1.BorderColorOnHover = System.Drawing.Color.Maroon;
+            this.yt_Button1.BorderColorOnHoverEnabled = true;
+            this.yt_Button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.yt_Button1.Font = new System.Drawing.Font("Verdana", 8.25F);
+            this.yt_Button1.ForeColor = System.Drawing.Color.White;
+            this.yt_Button1.Location = new System.Drawing.Point(12, 40);
+            this.yt_Button1.Name = "yt_Button1";
+            this.yt_Button1.RippleColor = System.Drawing.Color.White;
+            this.yt_Button1.RoundingEnable = false;
+            this.yt_Button1.Size = new System.Drawing.Size(106, 28);
+            this.yt_Button1.TabIndex = 31;
+            this.yt_Button1.Text = "Ленточный вид";
+            this.yt_Button1.TextHover = "";
+            this.yt_Button1.UseDownPressEffectOnClick = true;
+            this.yt_Button1.UseRippleEffect = true;
+            this.yt_Button1.UseZoomEffectOnHover = true;
+            this.yt_Button1.Click += new System.EventHandler(this.yt_Button1_Click);
             // 
             // CarBrandTableForm
             // 
@@ -617,9 +617,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripButton carBrandBindingNavigatorSaveItem;
         private System.Windows.Forms.DataGridView carBrandDataGridView;
-        private System.Windows.Forms.Label label1;
         private Components.EgoldsFormStyle egoldsFormStyle1;
-        private yt_Button yt_Button1;
         private System.Windows.Forms.GroupBox groupBox1;
         private EgoldsRadioButton RadioButton_DESC;
         private EgoldsRadioButton RadioButton_ASC;
@@ -640,5 +638,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
         private System.Windows.Forms.ComboBox comboBox1;
+        private yt_Button yt_Button1;
+        private System.Windows.Forms.Label label1;
     }
 }
