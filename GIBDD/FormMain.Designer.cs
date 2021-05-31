@@ -390,6 +390,7 @@ namespace yt_DesignUI
             this.yt_Button1.UseDownPressEffectOnClick = true;
             this.yt_Button1.UseRippleEffect = true;
             this.yt_Button1.UseZoomEffectOnHover = true;
+            this.yt_Button1.Click += new System.EventHandler(this.yt_Button1_Click_1);
             // 
             // yt_Button4
             // 

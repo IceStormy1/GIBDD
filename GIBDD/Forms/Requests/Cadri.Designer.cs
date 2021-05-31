@@ -80,6 +80,7 @@ namespace yt_DesignUI.Forms.Requests
             this.RadioButton_DESC = new yt_DesignUI.EgoldsRadioButton();
             this.RadioButton_ASC = new yt_DesignUI.EgoldsRadioButton();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.yt_Button1 = new yt_DesignUI.yt_Button();
             ((System.ComponentModel.ISupportInitialize)(this.trafficPoliceDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.отдел_кадровBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.отдел_кадровBindingNavigator)).BeginInit();
@@ -623,11 +624,38 @@ namespace yt_DesignUI.Forms.Requests
             this.listBox1.Size = new System.Drawing.Size(207, 124);
             this.listBox1.TabIndex = 0;
             // 
+            // yt_Button1
+            // 
+            this.yt_Button1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.yt_Button1.BackColorAdditional = System.Drawing.Color.Tomato;
+            this.yt_Button1.BackColorGradientEnabled = true;
+            this.yt_Button1.BackColorGradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.yt_Button1.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.yt_Button1.BorderColorEnabled = true;
+            this.yt_Button1.BorderColorOnHover = System.Drawing.Color.White;
+            this.yt_Button1.BorderColorOnHoverEnabled = true;
+            this.yt_Button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.yt_Button1.Font = new System.Drawing.Font("Verdana", 8.25F);
+            this.yt_Button1.ForeColor = System.Drawing.Color.White;
+            this.yt_Button1.Location = new System.Drawing.Point(1221, 419);
+            this.yt_Button1.Name = "yt_Button1";
+            this.yt_Button1.RippleColor = System.Drawing.Color.White;
+            this.yt_Button1.RoundingEnable = true;
+            this.yt_Button1.Size = new System.Drawing.Size(145, 33);
+            this.yt_Button1.TabIndex = 49;
+            this.yt_Button1.Text = "Открыть гистограмму";
+            this.yt_Button1.TextHover = "";
+            this.yt_Button1.UseDownPressEffectOnClick = true;
+            this.yt_Button1.UseRippleEffect = true;
+            this.yt_Button1.UseZoomEffectOnHover = true;
+            this.yt_Button1.Click += new System.EventHandler(this.yt_Button1_Click);
+            // 
             // Cadri
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1387, 464);
+            this.Controls.Add(this.yt_Button1);
             this.Controls.Add(this.ShowAll_CarBrandTable_Button);
             this.Controls.Add(this.Find_CarBrandTable_Button);
             this.Controls.Add(this.Filter_CarBrandTable_Button);
@@ -709,5 +737,6 @@ namespace yt_DesignUI.Forms.Requests
         private EgoldsRadioButton RadioButton_DESC;
         private EgoldsRadioButton RadioButton_ASC;
         private System.Windows.Forms.ListBox listBox1;
+        private yt_Button yt_Button1;
     }
 }
