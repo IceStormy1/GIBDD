@@ -86,7 +86,7 @@ namespace yt_DesignUI
             this.AboutProgramm_button_exit.BackColorGradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
             this.AboutProgramm_button_exit.BorderColor = System.Drawing.Color.RoyalBlue;
             this.AboutProgramm_button_exit.BorderColorEnabled = true;
-            this.AboutProgramm_button_exit.BorderColorOnHover = System.Drawing.Color.Maroon;
+            this.AboutProgramm_button_exit.BorderColorOnHover = System.Drawing.Color.White;
             this.AboutProgramm_button_exit.BorderColorOnHoverEnabled = true;
             this.AboutProgramm_button_exit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.AboutProgramm_button_exit.Font = new System.Drawing.Font("Verdana", 8.25F);

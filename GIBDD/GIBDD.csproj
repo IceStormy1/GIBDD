@@ -253,6 +253,9 @@
     <EmbeddedResource Include="Forms\Requests\ListOfCars.resx">
       <DependentUpon>ListOfCars.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Requests\ListOfHijackings.resx">
+      <DependentUpon>ListOfHijackings.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\TablesFromDB\CarBrand.resx">
       <DependentUpon>CarBrand.cs</DependentUpon>
     </EmbeddedResource>

@@ -184,6 +184,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Положение";
             this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem.Text = "0";
@@ -236,7 +237,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn5});
             this.positionDataGridView.DataSource = this.positionBindingSource;
-            this.positionDataGridView.Location = new System.Drawing.Point(12, 77);
+            this.positionDataGridView.Location = new System.Drawing.Point(12, 96);
             this.positionDataGridView.Name = "positionDataGridView";
             this.positionDataGridView.Size = new System.Drawing.Size(449, 148);
             this.positionDataGridView.TabIndex = 1;
@@ -273,12 +274,12 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.ShowAll_CarBrandTable_Button.BackColorGradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
             this.ShowAll_CarBrandTable_Button.BorderColor = System.Drawing.Color.RoyalBlue;
             this.ShowAll_CarBrandTable_Button.BorderColorEnabled = true;
-            this.ShowAll_CarBrandTable_Button.BorderColorOnHover = System.Drawing.Color.Maroon;
+            this.ShowAll_CarBrandTable_Button.BorderColorOnHover = System.Drawing.Color.White;
             this.ShowAll_CarBrandTable_Button.BorderColorOnHoverEnabled = true;
             this.ShowAll_CarBrandTable_Button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ShowAll_CarBrandTable_Button.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.ShowAll_CarBrandTable_Button.ForeColor = System.Drawing.Color.White;
-            this.ShowAll_CarBrandTable_Button.Location = new System.Drawing.Point(605, 316);
+            this.ShowAll_CarBrandTable_Button.Location = new System.Drawing.Point(492, 308);
             this.ShowAll_CarBrandTable_Button.Name = "ShowAll_CarBrandTable_Button";
             this.ShowAll_CarBrandTable_Button.RippleColor = System.Drawing.Color.White;
             this.ShowAll_CarBrandTable_Button.RoundingEnable = true;
@@ -299,12 +300,12 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.Find_CarBrandTable_Button.BackColorGradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
             this.Find_CarBrandTable_Button.BorderColor = System.Drawing.Color.RoyalBlue;
             this.Find_CarBrandTable_Button.BorderColorEnabled = true;
-            this.Find_CarBrandTable_Button.BorderColorOnHover = System.Drawing.Color.Maroon;
+            this.Find_CarBrandTable_Button.BorderColorOnHover = System.Drawing.Color.White;
             this.Find_CarBrandTable_Button.BorderColorOnHoverEnabled = true;
             this.Find_CarBrandTable_Button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Find_CarBrandTable_Button.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.Find_CarBrandTable_Button.ForeColor = System.Drawing.Color.White;
-            this.Find_CarBrandTable_Button.Location = new System.Drawing.Point(553, 364);
+            this.Find_CarBrandTable_Button.Location = new System.Drawing.Point(368, 354);
             this.Find_CarBrandTable_Button.Name = "Find_CarBrandTable_Button";
             this.Find_CarBrandTable_Button.RippleColor = System.Drawing.Color.White;
             this.Find_CarBrandTable_Button.RoundingEnable = true;
@@ -325,12 +326,12 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.Filter_CarBrandTable_Button.BackColorGradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
             this.Filter_CarBrandTable_Button.BorderColor = System.Drawing.Color.RoyalBlue;
             this.Filter_CarBrandTable_Button.BorderColorEnabled = true;
-            this.Filter_CarBrandTable_Button.BorderColorOnHover = System.Drawing.Color.Maroon;
+            this.Filter_CarBrandTable_Button.BorderColorOnHover = System.Drawing.Color.White;
             this.Filter_CarBrandTable_Button.BorderColorOnHoverEnabled = true;
             this.Filter_CarBrandTable_Button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Filter_CarBrandTable_Button.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.Filter_CarBrandTable_Button.ForeColor = System.Drawing.Color.White;
-            this.Filter_CarBrandTable_Button.Location = new System.Drawing.Point(481, 316);
+            this.Filter_CarBrandTable_Button.Location = new System.Drawing.Point(367, 308);
             this.Filter_CarBrandTable_Button.Name = "Filter_CarBrandTable_Button";
             this.Filter_CarBrandTable_Button.RippleColor = System.Drawing.Color.White;
             this.Filter_CarBrandTable_Button.RoundingEnable = true;
@@ -365,7 +366,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.Sort_CarBrandTable_Button.BackColorGradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
             this.Sort_CarBrandTable_Button.BorderColor = System.Drawing.Color.RoyalBlue;
             this.Sort_CarBrandTable_Button.BorderColorEnabled = true;
-            this.Sort_CarBrandTable_Button.BorderColorOnHover = System.Drawing.Color.Maroon;
+            this.Sort_CarBrandTable_Button.BorderColorOnHover = System.Drawing.Color.White;
             this.Sort_CarBrandTable_Button.BorderColorOnHoverEnabled = true;
             this.Sort_CarBrandTable_Button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Sort_CarBrandTable_Button.Font = new System.Drawing.Font("Verdana", 8.25F);
@@ -428,7 +429,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.comboBox1.DataSource = this.positionBindingSource;
             this.comboBox1.DisplayMember = "NamePosition";
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(196, 266);
+            this.comboBox1.Location = new System.Drawing.Point(194, 315);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(150, 21);
             this.comboBox1.TabIndex = 56;
@@ -442,7 +443,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.TextBox_CarBrandTable.Font = new System.Drawing.Font("Arial", 11.25F);
             this.TextBox_CarBrandTable.FontTextPreview = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
             this.TextBox_CarBrandTable.ForeColor = System.Drawing.Color.Black;
-            this.TextBox_CarBrandTable.Location = new System.Drawing.Point(196, 293);
+            this.TextBox_CarBrandTable.Location = new System.Drawing.Point(194, 342);
             this.TextBox_CarBrandTable.Name = "TextBox_CarBrandTable";
             this.TextBox_CarBrandTable.Size = new System.Drawing.Size(150, 40);
             this.TextBox_CarBrandTable.TabIndex = 55;
@@ -454,7 +455,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(16, 305);
+            this.label3.Location = new System.Drawing.Point(14, 354);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(73, 18);
             this.label3.TabIndex = 54;
@@ -464,7 +465,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(16, 265);
+            this.label2.Location = new System.Drawing.Point(14, 314);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(157, 18);
             this.label2.TabIndex = 53;
@@ -478,7 +479,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.yt_Button1.BackColorGradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
             this.yt_Button1.BorderColor = System.Drawing.Color.RoyalBlue;
             this.yt_Button1.BorderColorEnabled = true;
-            this.yt_Button1.BorderColorOnHover = System.Drawing.Color.Maroon;
+            this.yt_Button1.BorderColorOnHover = System.Drawing.Color.White;
             this.yt_Button1.BorderColorOnHoverEnabled = true;
             this.yt_Button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.yt_Button1.Font = new System.Drawing.Font("Verdana", 8.25F);
@@ -500,7 +501,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(247, 43);
+            this.label1.Location = new System.Drawing.Point(250, 34);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(306, 20);
             this.label1.TabIndex = 58;
