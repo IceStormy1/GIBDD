@@ -82,5 +82,12 @@ namespace yt_DesignUI.Forms.Requests
                 }
             }
         }
+
+        private void Exit_CarBrand_Button_Click(object sender, EventArgs e)
+        {
+            var formMain = new FormMain();
+            formMain.Show();
+            Close();
+        }
     }
 }

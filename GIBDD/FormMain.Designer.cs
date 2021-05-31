@@ -41,15 +41,15 @@ namespace yt_DesignUI
             this.Workers_Button = new yt_DesignUI.yt_Button();
             this.StolenCar_Button = new yt_DesignUI.yt_Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.Cadr_FormMain_Button = new yt_DesignUI.yt_Button();
+            this.ListOfCars_FormMain_Button = new yt_DesignUI.yt_Button();
+            this.ListOfHijackings = new yt_DesignUI.yt_Button();
             this.label1 = new System.Windows.Forms.Label();
             this.yt_Button1 = new yt_DesignUI.yt_Button();
             this.yt_Button4 = new yt_DesignUI.yt_Button();
             this.AboutProgramm = new yt_DesignUI.yt_Button();
             this.egoldsFormStyle1 = new yt_DesignUI.Components.EgoldsFormStyle(this.components);
             this.roundingButtonsComponent1 = new yt_DesignUI.Components.RoundingButtonsComponent(this.components);
-            this.Cadr_FormMain_Button = new yt_DesignUI.yt_Button();
-            this.ListOfCars_FormMain_Button = new yt_DesignUI.yt_Button();
-            this.ListOfHijackings = new yt_DesignUI.yt_Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -91,14 +91,14 @@ namespace yt_DesignUI
             this.Position_Button.BackColorGradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
             this.Position_Button.BorderColor = System.Drawing.Color.RoyalBlue;
             this.Position_Button.BorderColorEnabled = true;
-            this.Position_Button.BorderColorOnHover = System.Drawing.Color.Maroon;
+            this.Position_Button.BorderColorOnHover = System.Drawing.Color.White;
             this.Position_Button.BorderColorOnHoverEnabled = true;
             this.Position_Button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Position_Button.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.Position_Button.ForeColor = System.Drawing.Color.White;
             this.Position_Button.Location = new System.Drawing.Point(234, 147);
             this.Position_Button.Name = "Position_Button";
-            this.Position_Button.RippleColor = System.Drawing.Color.White;
+            this.Position_Button.RippleColor = System.Drawing.Color.Black;
             this.Position_Button.RoundingEnable = true;
             this.Position_Button.Size = new System.Drawing.Size(131, 33);
             this.Position_Button.TabIndex = 16;
@@ -117,14 +117,14 @@ namespace yt_DesignUI
             this.CarBrand_Button.BackColorGradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
             this.CarBrand_Button.BorderColor = System.Drawing.Color.RoyalBlue;
             this.CarBrand_Button.BorderColorEnabled = true;
-            this.CarBrand_Button.BorderColorOnHover = System.Drawing.Color.Maroon;
+            this.CarBrand_Button.BorderColorOnHover = System.Drawing.Color.White;
             this.CarBrand_Button.BorderColorOnHoverEnabled = true;
             this.CarBrand_Button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CarBrand_Button.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.CarBrand_Button.ForeColor = System.Drawing.Color.White;
             this.CarBrand_Button.Location = new System.Drawing.Point(47, 6);
             this.CarBrand_Button.Name = "CarBrand_Button";
-            this.CarBrand_Button.RippleColor = System.Drawing.Color.White;
+            this.CarBrand_Button.RippleColor = System.Drawing.Color.Black;
             this.CarBrand_Button.RoundingEnable = true;
             this.CarBrand_Button.Size = new System.Drawing.Size(131, 33);
             this.CarBrand_Button.TabIndex = 14;
@@ -143,14 +143,14 @@ namespace yt_DesignUI
             this.Ranks_Button.BackColorGradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
             this.Ranks_Button.BorderColor = System.Drawing.Color.RoyalBlue;
             this.Ranks_Button.BorderColorEnabled = true;
-            this.Ranks_Button.BorderColorOnHover = System.Drawing.Color.Maroon;
+            this.Ranks_Button.BorderColorOnHover = System.Drawing.Color.White;
             this.Ranks_Button.BorderColorOnHoverEnabled = true;
             this.Ranks_Button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Ranks_Button.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.Ranks_Button.ForeColor = System.Drawing.Color.White;
             this.Ranks_Button.Location = new System.Drawing.Point(234, 99);
             this.Ranks_Button.Name = "Ranks_Button";
-            this.Ranks_Button.RippleColor = System.Drawing.Color.White;
+            this.Ranks_Button.RippleColor = System.Drawing.Color.Black;
             this.Ranks_Button.RoundingEnable = true;
             this.Ranks_Button.Size = new System.Drawing.Size(131, 33);
             this.Ranks_Button.TabIndex = 18;
@@ -169,14 +169,14 @@ namespace yt_DesignUI
             this.Drivers_Button.BackColorGradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
             this.Drivers_Button.BorderColor = System.Drawing.Color.RoyalBlue;
             this.Drivers_Button.BorderColorEnabled = true;
-            this.Drivers_Button.BorderColorOnHover = System.Drawing.Color.Maroon;
+            this.Drivers_Button.BorderColorOnHover = System.Drawing.Color.White;
             this.Drivers_Button.BorderColorOnHoverEnabled = true;
             this.Drivers_Button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Drivers_Button.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.Drivers_Button.ForeColor = System.Drawing.Color.White;
             this.Drivers_Button.Location = new System.Drawing.Point(234, 6);
             this.Drivers_Button.Name = "Drivers_Button";
-            this.Drivers_Button.RippleColor = System.Drawing.Color.White;
+            this.Drivers_Button.RippleColor = System.Drawing.Color.Black;
             this.Drivers_Button.RoundingEnable = true;
             this.Drivers_Button.Size = new System.Drawing.Size(131, 33);
             this.Drivers_Button.TabIndex = 19;
@@ -195,14 +195,14 @@ namespace yt_DesignUI
             this.Cars_Button.BackColorGradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
             this.Cars_Button.BorderColor = System.Drawing.Color.RoyalBlue;
             this.Cars_Button.BorderColorEnabled = true;
-            this.Cars_Button.BorderColorOnHover = System.Drawing.Color.Maroon;
+            this.Cars_Button.BorderColorOnHover = System.Drawing.Color.White;
             this.Cars_Button.BorderColorOnHoverEnabled = true;
             this.Cars_Button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Cars_Button.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.Cars_Button.ForeColor = System.Drawing.Color.White;
             this.Cars_Button.Location = new System.Drawing.Point(47, 60);
             this.Cars_Button.Name = "Cars_Button";
-            this.Cars_Button.RippleColor = System.Drawing.Color.White;
+            this.Cars_Button.RippleColor = System.Drawing.Color.Black;
             this.Cars_Button.RoundingEnable = true;
             this.Cars_Button.Size = new System.Drawing.Size(131, 33);
             this.Cars_Button.TabIndex = 20;
@@ -221,14 +221,14 @@ namespace yt_DesignUI
             this.Workers_Button.BackColorGradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
             this.Workers_Button.BorderColor = System.Drawing.Color.RoyalBlue;
             this.Workers_Button.BorderColorEnabled = true;
-            this.Workers_Button.BorderColorOnHover = System.Drawing.Color.Maroon;
+            this.Workers_Button.BorderColorOnHover = System.Drawing.Color.White;
             this.Workers_Button.BorderColorOnHoverEnabled = true;
             this.Workers_Button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Workers_Button.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.Workers_Button.ForeColor = System.Drawing.Color.White;
             this.Workers_Button.Location = new System.Drawing.Point(234, 51);
             this.Workers_Button.Name = "Workers_Button";
-            this.Workers_Button.RippleColor = System.Drawing.Color.White;
+            this.Workers_Button.RippleColor = System.Drawing.Color.Black;
             this.Workers_Button.RoundingEnable = true;
             this.Workers_Button.Size = new System.Drawing.Size(131, 33);
             this.Workers_Button.TabIndex = 15;
@@ -247,14 +247,14 @@ namespace yt_DesignUI
             this.StolenCar_Button.BackColorGradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
             this.StolenCar_Button.BorderColor = System.Drawing.Color.RoyalBlue;
             this.StolenCar_Button.BorderColorEnabled = true;
-            this.StolenCar_Button.BorderColorOnHover = System.Drawing.Color.Maroon;
+            this.StolenCar_Button.BorderColorOnHover = System.Drawing.Color.White;
             this.StolenCar_Button.BorderColorOnHoverEnabled = true;
             this.StolenCar_Button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.StolenCar_Button.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.StolenCar_Button.ForeColor = System.Drawing.Color.White;
             this.StolenCar_Button.Location = new System.Drawing.Point(47, 117);
             this.StolenCar_Button.Name = "StolenCar_Button";
-            this.StolenCar_Button.RippleColor = System.Drawing.Color.White;
+            this.StolenCar_Button.RippleColor = System.Drawing.Color.Black;
             this.StolenCar_Button.RoundingEnable = true;
             this.StolenCar_Button.Size = new System.Drawing.Size(131, 33);
             this.StolenCar_Button.TabIndex = 17;
@@ -278,6 +278,84 @@ namespace yt_DesignUI
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Запросы";
             // 
+            // Cadr_FormMain_Button
+            // 
+            this.Cadr_FormMain_Button.BackColor = System.Drawing.Color.RoyalBlue;
+            this.Cadr_FormMain_Button.BackColorAdditional = System.Drawing.Color.Tomato;
+            this.Cadr_FormMain_Button.BackColorGradientEnabled = true;
+            this.Cadr_FormMain_Button.BackColorGradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.Cadr_FormMain_Button.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.Cadr_FormMain_Button.BorderColorEnabled = true;
+            this.Cadr_FormMain_Button.BorderColorOnHover = System.Drawing.Color.White;
+            this.Cadr_FormMain_Button.BorderColorOnHoverEnabled = true;
+            this.Cadr_FormMain_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Cadr_FormMain_Button.Font = new System.Drawing.Font("Verdana", 8.25F);
+            this.Cadr_FormMain_Button.ForeColor = System.Drawing.Color.White;
+            this.Cadr_FormMain_Button.Location = new System.Drawing.Point(20, 50);
+            this.Cadr_FormMain_Button.Name = "Cadr_FormMain_Button";
+            this.Cadr_FormMain_Button.RippleColor = System.Drawing.Color.White;
+            this.Cadr_FormMain_Button.RoundingEnable = true;
+            this.Cadr_FormMain_Button.Size = new System.Drawing.Size(131, 33);
+            this.Cadr_FormMain_Button.TabIndex = 21;
+            this.Cadr_FormMain_Button.Text = "Отдел кадров";
+            this.Cadr_FormMain_Button.TextHover = "";
+            this.Cadr_FormMain_Button.UseDownPressEffectOnClick = true;
+            this.Cadr_FormMain_Button.UseRippleEffect = true;
+            this.Cadr_FormMain_Button.UseZoomEffectOnHover = true;
+            this.Cadr_FormMain_Button.Click += new System.EventHandler(this.Cadr_FormMain_Button_Click);
+            // 
+            // ListOfCars_FormMain_Button
+            // 
+            this.ListOfCars_FormMain_Button.BackColor = System.Drawing.Color.RoyalBlue;
+            this.ListOfCars_FormMain_Button.BackColorAdditional = System.Drawing.Color.Tomato;
+            this.ListOfCars_FormMain_Button.BackColorGradientEnabled = true;
+            this.ListOfCars_FormMain_Button.BackColorGradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.ListOfCars_FormMain_Button.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.ListOfCars_FormMain_Button.BorderColorEnabled = true;
+            this.ListOfCars_FormMain_Button.BorderColorOnHover = System.Drawing.Color.White;
+            this.ListOfCars_FormMain_Button.BorderColorOnHoverEnabled = true;
+            this.ListOfCars_FormMain_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ListOfCars_FormMain_Button.Font = new System.Drawing.Font("Verdana", 8.25F);
+            this.ListOfCars_FormMain_Button.ForeColor = System.Drawing.Color.White;
+            this.ListOfCars_FormMain_Button.Location = new System.Drawing.Point(252, 50);
+            this.ListOfCars_FormMain_Button.Name = "ListOfCars_FormMain_Button";
+            this.ListOfCars_FormMain_Button.RippleColor = System.Drawing.Color.White;
+            this.ListOfCars_FormMain_Button.RoundingEnable = true;
+            this.ListOfCars_FormMain_Button.Size = new System.Drawing.Size(131, 33);
+            this.ListOfCars_FormMain_Button.TabIndex = 23;
+            this.ListOfCars_FormMain_Button.Text = "Список автомобилей";
+            this.ListOfCars_FormMain_Button.TextHover = "";
+            this.ListOfCars_FormMain_Button.UseDownPressEffectOnClick = true;
+            this.ListOfCars_FormMain_Button.UseRippleEffect = true;
+            this.ListOfCars_FormMain_Button.UseZoomEffectOnHover = true;
+            this.ListOfCars_FormMain_Button.Click += new System.EventHandler(this.ListOfCars_FormMain_Button_Click);
+            // 
+            // ListOfHijackings
+            // 
+            this.ListOfHijackings.BackColor = System.Drawing.Color.RoyalBlue;
+            this.ListOfHijackings.BackColorAdditional = System.Drawing.Color.Tomato;
+            this.ListOfHijackings.BackColorGradientEnabled = true;
+            this.ListOfHijackings.BackColorGradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.ListOfHijackings.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.ListOfHijackings.BorderColorEnabled = true;
+            this.ListOfHijackings.BorderColorOnHover = System.Drawing.Color.White;
+            this.ListOfHijackings.BorderColorOnHoverEnabled = true;
+            this.ListOfHijackings.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ListOfHijackings.Font = new System.Drawing.Font("Verdana", 8.25F);
+            this.ListOfHijackings.ForeColor = System.Drawing.Color.White;
+            this.ListOfHijackings.Location = new System.Drawing.Point(139, 138);
+            this.ListOfHijackings.Name = "ListOfHijackings";
+            this.ListOfHijackings.RippleColor = System.Drawing.Color.White;
+            this.ListOfHijackings.RoundingEnable = true;
+            this.ListOfHijackings.Size = new System.Drawing.Size(131, 33);
+            this.ListOfHijackings.TabIndex = 22;
+            this.ListOfHijackings.Text = "Список угонов";
+            this.ListOfHijackings.TextHover = "";
+            this.ListOfHijackings.UseDownPressEffectOnClick = true;
+            this.ListOfHijackings.UseRippleEffect = true;
+            this.ListOfHijackings.UseZoomEffectOnHover = true;
+            this.ListOfHijackings.Click += new System.EventHandler(this.ListOfHijackings_Click);
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -296,14 +374,14 @@ namespace yt_DesignUI
             this.yt_Button1.BackColorGradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
             this.yt_Button1.BorderColor = System.Drawing.Color.RoyalBlue;
             this.yt_Button1.BorderColorEnabled = true;
-            this.yt_Button1.BorderColorOnHover = System.Drawing.Color.Maroon;
+            this.yt_Button1.BorderColorOnHover = System.Drawing.Color.White;
             this.yt_Button1.BorderColorOnHoverEnabled = true;
             this.yt_Button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.yt_Button1.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.yt_Button1.ForeColor = System.Drawing.Color.White;
             this.yt_Button1.Location = new System.Drawing.Point(170, 324);
             this.yt_Button1.Name = "yt_Button1";
-            this.yt_Button1.RippleColor = System.Drawing.Color.White;
+            this.yt_Button1.RippleColor = System.Drawing.Color.Black;
             this.yt_Button1.RoundingEnable = true;
             this.yt_Button1.Size = new System.Drawing.Size(88, 32);
             this.yt_Button1.TabIndex = 7;
@@ -321,14 +399,14 @@ namespace yt_DesignUI
             this.yt_Button4.BackColorGradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
             this.yt_Button4.BorderColor = System.Drawing.Color.RoyalBlue;
             this.yt_Button4.BorderColorEnabled = true;
-            this.yt_Button4.BorderColorOnHover = System.Drawing.Color.Maroon;
+            this.yt_Button4.BorderColorOnHover = System.Drawing.Color.White;
             this.yt_Button4.BorderColorOnHoverEnabled = true;
             this.yt_Button4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.yt_Button4.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.yt_Button4.ForeColor = System.Drawing.Color.White;
             this.yt_Button4.Location = new System.Drawing.Point(347, 330);
             this.yt_Button4.Name = "yt_Button4";
-            this.yt_Button4.RippleColor = System.Drawing.Color.White;
+            this.yt_Button4.RippleColor = System.Drawing.Color.Maroon;
             this.yt_Button4.RoundingEnable = true;
             this.yt_Button4.Size = new System.Drawing.Size(49, 26);
             this.yt_Button4.TabIndex = 5;
@@ -389,84 +467,6 @@ namespace yt_DesignUI
             this.roundingButtonsComponent1.Rounding = 60;
             this.roundingButtonsComponent1.RoundingEnable = true;
             this.roundingButtonsComponent1.TargetForm = this;
-            // 
-            // Cadr_FormMain_Button
-            // 
-            this.Cadr_FormMain_Button.BackColor = System.Drawing.Color.RoyalBlue;
-            this.Cadr_FormMain_Button.BackColorAdditional = System.Drawing.Color.Tomato;
-            this.Cadr_FormMain_Button.BackColorGradientEnabled = true;
-            this.Cadr_FormMain_Button.BackColorGradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
-            this.Cadr_FormMain_Button.BorderColor = System.Drawing.Color.RoyalBlue;
-            this.Cadr_FormMain_Button.BorderColorEnabled = true;
-            this.Cadr_FormMain_Button.BorderColorOnHover = System.Drawing.Color.Maroon;
-            this.Cadr_FormMain_Button.BorderColorOnHoverEnabled = true;
-            this.Cadr_FormMain_Button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Cadr_FormMain_Button.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.Cadr_FormMain_Button.ForeColor = System.Drawing.Color.White;
-            this.Cadr_FormMain_Button.Location = new System.Drawing.Point(20, 50);
-            this.Cadr_FormMain_Button.Name = "Cadr_FormMain_Button";
-            this.Cadr_FormMain_Button.RippleColor = System.Drawing.Color.White;
-            this.Cadr_FormMain_Button.RoundingEnable = true;
-            this.Cadr_FormMain_Button.Size = new System.Drawing.Size(131, 33);
-            this.Cadr_FormMain_Button.TabIndex = 21;
-            this.Cadr_FormMain_Button.Text = "Отдел кадров";
-            this.Cadr_FormMain_Button.TextHover = "";
-            this.Cadr_FormMain_Button.UseDownPressEffectOnClick = true;
-            this.Cadr_FormMain_Button.UseRippleEffect = true;
-            this.Cadr_FormMain_Button.UseZoomEffectOnHover = true;
-            this.Cadr_FormMain_Button.Click += new System.EventHandler(this.Cadr_FormMain_Button_Click);
-            // 
-            // ListOfCars_FormMain_Button
-            // 
-            this.ListOfCars_FormMain_Button.BackColor = System.Drawing.Color.RoyalBlue;
-            this.ListOfCars_FormMain_Button.BackColorAdditional = System.Drawing.Color.Tomato;
-            this.ListOfCars_FormMain_Button.BackColorGradientEnabled = true;
-            this.ListOfCars_FormMain_Button.BackColorGradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
-            this.ListOfCars_FormMain_Button.BorderColor = System.Drawing.Color.RoyalBlue;
-            this.ListOfCars_FormMain_Button.BorderColorEnabled = true;
-            this.ListOfCars_FormMain_Button.BorderColorOnHover = System.Drawing.Color.Maroon;
-            this.ListOfCars_FormMain_Button.BorderColorOnHoverEnabled = true;
-            this.ListOfCars_FormMain_Button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ListOfCars_FormMain_Button.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.ListOfCars_FormMain_Button.ForeColor = System.Drawing.Color.White;
-            this.ListOfCars_FormMain_Button.Location = new System.Drawing.Point(252, 50);
-            this.ListOfCars_FormMain_Button.Name = "ListOfCars_FormMain_Button";
-            this.ListOfCars_FormMain_Button.RippleColor = System.Drawing.Color.White;
-            this.ListOfCars_FormMain_Button.RoundingEnable = true;
-            this.ListOfCars_FormMain_Button.Size = new System.Drawing.Size(131, 33);
-            this.ListOfCars_FormMain_Button.TabIndex = 23;
-            this.ListOfCars_FormMain_Button.Text = "Список автомобилей";
-            this.ListOfCars_FormMain_Button.TextHover = "";
-            this.ListOfCars_FormMain_Button.UseDownPressEffectOnClick = true;
-            this.ListOfCars_FormMain_Button.UseRippleEffect = true;
-            this.ListOfCars_FormMain_Button.UseZoomEffectOnHover = true;
-            this.ListOfCars_FormMain_Button.Click += new System.EventHandler(this.ListOfCars_FormMain_Button_Click);
-            // 
-            // ListOfHijackings
-            // 
-            this.ListOfHijackings.BackColor = System.Drawing.Color.RoyalBlue;
-            this.ListOfHijackings.BackColorAdditional = System.Drawing.Color.Tomato;
-            this.ListOfHijackings.BackColorGradientEnabled = true;
-            this.ListOfHijackings.BackColorGradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
-            this.ListOfHijackings.BorderColor = System.Drawing.Color.RoyalBlue;
-            this.ListOfHijackings.BorderColorEnabled = true;
-            this.ListOfHijackings.BorderColorOnHover = System.Drawing.Color.Maroon;
-            this.ListOfHijackings.BorderColorOnHoverEnabled = true;
-            this.ListOfHijackings.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ListOfHijackings.Font = new System.Drawing.Font("Verdana", 8.25F);
-            this.ListOfHijackings.ForeColor = System.Drawing.Color.White;
-            this.ListOfHijackings.Location = new System.Drawing.Point(139, 138);
-            this.ListOfHijackings.Name = "ListOfHijackings";
-            this.ListOfHijackings.RippleColor = System.Drawing.Color.White;
-            this.ListOfHijackings.RoundingEnable = true;
-            this.ListOfHijackings.Size = new System.Drawing.Size(131, 33);
-            this.ListOfHijackings.TabIndex = 22;
-            this.ListOfHijackings.Text = "Список угонов";
-            this.ListOfHijackings.TextHover = "";
-            this.ListOfHijackings.UseDownPressEffectOnClick = true;
-            this.ListOfHijackings.UseRippleEffect = true;
-            this.ListOfHijackings.UseZoomEffectOnHover = true;
-            this.ListOfHijackings.Click += new System.EventHandler(this.ListOfHijackings_Click);
             // 
             // FormMain
             // 
