@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using yt_DesignUI.Forms.Forms;
 using yt_DesignUI.Forms.Requests;
 using yt_DesignUI.Forms.TablesFromDB;
 
@@ -155,6 +156,12 @@ namespace yt_DesignUI
             Hide();
             var listOfHijackings = new ListOfHijackings();
             listOfHijackings.Show();
+        }
+
+        private void yt_Button1_Click_1(object sender, EventArgs e)
+        {
+            var carBrand = new Diagramma();
+            carBrand.Show();
         }
     }
 }
