@@ -36,17 +36,17 @@ namespace yt_DesignUI.Forms.Requests
             this.список_автомобилейTableAdapter = new yt_DesignUI.TrafficPoliceDataSetTableAdapters.Список_автомобилейTableAdapter();
             this.tableAdapterManager = new yt_DesignUI.TrafficPoliceDataSetTableAdapters.TableAdapterManager();
             this.список_автомобилейBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.список_автомобилейBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.список_автомобилейDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -95,6 +95,7 @@ namespace yt_DesignUI.Forms.Requests
             this.RadioButton_DESC = new yt_DesignUI.EgoldsRadioButton();
             this.RadioButton_ASC = new yt_DesignUI.EgoldsRadioButton();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.Exit_CarBrand_Button = new yt_DesignUI.yt_Button();
             ((System.ComponentModel.ISupportInitialize)(this.trafficPoliceDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.список_автомобилейBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.список_автомобилейBindingNavigator)).BeginInit();
@@ -156,9 +157,34 @@ namespace yt_DesignUI.Forms.Requests
             this.список_автомобилейBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.список_автомобилейBindingNavigator.Name = "список_автомобилейBindingNavigator";
             this.список_автомобилейBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.список_автомобилейBindingNavigator.Size = new System.Drawing.Size(1462, 25);
+            this.список_автомобилейBindingNavigator.Size = new System.Drawing.Size(1392, 25);
             this.список_автомобилейBindingNavigator.TabIndex = 0;
             this.список_автомобилейBindingNavigator.Text = "bindingNavigator1";
+            // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Text = "Добавить";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(43, 22);
+            this.bindingNavigatorCountItem.Text = "для {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Text = "Удалить";
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -193,16 +219,9 @@ namespace yt_DesignUI.Forms.Requests
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Текущее положение";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(43, 22);
-            this.bindingNavigatorCountItem.Text = "для {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
             this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorMoveNextItem
@@ -225,26 +244,8 @@ namespace yt_DesignUI.Forms.Requests
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorAddNewItem.Text = "Добавить";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
-            this.bindingNavigatorDeleteItem.Text = "Удалить";
             // 
             // список_автомобилейBindingNavigatorSaveItem
             // 
@@ -295,7 +296,7 @@ namespace yt_DesignUI.Forms.Requests
             this.список_автомобилейDataGridView.DataSource = this.список_автомобилейBindingSource;
             this.список_автомобилейDataGridView.Location = new System.Drawing.Point(19, 70);
             this.список_автомобилейDataGridView.Name = "список_автомобилейDataGridView";
-            this.список_автомобилейDataGridView.Size = new System.Drawing.Size(1166, 220);
+            this.список_автомобилейDataGridView.Size = new System.Drawing.Size(1141, 220);
             this.список_автомобилейDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn2
@@ -495,7 +496,7 @@ namespace yt_DesignUI.Forms.Requests
             this.comboBox1.DataSource = this.список_автомобилейBindingSource;
             this.comboBox1.DisplayMember = "FIO";
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(202, 339);
+            this.comboBox1.Location = new System.Drawing.Point(188, 315);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(150, 21);
             this.comboBox1.TabIndex = 48;
@@ -509,7 +510,7 @@ namespace yt_DesignUI.Forms.Requests
             this.TextBox_CarBrandTable.Font = new System.Drawing.Font("Arial", 11.25F);
             this.TextBox_CarBrandTable.FontTextPreview = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold);
             this.TextBox_CarBrandTable.ForeColor = System.Drawing.Color.Black;
-            this.TextBox_CarBrandTable.Location = new System.Drawing.Point(202, 374);
+            this.TextBox_CarBrandTable.Location = new System.Drawing.Point(188, 350);
             this.TextBox_CarBrandTable.Name = "TextBox_CarBrandTable";
             this.TextBox_CarBrandTable.Size = new System.Drawing.Size(150, 40);
             this.TextBox_CarBrandTable.TabIndex = 47;
@@ -521,7 +522,7 @@ namespace yt_DesignUI.Forms.Requests
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(52, 386);
+            this.label3.Location = new System.Drawing.Point(38, 362);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(73, 18);
             this.label3.TabIndex = 46;
@@ -531,7 +532,7 @@ namespace yt_DesignUI.Forms.Requests
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(52, 346);
+            this.label2.Location = new System.Drawing.Point(38, 322);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(128, 18);
             this.label2.TabIndex = 45;
@@ -555,7 +556,7 @@ namespace yt_DesignUI.Forms.Requests
             this.egoldsFormStyle1.ControlBoxButtonsWidth = 30;
             this.egoldsFormStyle1.EnableControlBoxIconsLight = false;
             this.egoldsFormStyle1.EnableControlBoxMouseLight = false;
-            this.egoldsFormStyle1.Form = null;
+            this.egoldsFormStyle1.Form = this;
             this.egoldsFormStyle1.FormStyle = yt_DesignUI.Components.EgoldsFormStyle.fStyle.UserStyle;
             this.egoldsFormStyle1.HeaderColor = System.Drawing.Color.RoyalBlue;
             this.egoldsFormStyle1.HeaderColorAdditional = System.Drawing.Color.Tomato;
@@ -574,12 +575,12 @@ namespace yt_DesignUI.Forms.Requests
             this.ShowAll_CarBrandTable_Button.BackColorGradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
             this.ShowAll_CarBrandTable_Button.BorderColor = System.Drawing.Color.RoyalBlue;
             this.ShowAll_CarBrandTable_Button.BorderColorEnabled = true;
-            this.ShowAll_CarBrandTable_Button.BorderColorOnHover = System.Drawing.Color.Maroon;
+            this.ShowAll_CarBrandTable_Button.BorderColorOnHover = System.Drawing.Color.White;
             this.ShowAll_CarBrandTable_Button.BorderColorOnHoverEnabled = true;
             this.ShowAll_CarBrandTable_Button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ShowAll_CarBrandTable_Button.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.ShowAll_CarBrandTable_Button.ForeColor = System.Drawing.Color.White;
-            this.ShowAll_CarBrandTable_Button.Location = new System.Drawing.Point(1308, 343);
+            this.ShowAll_CarBrandTable_Button.Location = new System.Drawing.Point(491, 312);
             this.ShowAll_CarBrandTable_Button.Name = "ShowAll_CarBrandTable_Button";
             this.ShowAll_CarBrandTable_Button.RippleColor = System.Drawing.Color.White;
             this.ShowAll_CarBrandTable_Button.RoundingEnable = true;
@@ -600,12 +601,12 @@ namespace yt_DesignUI.Forms.Requests
             this.Find_CarBrandTable_Button.BackColorGradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
             this.Find_CarBrandTable_Button.BorderColor = System.Drawing.Color.RoyalBlue;
             this.Find_CarBrandTable_Button.BorderColorEnabled = true;
-            this.Find_CarBrandTable_Button.BorderColorOnHover = System.Drawing.Color.Maroon;
+            this.Find_CarBrandTable_Button.BorderColorOnHover = System.Drawing.Color.White;
             this.Find_CarBrandTable_Button.BorderColorOnHoverEnabled = true;
             this.Find_CarBrandTable_Button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Find_CarBrandTable_Button.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.Find_CarBrandTable_Button.ForeColor = System.Drawing.Color.White;
-            this.Find_CarBrandTable_Button.Location = new System.Drawing.Point(1256, 391);
+            this.Find_CarBrandTable_Button.Location = new System.Drawing.Point(367, 362);
             this.Find_CarBrandTable_Button.Name = "Find_CarBrandTable_Button";
             this.Find_CarBrandTable_Button.RippleColor = System.Drawing.Color.White;
             this.Find_CarBrandTable_Button.RoundingEnable = true;
@@ -626,12 +627,12 @@ namespace yt_DesignUI.Forms.Requests
             this.Filter_CarBrandTable_Button.BackColorGradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
             this.Filter_CarBrandTable_Button.BorderColor = System.Drawing.Color.RoyalBlue;
             this.Filter_CarBrandTable_Button.BorderColorEnabled = true;
-            this.Filter_CarBrandTable_Button.BorderColorOnHover = System.Drawing.Color.Maroon;
+            this.Filter_CarBrandTable_Button.BorderColorOnHover = System.Drawing.Color.White;
             this.Filter_CarBrandTable_Button.BorderColorOnHoverEnabled = true;
             this.Filter_CarBrandTable_Button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Filter_CarBrandTable_Button.Font = new System.Drawing.Font("Verdana", 8.25F);
             this.Filter_CarBrandTable_Button.ForeColor = System.Drawing.Color.White;
-            this.Filter_CarBrandTable_Button.Location = new System.Drawing.Point(1184, 343);
+            this.Filter_CarBrandTable_Button.Location = new System.Drawing.Point(367, 312);
             this.Filter_CarBrandTable_Button.Name = "Filter_CarBrandTable_Button";
             this.Filter_CarBrandTable_Button.RippleColor = System.Drawing.Color.White;
             this.Filter_CarBrandTable_Button.RoundingEnable = true;
@@ -651,7 +652,7 @@ namespace yt_DesignUI.Forms.Requests
             this.groupBox1.Controls.Add(this.RadioButton_ASC);
             this.groupBox1.Controls.Add(this.listBox1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.groupBox1.Location = new System.Drawing.Point(1184, 70);
+            this.groupBox1.Location = new System.Drawing.Point(1166, 70);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(223, 245);
             this.groupBox1.TabIndex = 51;
@@ -666,7 +667,7 @@ namespace yt_DesignUI.Forms.Requests
             this.Sort_CarBrandTable_Button.BackColorGradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
             this.Sort_CarBrandTable_Button.BorderColor = System.Drawing.Color.RoyalBlue;
             this.Sort_CarBrandTable_Button.BorderColorEnabled = true;
-            this.Sort_CarBrandTable_Button.BorderColorOnHover = System.Drawing.Color.Maroon;
+            this.Sort_CarBrandTable_Button.BorderColorOnHover = System.Drawing.Color.White;
             this.Sort_CarBrandTable_Button.BorderColorOnHoverEnabled = true;
             this.Sort_CarBrandTable_Button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Sort_CarBrandTable_Button.Font = new System.Drawing.Font("Verdana", 8.25F);
@@ -722,11 +723,38 @@ namespace yt_DesignUI.Forms.Requests
             this.listBox1.Size = new System.Drawing.Size(207, 124);
             this.listBox1.TabIndex = 0;
             // 
+            // Exit_CarBrand_Button
+            // 
+            this.Exit_CarBrand_Button.BackColor = System.Drawing.Color.RoyalBlue;
+            this.Exit_CarBrand_Button.BackColorAdditional = System.Drawing.Color.Tomato;
+            this.Exit_CarBrand_Button.BackColorGradientEnabled = true;
+            this.Exit_CarBrand_Button.BackColorGradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
+            this.Exit_CarBrand_Button.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.Exit_CarBrand_Button.BorderColorEnabled = true;
+            this.Exit_CarBrand_Button.BorderColorOnHover = System.Drawing.Color.White;
+            this.Exit_CarBrand_Button.BorderColorOnHoverEnabled = true;
+            this.Exit_CarBrand_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Exit_CarBrand_Button.Font = new System.Drawing.Font("Verdana", 8.25F);
+            this.Exit_CarBrand_Button.ForeColor = System.Drawing.Color.White;
+            this.Exit_CarBrand_Button.Location = new System.Drawing.Point(19, 40);
+            this.Exit_CarBrand_Button.Name = "Exit_CarBrand_Button";
+            this.Exit_CarBrand_Button.RippleColor = System.Drawing.Color.White;
+            this.Exit_CarBrand_Button.RoundingEnable = true;
+            this.Exit_CarBrand_Button.Size = new System.Drawing.Size(48, 24);
+            this.Exit_CarBrand_Button.TabIndex = 54;
+            this.Exit_CarBrand_Button.Text = "Назад";
+            this.Exit_CarBrand_Button.TextHover = "";
+            this.Exit_CarBrand_Button.UseDownPressEffectOnClick = true;
+            this.Exit_CarBrand_Button.UseRippleEffect = true;
+            this.Exit_CarBrand_Button.UseZoomEffectOnHover = true;
+            this.Exit_CarBrand_Button.Click += new System.EventHandler(this.Exit_CarBrand_Button_Click);
+            // 
             // ListOfCars
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1462, 450);
+            this.ClientSize = new System.Drawing.Size(1392, 436);
+            this.Controls.Add(this.Exit_CarBrand_Button);
             this.Controls.Add(this.ShowAll_CarBrandTable_Button);
             this.Controls.Add(this.Find_CarBrandTable_Button);
             this.Controls.Add(this.Filter_CarBrandTable_Button);
@@ -738,7 +766,9 @@ namespace yt_DesignUI.Forms.Requests
             this.Controls.Add(this.label2);
             this.Controls.Add(this.список_автомобилейDataGridView);
             this.Controls.Add(this.список_автомобилейBindingNavigator);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ListOfCars";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ListOfCars";
             this.Load += new System.EventHandler(this.ListOfCars_Load);
             ((System.ComponentModel.ISupportInitialize)(this.trafficPoliceDataSet)).EndInit();
@@ -820,5 +850,6 @@ namespace yt_DesignUI.Forms.Requests
         private EgoldsRadioButton RadioButton_DESC;
         private EgoldsRadioButton RadioButton_ASC;
         private System.Windows.Forms.ListBox listBox1;
+        private yt_Button Exit_CarBrand_Button;
     }
 }

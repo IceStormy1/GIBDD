@@ -421,7 +421,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.Exit_CarBrand_Button.BackColorGradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
             this.Exit_CarBrand_Button.BorderColor = System.Drawing.Color.RoyalBlue;
             this.Exit_CarBrand_Button.BorderColorEnabled = true;
-            this.Exit_CarBrand_Button.BorderColorOnHover = System.Drawing.Color.Maroon;
+            this.Exit_CarBrand_Button.BorderColorOnHover = System.Drawing.Color.White;
             this.Exit_CarBrand_Button.BorderColorOnHoverEnabled = true;
             this.Exit_CarBrand_Button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Exit_CarBrand_Button.Font = new System.Drawing.Font("Verdana", 8.25F);
@@ -447,7 +447,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.Save_CarBrand_Button.BackColorGradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
             this.Save_CarBrand_Button.BorderColor = System.Drawing.Color.RoyalBlue;
             this.Save_CarBrand_Button.BorderColorEnabled = true;
-            this.Save_CarBrand_Button.BorderColorOnHover = System.Drawing.Color.Maroon;
+            this.Save_CarBrand_Button.BorderColorOnHover = System.Drawing.Color.White;
             this.Save_CarBrand_Button.BorderColorOnHoverEnabled = true;
             this.Save_CarBrand_Button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Save_CarBrand_Button.Font = new System.Drawing.Font("Verdana", 8.25F);
@@ -473,7 +473,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.Remove_CarBrand_Button.BackColorGradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
             this.Remove_CarBrand_Button.BorderColor = System.Drawing.Color.RoyalBlue;
             this.Remove_CarBrand_Button.BorderColorEnabled = true;
-            this.Remove_CarBrand_Button.BorderColorOnHover = System.Drawing.Color.Maroon;
+            this.Remove_CarBrand_Button.BorderColorOnHover = System.Drawing.Color.White;
             this.Remove_CarBrand_Button.BorderColorOnHoverEnabled = true;
             this.Remove_CarBrand_Button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Remove_CarBrand_Button.Font = new System.Drawing.Font("Verdana", 8.25F);
@@ -499,7 +499,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.Next_CarBrand_Button.BackColorGradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
             this.Next_CarBrand_Button.BorderColor = System.Drawing.Color.RoyalBlue;
             this.Next_CarBrand_Button.BorderColorEnabled = true;
-            this.Next_CarBrand_Button.BorderColorOnHover = System.Drawing.Color.Maroon;
+            this.Next_CarBrand_Button.BorderColorOnHover = System.Drawing.Color.White;
             this.Next_CarBrand_Button.BorderColorOnHoverEnabled = true;
             this.Next_CarBrand_Button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Next_CarBrand_Button.Font = new System.Drawing.Font("Verdana", 8.25F);
@@ -525,7 +525,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.Last_CarBrand_Button.BackColorGradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
             this.Last_CarBrand_Button.BorderColor = System.Drawing.Color.RoyalBlue;
             this.Last_CarBrand_Button.BorderColorEnabled = true;
-            this.Last_CarBrand_Button.BorderColorOnHover = System.Drawing.Color.Maroon;
+            this.Last_CarBrand_Button.BorderColorOnHover = System.Drawing.Color.White;
             this.Last_CarBrand_Button.BorderColorOnHoverEnabled = true;
             this.Last_CarBrand_Button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Last_CarBrand_Button.Font = new System.Drawing.Font("Verdana", 8.25F);
@@ -551,7 +551,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.Add_CarBrand_Button.BackColorGradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
             this.Add_CarBrand_Button.BorderColor = System.Drawing.Color.RoyalBlue;
             this.Add_CarBrand_Button.BorderColorEnabled = true;
-            this.Add_CarBrand_Button.BorderColorOnHover = System.Drawing.Color.Maroon;
+            this.Add_CarBrand_Button.BorderColorOnHover = System.Drawing.Color.White;
             this.Add_CarBrand_Button.BorderColorOnHoverEnabled = true;
             this.Add_CarBrand_Button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Add_CarBrand_Button.Font = new System.Drawing.Font("Verdana", 8.25F);
@@ -577,7 +577,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.Previevs_CarBrand_Button.BackColorGradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
             this.Previevs_CarBrand_Button.BorderColor = System.Drawing.Color.RoyalBlue;
             this.Previevs_CarBrand_Button.BorderColorEnabled = true;
-            this.Previevs_CarBrand_Button.BorderColorOnHover = System.Drawing.Color.Maroon;
+            this.Previevs_CarBrand_Button.BorderColorOnHover = System.Drawing.Color.White;
             this.Previevs_CarBrand_Button.BorderColorOnHoverEnabled = true;
             this.Previevs_CarBrand_Button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Previevs_CarBrand_Button.Font = new System.Drawing.Font("Verdana", 8.25F);
@@ -603,7 +603,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.First_CarBrand_Button.BackColorGradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
             this.First_CarBrand_Button.BorderColor = System.Drawing.Color.RoyalBlue;
             this.First_CarBrand_Button.BorderColorEnabled = true;
-            this.First_CarBrand_Button.BorderColorOnHover = System.Drawing.Color.Maroon;
+            this.First_CarBrand_Button.BorderColorOnHover = System.Drawing.Color.White;
             this.First_CarBrand_Button.BorderColorOnHoverEnabled = true;
             this.First_CarBrand_Button.Cursor = System.Windows.Forms.Cursors.Hand;
             this.First_CarBrand_Button.Font = new System.Drawing.Font("Verdana", 8.25F);
@@ -629,7 +629,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.yt_Button1.BackColorGradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
             this.yt_Button1.BorderColor = System.Drawing.Color.RoyalBlue;
             this.yt_Button1.BorderColorEnabled = true;
-            this.yt_Button1.BorderColorOnHover = System.Drawing.Color.Maroon;
+            this.yt_Button1.BorderColorOnHover = System.Drawing.Color.White;
             this.yt_Button1.BorderColorOnHoverEnabled = true;
             this.yt_Button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.yt_Button1.Font = new System.Drawing.Font("Verdana", 8.25F);
