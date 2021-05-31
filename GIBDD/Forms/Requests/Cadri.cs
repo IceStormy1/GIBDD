@@ -7,6 +7,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using yt_DesignUI.Forms.Forms;
 
 namespace yt_DesignUI.Forms.Requests
 {
@@ -95,6 +96,12 @@ namespace yt_DesignUI.Forms.Requests
                     }
                 }
             }
+        }
+
+        private void yt_Button1_Click(object sender, EventArgs e)
+        {
+            var diagramma = new Diagramma();
+            diagramma.Show();
         }
     }
 }
