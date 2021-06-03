@@ -251,7 +251,7 @@ namespace yt_DesignUI.Forms.TablesFromDB
             this.carsDataGridView.DataSource = this.carsBindingSource;
             this.carsDataGridView.Location = new System.Drawing.Point(12, 96);
             this.carsDataGridView.Name = "carsDataGridView";
-            this.carsDataGridView.Size = new System.Drawing.Size(1056, 220);
+            this.carsDataGridView.Size = new System.Drawing.Size(1045, 220);
             this.carsDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn2
